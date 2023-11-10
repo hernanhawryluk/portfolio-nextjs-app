@@ -33,30 +33,38 @@ export const links = [
   },
 ] as const;
 
-export const experienceData = [
+export const experiencesData = [
   {
-    title: "Graduated from Platzi",
+    title: "Coding Journey Begins",
     location: "Argentina, Bs. As.",
     description:
-      "I graduated after 6 months of studying. I immediatly found a job as a front-end developer.",
+      "I embarked on my programming journey by exploring into the foundations of Python and JavaScript. My fascination with front-end development grew rapidly.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018",
+    date: "December 2021 - February 2022",
   },
   {
-    title: "Front-End Developer",
+    title: "Skill Refinement",
     location: "Argentina, Bs. As.",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Through the Platzi platform, I enhanced my English language skills and refined my web development abilities. I actively applied my knowledge through personal projects.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2022",
+    date: "March 2022 - December 2022",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Unveiling Cross-Platform",
     location: "Argentina, Bs. As.",
     description:
-      "I'm now a full stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, React Native and Firebase.",
+      "My journey led me to delve into cross-platform mobile development with React Native, which allowed me to create apps for both iOS and Android.",
+    icon: React.createElement(CgWorkAlt),
+    date: "January 2023 - April 2023",
+  },
+  {
+    title: "Skilled Front-End Developer",
+    location: "Argentina, Bs. As.",
+    description:
+      "I'm now a front-end developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, React Native and Firebase.",
     icon: React.createElement(FaReact),
-    date: "2023 - Present",
+    date: "May 2023 - Present",
   },
 ] as const;
 
@@ -66,7 +74,7 @@ export const projectsData = [
     description:
       "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
     tags: ["React Native", "Expo", "Firebase"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: corpcommentImg,
   },
   {
     title: "Archviz Render Web",
@@ -90,16 +98,16 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "React Native",
-  "Expo",
   "Node.js",
   "Next.js",
-  "Node.js",
-  "Express",
+  "React Native",
+  "Expo",
   "Git",
   "GitHub",
-  "Firebase",
   "Tailwind",
+  "Firebase",
+  "MongoDB",
   "Python",
   "Unreal Engine",
+  "Framer Motion",
 ] as const;
