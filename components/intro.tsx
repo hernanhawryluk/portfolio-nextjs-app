@@ -102,7 +102,7 @@ export default function Intro() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/hernan-hawryluk/"
+          href="https://github.com/hernanhawryluk/"
           target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
