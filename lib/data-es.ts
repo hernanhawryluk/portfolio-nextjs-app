@@ -22,29 +22,29 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
-export const links = [
+export const linksEs = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Perfil",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Proyectos",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Tecnologías",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiencia",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "Contacto",
     hash: "#contact",
   },
 ] as const;

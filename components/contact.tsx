@@ -7,9 +7,14 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitButton from "./submit-button";
 import toast from "react-hot-toast";
+import { useI18nContext } from "@/context/i18n-context";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { language } = useI18nContext();
+  const { ref } = useSectionInView(
+    language === "en" ? "Contact" : "Contacto",
+    0.5
+  );
 
   return (
     <motion.section

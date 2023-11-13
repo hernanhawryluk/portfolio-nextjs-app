@@ -9,9 +9,11 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useI18nContext } from "@/context/i18n-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { language, t } = useI18nContext();
+  const { ref } = useSectionInView(language === "en" ? "Home" : "Inicio", 0.5);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -59,12 +61,11 @@ export default function Intro() {
         transition={{ duration: 0.5 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Hello, I'm Hernan.</span> I'm a{" "}
-        <span className="font-bold">Front-End Developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & mobile apps</span>. <br />
-        My focus is <span className="underline">React</span> and{" "}
-        <span className="underline">React Native</span>.
+        {t("intro.greeting")}
+        <br />
+        {t("intro.main")}
+        <br />
+        {t("intro.occupation")}
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -80,7 +81,7 @@ export default function Intro() {
           }}
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 transition active:scale-105 cursor-pointer borderBlack"
         >
-          Contact me here{" "}
+          {t("intro.contactButton")}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -89,7 +90,7 @@ export default function Intro() {
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download CV{" "}
+          {t("intro.downloadCV")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
         </a>
 
