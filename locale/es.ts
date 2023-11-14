@@ -23,6 +23,32 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 const es = {
+  links: [
+    {
+      name: "Inicio",
+      hash: "#home",
+    },
+    {
+      name: "Perfil",
+      hash: "#about",
+    },
+    {
+      name: "Proyectos",
+      hash: "#projects",
+    },
+    {
+      name: "Tecnologías",
+      hash: "#skills",
+    },
+    {
+      name: "Experiencia",
+      hash: "#experience",
+    },
+    {
+      name: "Contacto",
+      hash: "#contact",
+    },
+  ],
   intro: {
     greeting: "Hola, Soy Hernan Hawryluk.",
     main: "Desarrollador Front-end con 2 años de experiencia. Me encanta desarrollar paginas web y aplicaciones móbiles.",
@@ -63,32 +89,142 @@ const es = {
       },
     ],
   },
-  links: [
-    {
-      name: "Inicio",
-      hash: "#home",
-    },
-    {
-      name: "Perfil",
-      hash: "#about",
-    },
-    {
-      name: "Proyectos",
-      hash: "#projects",
-    },
-    {
-      name: "Tecnologías",
-      hash: "#skills",
-    },
-    {
-      name: "Experiencia",
-      hash: "#experience",
-    },
-    {
-      name: "Contacto",
-      hash: "#contact",
-    },
-  ],
+  skills: {
+    title: "Mis Tecnologías",
+    data: [
+      {
+        skill: "HTML",
+        icon: React.createElement(SiHtml5),
+        color: "#e34f26",
+      },
+      {
+        skill: "CSS",
+        icon: React.createElement(SiHtml5),
+        color: "#264de4",
+      },
+      {
+        skill: "JavaScript",
+        icon: React.createElement(SiJavascript),
+        color: "#f0db4f",
+      },
+      {
+        skill: "TypeScript",
+        icon: React.createElement(SiTypescript),
+        color: "#3178c6",
+      },
+      {
+        skill: "React",
+        icon: React.createElement(SiReact),
+        color: "#61dafb",
+      },
+      {
+        skill: "Next.js",
+        icon: React.createElement(SiNextdotjs),
+        color: "#000000",
+      },
+      {
+        skill: "Tailwind",
+        icon: React.createElement(SiTailwindcss),
+        color: "#38bdf8",
+      },
+      {
+        skill: "Framer Motion",
+        icon: React.createElement(SiFramer),
+        color: "#000000",
+      },
+      {
+        skill: "React Native",
+        icon: React.createElement(SiReact),
+        color: "#61dafb",
+      },
+      {
+        skill: "Expo",
+        icon: React.createElement(SiExpo),
+        color: "#000000",
+      },
+      {
+        skill: "Firebase",
+        icon: React.createElement(SiFirebase),
+        color: "#ffcb2b",
+      },
+      {
+        skill: "MongoDB",
+        icon: React.createElement(SiMongodb),
+        color: "#4db33d",
+      },
+      {
+        skill: "Git",
+        icon: React.createElement(SiGit),
+        color: "#f05032",
+      },
+      {
+        skill: "GitHub",
+        icon: React.createElement(SiGithub),
+        color: "#000000",
+      },
+      {
+        skill: "Python",
+        icon: React.createElement(SiPython),
+        color: "#3572A5",
+      },
+      {
+        skill: "Unreal Engine",
+        icon: React.createElement(SiUnrealengine),
+        color: "#000000",
+      },
+    ],
+  },
+  experience: {
+    title: "Mi Experiencia",
+    data: [
+      {
+        title: "Comienzo con la programación",
+        location: "Argentina, Bs. As.",
+        description:
+          "Empece a estudiar programación explorando los fundamentos de Python y JavaScript. Mi fascinación por el desarrollo front-end creció rápidamente.",
+        icon: React.createElement(LuGraduationCap),
+        date: "December 2021 - February 2022",
+      },
+      {
+        title: "Perfeccionamiento de habilidades",
+        location: "Argentina, Bs. As.",
+        description:
+          "A través de la plataforma de Platzi, mejoré mis habilidades en el idioma inglés y perfeccioné mis habilidades en desarrollo web. Apliqué activamente mis conocimientos a través de proyectos personales.",
+        icon: React.createElement(CgWorkAlt),
+        date: "March 2022 - December 2022",
+      },
+      {
+        title: "Revelando la multiplataforma",
+        location: "Argentina, Bs. As.",
+        description:
+          "Mi trayectoria me llevó a adentrarme en el desarrollo móvil multiplataforma con React Native, lo que me permitió crear aplicaciones tanto para iOS como para Android.",
+        icon: React.createElement(CgWorkAlt),
+        date: "January 2023 - April 2023",
+      },
+      {
+        title: "Desarrollador Front-End Competente",
+        location: "Argentina, Bs. As.",
+        description:
+          "Ahora soy un desarrollador front-end que trabaja como freelancer. Mi conjunto de tecnologías incluye React, Next.js, TypeScript, Tailwind, React Native y Firebase.",
+        icon: React.createElement(FaReact),
+        date: "May 2023 - Present",
+      },
+    ],
+  },
+  contact: {
+    title: "Contactame",
+    messageBefore: "Por favor, contáctame directamente a ",
+    messageAfter: " o a través de este formulario.",
+    placeholderEmail: "Tu email",
+    placeholderMessage: "Tu mensaje",
+    button: "Enviar",
+  },
+  footer: {
+    text: "Todos los derechos reservados.",
+    subtitle: "Sobre este sitio:",
+    about:
+      "Construido con React y Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, y alojado en Vercel.",
+  },
 };
 
 export default es;

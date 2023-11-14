@@ -2,13 +2,15 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useI18nContext } from "@/context/i18n-context";
+import en from "@/locale/en";
+
+type skillsProps = (typeof en.skills.data)[number];
 
 export default function Skills() {
-  const { language } = useI18nContext();
+  const { language, t } = useI18nContext();
   const { ref } = useSectionInView(
     language === "en" ? "Skills" : "Tecnologías",
     0.5
@@ -34,9 +36,9 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[58rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{t("skills.title")}</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((item, index) => (
+        {t("skills.data").map((item: skillsProps, index: number) => (
           <motion.li
             className="flex gap-2 items-center bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}

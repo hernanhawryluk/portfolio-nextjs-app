@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 import { useI18nContext } from "@/context/i18n-context";
 
 export default function Contact() {
-  const { language } = useI18nContext();
+  const { language, t } = useI18nContext();
   const { ref } = useSectionInView(
     language === "en" ? "Contact" : "Contacto",
     0.5
@@ -26,13 +26,13 @@ export default function Contact() {
       viewport={{ once: true }}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>{t("contact.title")}</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        {t("contact.messageBefore")}
         <a className="underline" href="mailto:hernanhawryluk@gmail.com">
           hernanhawryluk@gmail.com
-        </a>{" "}
-        or though this form.
+        </a>
+        {t("contact.messageAfter")}
       </p>
 
       <form
@@ -54,11 +54,11 @@ export default function Contact() {
           name="senderEmail"
           required
           maxLength={80}
-          placeholder="Your email"
+          placeholder={t("contact.placeholderEmail")}
         />
         <textarea
           className="h-52 my-3 p-4 rounded-lg borderBlack outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
-          placeholder="Your message"
+          placeholder={t("contact.placeholderMessage")}
           name="message"
           required
           maxLength={5000}
