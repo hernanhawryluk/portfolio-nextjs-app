@@ -50,7 +50,8 @@ const es = {
     },
   ],
   intro: {
-    greeting: "Hola, Soy Hernan Hawryluk.",
+    greeting1: "¡Hola! Soy Hernan.",
+    greeting2: "Desarrollador Front-End Multiplataforma.",
     main: "Desarrollador Front-end con 2 años de experiencia. Me encanta desarrollar paginas web y aplicaciones móbiles.",
     occupation: "Mis principales herramientas son React and React Native.",
     contactButton: "Contactame aquí",

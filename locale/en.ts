@@ -50,7 +50,8 @@ const en = {
     },
   ],
   intro: {
-    greeting: "Hello, I'm Hernan Hawryluk.",
+    greeting1: "Hello! I'm Hernan.",
+    greeting2: "Multiplatform Front-end Developer",
     main: "Front-End Developer with 2 years of experience. I enjoy building sites andmobile apps",
     occupation: "My focus is React and React Native.",
     contactButton: "Contact me here",

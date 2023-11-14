@@ -29,11 +29,11 @@ export default function RootLayout({
       >
         <div
           style={{ transform: "translate3d(0,0,0)" }}
-          className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263] transition-colors duration-300"
+          className="bg-[#fbe2e3] absolute top-[0rem] -z-10 right-[2rem] h-[50vh] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263] transition-colors duration-300"
         ></div>
         <div
           style={{ transform: "translate3d(0,0,0)" }}
-          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394] transition-colors duration-300"
+          className="bg-[#dbd7fb] absolute top-[0rem] -z-10 left-[-35rem] h-[50vh] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394] transition-colors duration-300"
         ></div>
         <ThemeContextProvider>
           <I18nProvider>

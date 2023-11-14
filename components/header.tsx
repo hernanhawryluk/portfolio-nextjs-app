@@ -7,6 +7,8 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useI18nContext } from "@/context/i18n-context";
 import { SectionName } from "@/lib/types";
+import portrait from "@/public/portrait.png";
+import Image from "next/image";
 
 type Links = [{ name: string; hash: string }];
 
@@ -21,16 +23,35 @@ export default function Header() {
   }, [language]);
 
   return (
-    <header className="z-[999] relative">
+    <header className="z-[999] relative sm:flex sm:justify-center">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="hidden xl:flex justify-center items-center fixed top-6 border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-[17rem] h-[3rem] rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-70 left-[4rem] xl:left-10 2xl:left-[7%] gap-3 pr-18"
+      >
+        <Image
+          src={portrait}
+          alt="Hernan Hawryluk portrait"
+          width={192}
+          height={192}
+          quality={100}
+          priority={true}
+          className="h-20 w-20 rounded-full border-[0.35rem] border-white shadow-x1 dark:border-black/60"
+        />
+        <motion.div className="text-[1rem] font-light text-gray-900 dark:text-gray-200">
+          <span>Hernan Hawryluk</span>
+        </motion.div>
+      </motion.div>
       <motion.div
         className={clsx(
-          "fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:w-[36rem] sm:h-[3.25rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75",
+          "fixed top-0 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:w-[36rem] sm:h-[3.25rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-70 xl:right-10 2xl:right-[7%]",
           {
             "sm:w-[40rem]": language === "es",
           }
         )}
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
         <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:h-[initial] sm:py-0">
@@ -44,7 +65,7 @@ export default function Header() {
                   className={clsx(
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                     {
-                      "text-gray-950 dark:text-gray-100":
+                      "text-gray-950 dark:text-gray-300":
                         activeSection === link.name,
                     }
                   )}

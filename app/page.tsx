@@ -8,7 +8,7 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-4 2xl:px-[5%]">
       <Intro />
       <SectionDivider />
       <About />
