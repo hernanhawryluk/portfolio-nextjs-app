@@ -18,9 +18,9 @@ import {
   SiUnrealengine,
 } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import instagramClonImg from "@/public/instagram-clon.png";
+import renderWebImg from "@/public/render-web.png";
+import interactiveRenderImg from "@/public/interactive-render.png";
 
 const en = {
   links: [
@@ -50,8 +50,8 @@ const en = {
     },
   ],
   intro: {
-    greeting1: "Hello! I'm Hernan.",
-    greeting2: "Multiplatform Front-end Developer",
+    greeting: "Hello! I'm Hernan.",
+    heading: "Multiplatform Front-end Developer",
     main: "Front-End Developer with 2 years of experience. I enjoy building sites andmobile apps",
     occupation: "My focus is React and React Native.",
     contactButton: "Contact me here",
@@ -68,25 +68,32 @@ const en = {
     title: "My Projects",
     data: [
       {
+        title: "Portfolio Website",
+        description:
+          "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
+        tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        imageUrl: instagramClonImg,
+      },
+      {
         title: "Instagram Clone App",
         description:
           "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
         tags: ["React Native", "Expo", "Firebase"],
-        imageUrl: corpcommentImg,
+        imageUrl: instagramClonImg,
       },
       {
         title: "Archviz Render Web",
         description:
           "A web site developed from scratch to elegantly showcase and effectively promote high-quality architectural renders, featuring seamless real-time online cotization.",
         tags: ["HTML5", "CSS", "JavaScript"],
-        imageUrl: rmtdevImg,
+        imageUrl: renderWebImg,
       },
       {
         title: "Interactive Render",
         description:
           "An apartment designed in a game engine that provides the freedom to explore, interact with all its elements, customize finishes, and experience different lighting levels.",
         tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro"],
-        imageUrl: wordanalyticsImg,
+        imageUrl: interactiveRenderImg,
       },
     ],
   },
@@ -218,7 +225,10 @@ const en = {
     messageAfter: " or though this form.",
     placeholderEmail: "Your email",
     placeholderMessage: "Your message",
-    button: "Submit",
+    buttonSubmit: "Submit",
+    buttonCopy: "Copy Email Address",
+    toastSent: "Email sent successfully!",
+    toastCopied: "Email address copied to clipboard!",
   },
   footer: {
     text: "All rights reserved.",

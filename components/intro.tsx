@@ -61,12 +61,11 @@ export default function Intro() {
         transition={{ duration: 0.5 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span>{t("intro.greeting1")}</span>
+        <span>{t("intro.greeting")}</span>
         <br />
-        <h1>{t("intro.greeting2")}</h1>
+        <h1>{t("intro.heading")}</h1>
         <p className="text-xl font-light">{t("intro.main")}</p>
-        <br />
-        {t("intro.occupation")}
+        <p className="text-xl font-light">{t("intro.occupation")}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -99,7 +98,7 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/hernan-hawryluk/"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90"
           >
             <BsLinkedin />
           </a>
@@ -107,7 +106,7 @@ export default function Intro() {
           <a
             href="https://github.com/hernanhawryluk/"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90"
           >
             <BsGithub />
           </a>

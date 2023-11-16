@@ -1,14 +1,17 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import en from "@/locale/en";
+import { FaGitAlt } from "react-icons/fa";
+import { TbWorldCheck } from "react-icons/tb";
 
 type ProjectProps = (typeof en.projects.data)[number];
 
 export default function ({ title, description, tags, imageUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -25,10 +28,11 @@ export default function ({ title, description, tags, imageUrl }: ProjectProps) {
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      onClick={() => setIsFocused(!isFocused)}
+      className="group cursor-pointer mb-3"
     >
-      <article className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <article className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[21rem] sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-200 transition sm:group-even:pl-5 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[54%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -48,8 +52,30 @@ export default function ({ title, description, tags, imageUrl }: ProjectProps) {
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="hidden sm:block absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+          className="hidden sm:block absolute top-8 -right-40 sm:w-[28.25rem] rounded-t-lg transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
         />
+        <motion.div
+          animate={{ opacity: isFocused ? 1 : 0 }}
+          style={{ display: "flex" }}
+          className="hidden absolute left-4 bottom-3 w-[91%] sm:w-[95%] justify-between"
+        >
+          <a
+            href="#"
+            className="px-2 py-1 bg-white/70 backdrop-blur-[0.5rem] rounded-2xl text-gray-800 dark:bg-red-950/60 dark:text-gray-300 font-medium borderBlack hover:scale-110 focus:scale-105 transition hover:dark:text-gray-200 shadow-md dark:shadow-gray-900"
+          >
+            <span className="flex items-center text-xl gap-2">
+              <FaGitAlt /> REPOSITORY
+            </span>
+          </a>
+          <a
+            href="#"
+            className="px-2 py-1 bg-white/70 backdrop-blur-[0.5rem] rounded-2xl text-gray-800 dark:bg-emerald-950/60 dark:text-gray-300 font-medium borderBlack hover:scale-110 focus:scale-105 transition hover:dark:text-gray-200 shadow-md dark:shadow-gray-900"
+          >
+            <span className="flex items-center text-xl gap-2">
+              <TbWorldCheck /> DEPLOY
+            </span>
+          </a>
+        </motion.div>
       </article>
     </motion.div>
   );

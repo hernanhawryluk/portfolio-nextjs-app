@@ -18,9 +18,9 @@ import {
   SiUnrealengine,
 } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import instagramClonImg from "@/public/instagram-clon.png";
+import renderWebImg from "@/public/render-web.png";
+import interactiveRenderImg from "@/public/interactive-render.png";
 
 const es = {
   links: [
@@ -50,10 +50,11 @@ const es = {
     },
   ],
   intro: {
-    greeting1: "¡Hola! Soy Hernan.",
-    greeting2: "Desarrollador Front-End Multiplataforma.",
-    main: "Desarrollador Front-end con 2 años de experiencia. Me encanta desarrollar paginas web y aplicaciones móbiles.",
-    occupation: "Mis principales herramientas son React and React Native.",
+    greeting: "¡Hola! Soy Hernan.",
+    heading: "Desarrollador Front-End Multiplataforma.",
+    main: "Desarrollo aplicaciones web y multiplataforma de alta calidad para iOS y Android. Hablo español e inglés con fluidez, facilitando la comunicación efectiva en entornos internacionales.",
+    occupation:
+      "Explora mi portafolio para descubrir proyectos que he desarrollado de manera independiente. Si buscas un desarrollador comprometido, ¡no dudes en ponerte en contacto conmigo!",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
@@ -68,25 +69,32 @@ const es = {
     title: "Mis Proyectos",
     data: [
       {
+        title: "Portfolio Website",
+        description:
+          "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
+        tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        imageUrl: instagramClonImg,
+      },
+      {
         title: "Instagram Clone App",
         description:
-          "Una réplica totalmente funcional de Instagram, perfectamente compatible con iOS y Android. Muestra la autenticación de usuarios, la creación de publicaciones, la carga de imágenes, notificaciones e interacciones en tiempo real.",
+          "Una réplica funcional de Instagram, perfectamente compatible con iOS y Android. Contiene autenticación de usuarios, creación de publicaciones, carga de imágenes, notificaciones e interacciones en tiempo real, entre otras funciones.",
         tags: ["React Native", "Expo", "Firebase"],
-        imageUrl: corpcommentImg,
+        imageUrl: instagramClonImg,
       },
       {
         title: "Archviz Render Web",
         description:
           "Un sitio web desarrollado desde cero para mostrar de manera elegante y promover de manera efectiva renders arquitectónicos de alta calidad, con una cotización en línea en tiempo real sin interrupciones.",
         tags: ["HTML5", "CSS", "JavaScript"],
-        imageUrl: rmtdevImg,
+        imageUrl: renderWebImg,
       },
       {
         title: "Render Interactivo",
         description:
-          "Un apartamento diseñado en un motor de videojuegos que brinda la libertad para explorar, interactuar con todos sus elementos, personalizar acabados y experimentar diferentes niveles de iluminación.",
+          "Un apartamento diseñado en un motor de videojuegos que brinda la libertad para explorar, interactuar con todos sus elementos, personalizar acabados y experimentar niveles de iluminación.",
         tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro"],
-        imageUrl: wordanalyticsImg,
+        imageUrl: interactiveRenderImg,
       },
     ],
   },
@@ -218,7 +226,10 @@ const es = {
     messageAfter: " o a través de este formulario.",
     placeholderEmail: "Tu email",
     placeholderMessage: "Tu mensaje",
-    button: "Enviar",
+    buttonSend: "Enviar",
+    buttonCopy: "Copiar correo electrónico",
+    toastSent: "¡Correo enviado exitosamente!",
+    toastCopied: "¡Dirección de correo electrónico copiada al portapapeles!",
   },
   footer: {
     text: "Todos los derechos reservados.",
