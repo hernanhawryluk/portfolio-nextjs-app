@@ -1,39 +1,48 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# instagram-clone-app
 
-## Getting Started
+<div>
+<h4>Language options</h4>
+  <a href="https://github.com/hernanhawryluk/portfolio-nextjs-app/blob/main/README.es.md"><img alt="Cambiar idioma al español" src="https://img.shields.io/badge/idioma-español-yellow.svg"></a>
+  <a href="#"><img alt="Visitor Badge" src="https://visitor-badge.laobi.icu/badge?page_id=hernanhawryluk.portfolio-nextjs-app"></a>
+</div>
+<div>
+  <h3>Technologies used</h3>
+  <a href="#"><img alt="React" src="https://img.shields.io/badge/React-18.2.0-blue?logo=react"></a>
+  <a href="#"><img alt="Next.js" src="https://img.shields.io/badge/Next.js-14.0.1-blue?logo=next.js&logoColor=000"></a>
+  <a href="#"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.2.2-blue?logo=typescript"></a>
+  <a href="#"><img alt="Tailwind" src="https://img.shields.io/badge/Tailwind--CSS-3.3.5-blue?logo=tailwindcss"></a>
+</div>
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+My portfolio website, fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Visually appealing design.
+- Light and dark mode available.
+- Adaptable to all screen sizes.
+- Form validation and email sending.
+- Multilingual support: Spanish and English.
+- Smooth and attractive animations for a dynamic touch.
+- Navigation bar highlights the current section.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+- React.
+- Next.js.
+- TypeScript.
+- Tailwind CSS.
+- Framer Motion.
+- React Email & Resend.
 
-To learn more about Next.js, take a look at the following resources:
+## Visit the web page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Where to find me?
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# portfolio-nextjs-app
-A portfolio app in progress, built with Next.js, TypeScript, and Tailwind. Just getting started...
->>>>>>> 60fedac4dca5c0915885178de685c9cac4f06215
+<div>
+  <a href="https://github.com/hernanhawryluk"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=github"></a>
+  <a href="https://www.linkedin.com/in/hernan-hawryluk"><img alt="GitHub" src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"></a>
+</div>

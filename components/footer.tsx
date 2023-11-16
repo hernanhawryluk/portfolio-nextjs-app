@@ -13,7 +13,7 @@ export default function Footer() {
       </small>
       <p className="text-xs ">
         <span className="font-semibold">{t("footer.subtitle")}</span>{" "}
-        {t("footer.about")}.
+        {t("footer.about")}
       </p>
     </footer>
   );
