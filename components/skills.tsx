@@ -25,7 +25,7 @@ export default function Skills() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.05 * index,
+        delay: 0.1 * index,
       },
     }),
   };
@@ -40,7 +40,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {t("skills.data").map((item: skillsProps, index: number) => (
           <motion.li
-            className="flex gap-2 items-center bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="flex gap-2 items-center bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 backdrop-blur-[0.5rem]"
             key={index}
             variants={fadeInAnimationsVariants}
             initial="initial"

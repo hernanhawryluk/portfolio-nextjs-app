@@ -21,6 +21,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import instagramClonImg from "@/public/instagram-clon.png";
 import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
+import portfolioWebImg from "@/public/portfolio-web.png";
 
 const en = {
   links: [
@@ -51,18 +52,19 @@ const en = {
   ],
   intro: {
     greeting: "Hello! I'm Hernan.",
-    heading: "Multiplatform Front-end Developer",
-    main: "Front-End Developer with 2 years of experience. I enjoy building sites andmobile apps",
-    occupation: "My focus is React and React Native.",
+    heading: "Cross-Platform Front-End Developer",
+    main: "I develop high-quality web and cross-platform applications for iOS and Android. I am fluent in both Spanish and English. I invite you to explore my portfolio to discover standout projects that I have independently developed.",
+    occupation:
+      "If you're seeking a developer experienced in React, Next.js and React Native, feel free to get in touch!",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
   about: {
     title: "About me",
     first:
-      "I'm a Front-end developer with the ability to independently create websites and cross-platform applications for iOS and Android. My core stack includes React, Next.js React Native, and Firebase. Fluent in both Spanish and English. I'm equally comfortable working in either languages. This facilitates effective communication and performance in international environments.",
+      "I am a Front-end developer with Back-end knowledge, enabling me to independently create high-quality websites and cross-platform applications for iOS and Android. My core stack includes React, Next.js, and React Native. I am fluent in both Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
     second:
-      "I'm a detail-oriented individual committed to delivering polished, high-quality products and interfaces. My GitHub projects serve as a testament to my dedication and skills. I also have a genuine passion for continuous learning, and I firmly believe that every problem has a solution, which drives me to seek innovative solutions. This ensures that the projects I work on consistently meet the highest quality standards.",
+      "In my personal life, beyond my role as a developer, I stand out for my conciliation skills and willingness to listen and learn. Furthermore, my passion for music, playing the violin and guitar, and my enjoyment of video games and anime contribute a creative perspective to my approach in development. These experiences and skills enrich my profile, contributing to shaping a professional identity characterized by creativity and collaboration.",
   },
   projects: {
     title: "My Projects",
@@ -70,30 +72,43 @@ const en = {
       {
         title: "Portfolio Website",
         description:
-          "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
+          "This portfolio is fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.",
         tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-        imageUrl: instagramClonImg,
+        imageUrl: portfolioWebImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
+        demoType: "Deploy",
+        demoUrl: "#",
       },
       {
         title: "Instagram Clone App",
         description:
-          "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
+          "A fully functional Instagram replica seamlessly compatible with iOS and Android. It includes user authentication, post creation, notifications, real-time interactions, and other features.",
         tags: ["React Native", "Expo", "Firebase"],
         imageUrl: instagramClonImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app",
+        demoType: "Video",
+        demoUrl: "https://youtu.be/llQH79EdmfU",
       },
       {
         title: "Archviz Render Web",
         description:
-          "A web site developed from scratch to elegantly showcase and effectively promote high-quality architectural renders, featuring seamless real-time online cotization.",
+          "A website developed from scratch with responsive design to effectively showcase high-quality architectural renders. It includes a real-time online quotation system, animations, and form validation.",
         tags: ["HTML5", "CSS", "JavaScript"],
         imageUrl: renderWebImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase",
+        demoType: "Deploy",
+        demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
       },
       {
         title: "Interactive Render",
         description:
-          "An apartment designed in a game engine that provides the freedom to explore, interact with all its elements, customize finishes, and experience different lighting levels.",
+          "An apartment designed in a game engine that provides the freedom to explore, interact with all its elements, change lighting, and customize finishes.",
         tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro"],
         imageUrl: interactiveRenderImg,
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/ue5-interactive-render",
+        demoType: "Video",
+        demoUrl: "https://youtu.be/7X-eYt_Ll30",
       },
     ],
   },
@@ -189,7 +204,7 @@ const en = {
         title: "Coding Journey Begins",
         location: "Argentina, Bs. As.",
         description:
-          "I embarked on my programming journey by exploring into the foundations of Python and JavaScript. My fascination with front-end development grew rapidly.",
+          "I started studying programming with Python and JavaScript through the Platzi platform. In a short time, after reaching an intermediate level of Python, I developed simple applications and games, which are available in my GitHub repository.",
         icon: React.createElement(LuGraduationCap),
         date: "December 2021 - February 2022",
       },
@@ -197,23 +212,23 @@ const en = {
         title: "Skill Refinement",
         location: "Argentina, Bs. As.",
         description:
-          "Through the Platzi platform, I enhanced my English language skills and refined my web development abilities. I actively applied my knowledge through personal projects.",
-        icon: React.createElement(CgWorkAlt),
+          "I diversified my education by learning object-oriented programming, databases, Git & GitHub, and complemented my JavaScript knowledge with HTML, CSS, and Responsive Design. This significantly contributed to refining my skills in web development.",
+        icon: React.createElement(LuGraduationCap),
         date: "March 2022 - December 2022",
       },
       {
-        title: "Unveiling Cross-Platform",
+        title: "Expanding Horizons of JavaScript",
         location: "Argentina, Bs. As.",
         description:
-          "My journey led me to delve into cross-platform mobile development with React Native, which allowed me to create apps for both iOS and Android.",
-        icon: React.createElement(CgWorkAlt),
+          "I studied and carried out at least one project in each of these JavaScript libraries: Node.js, Express, React, Next.js, and React Native. This provided me with comprehensive knowledge of how applications operate on both the front-end and back-end.",
+        icon: React.createElement(LuGraduationCap),
         date: "January 2023 - April 2023",
       },
       {
         title: "Skilled Front-End Developer",
         location: "Argentina, Bs. As.",
         description:
-          "I'm now a front-end developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, React Native and Firebase.",
+          "I am a Front-End Developer specialized in web and cross-platform applications for Android and iOS. My main set of technologies includes React, Next.js, TypeScript, Tailwind, React Native, MongoDB, and Firebase.",
         icon: React.createElement(FaReact),
         date: "May 2023 - Present",
       },
@@ -221,8 +236,8 @@ const en = {
   },
   contact: {
     title: "Contact Me",
-    messageBefore: "Please contact me directly at ",
-    messageAfter: " or though this form.",
+    message:
+      "Don't hesitate to get in touch! I'm excited about new job opportunities. You can do so through this form, by sending me a direct email, or by connecting with me on LinkedIn or GitHub. Looking forward to connecting!",
     placeholderEmail: "Your email",
     placeholderMessage: "Your message",
     buttonSubmit: "Submit",
@@ -234,7 +249,11 @@ const en = {
     text: "All rights reserved.",
     subtitle: "About this website",
     about:
-      "built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.",
+      "built with React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.",
+  },
+  buttons: {
+    theme: "Change theme",
+    language: "Change language",
   },
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import {
   SiExpo,
@@ -21,6 +20,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import instagramClonImg from "@/public/instagram-clon.png";
 import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
+import portfolioWebImg from "@/public/portfolio-web.png";
 
 const es = {
   links: [
@@ -50,20 +50,20 @@ const es = {
     },
   ],
   intro: {
-    greeting: "¡Hola! Soy Hernan.",
+    greeting: "¡Hola! Soy Hernán.",
     heading: "Desarrollador Front-End Multiplataforma.",
-    main: "Desarrollo aplicaciones web y multiplataforma de alta calidad para iOS y Android. Hablo español e inglés con fluidez, facilitando la comunicación efectiva en entornos internacionales.",
+    main: "Desarrollo aplicaciones web y multiplataforma de alta calidad para iOS y Android. Hablo fluidamente tanto español como inglés. Te invito a explorar mi portafolio para descubrir proyectos destacados que he desarrollado de manera independiente.",
     occupation:
-      "Explora mi portafolio para descubrir proyectos que he desarrollado de manera independiente. Si buscas un desarrollador comprometido, ¡no dudes en ponerte en contacto conmigo!",
+      "Si estás buscando un desarrollador con experiencia en React, Next.js y React Native, ¡no dudes en ponerte en contacto!",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
   about: {
     title: "Sobre mi",
     first:
-      "Soy un desarrollador Front-end con la capacidad de crear de forma independiente sitios web y aplicaciones multiplataforma para iOS y Android. Mi conjunto de tecnologías principales incluye React, Next.js, React Native y Firebase. Hablo fluidamente tanto español como inglés. Me siento igualmente cómodo trabajando en ambos idiomas, lo que facilita la comunicación efectiva y el rendimiento en entornos internacionales.",
+      "Soy un desarrollador Front-end con conocimientos de Back-end, lo que me capacita para crear de manera autónoma sitios web y aplicaciones multiplataforma para iOS y Android. Mi conjunto principal de tecnologías abarca React, Next.js y React Native. Hablo fluidamente tanto español, mi lengua materna, como inglés. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
     second:
-      "Soy una persona orientada a los detalles comprometida en entregar productos e interfaces pulidos de alta calidad. Mis proyectos en GitHub son un testimonio de mi dedicación y habilidades. Además, tengo una auténtica pasión por el aprendizaje continuo y creo firmemente que cada problema tiene una solución, lo que me impulsa a buscar soluciones innovadoras. Esto asegura que los proyectos en los que trabajo cumplan consistentemente con los estándares de calidad más altos.",
+      "En mi vida personal, más allá de mi faceta como desarrollador, destaco por mi capacidad de conciliación y disposición para escuchar y aprender. Además, mi pasión por la música, al tocar el violín y la guitarra, y mi gusto por los videojuegos y el anime aporta una perspectiva creativa a mi enfoque en el desarrollo. Estas vivencias y habilidades enriquecen mi perfil, contribuyendo a forjar una identidad profesional caracterizada por la creatividad y la colaboración.",
   },
   projects: {
     title: "Mis Proyectos",
@@ -71,35 +71,48 @@ const es = {
       {
         title: "Portfolio Website",
         description:
-          "A fully functional Instagram replica seamlessly compatible with iOS and Android. Showcasing user authentication, post creation, image uploads, notifications, and real-time interactions.",
+          "Este portafolio se adapta completamente a todas las pantallas, ofrece soporte multilingüe, modos de luz y oscuro, animaciones, y validación de formularios.",
         tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-        imageUrl: instagramClonImg,
+        imageUrl: portfolioWebImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
+        demoType: "Deploy",
+        demoUrl: "#",
       },
       {
         title: "Instagram Clone App",
         description:
-          "Una réplica funcional de Instagram, perfectamente compatible con iOS y Android. Contiene autenticación de usuarios, creación de publicaciones, carga de imágenes, notificaciones e interacciones en tiempo real, entre otras funciones.",
+          "Una réplica funcional de Instagram compatible con iOS y Android. Incluye autenticación de usuarios, creación de publicaciones, notificaciones, interacciones en tiempo real y otras características.",
         tags: ["React Native", "Expo", "Firebase"],
         imageUrl: instagramClonImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app",
+        demoType: "Video",
+        demoUrl: "https://youtu.be/llQH79EdmfU",
       },
       {
         title: "Archviz Render Web",
         description:
-          "Un sitio web desarrollado desde cero para mostrar de manera elegante y promover de manera efectiva renders arquitectónicos de alta calidad, con una cotización en línea en tiempo real sin interrupciones.",
+          "Un sitio web desarrollado desde cero para resaltar renders arquitectónicos de alta calidad. Incluye un diseño responsivo, sistema de cotización en línea en tiempo real, animaciones y validación de formularios.",
         tags: ["HTML5", "CSS", "JavaScript"],
         imageUrl: renderWebImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase",
+        demoType: "Deploy",
+        demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
       },
       {
         title: "Render Interactivo",
         description:
-          "Un apartamento diseñado en un motor de videojuegos que brinda la libertad para explorar, interactuar con todos sus elementos, personalizar acabados y experimentar niveles de iluminación.",
-        tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro"],
+          "Un apartamento diseñado en un motor de videojuegos que ofrece la libertad de explorar, interactuar con todos sus elementos y personalizar acabados.",
+        tags: ["Unreal Engine 5", "Blueprints", "SketchUp"],
         imageUrl: interactiveRenderImg,
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/ue5-interactive-render",
+        demoType: "Video",
+        demoUrl: "https://youtu.be/7X-eYt_Ll30",
       },
     ],
   },
   skills: {
-    title: "Mis Tecnologías",
+    title: "Habilidades Técnicas",
     data: [
       {
         skill: "HTML",
@@ -187,10 +200,10 @@ const es = {
     title: "Mi Experiencia",
     data: [
       {
-        title: "Comienzo con la programación",
+        title: "Proyectos iniciales",
         location: "Argentina, Bs. As.",
         description:
-          "Empece a estudiar programación explorando los fundamentos de Python y JavaScript. Mi fascinación por el desarrollo front-end creció rápidamente.",
+          "Comencé a estudiar programación con Python y JavaScript por medio de la plataforma Platzi. En poco tiempo, tras alcanzar un nivel intermedio de Python desarrollé aplicaciones y juegos sencillos los cuales están disponibles en mi repositorio de GitHub.",
         icon: React.createElement(LuGraduationCap),
         date: "December 2021 - February 2022",
       },
@@ -198,44 +211,48 @@ const es = {
         title: "Perfeccionamiento de habilidades",
         location: "Argentina, Bs. As.",
         description:
-          "A través de la plataforma de Platzi, mejoré mis habilidades en el idioma inglés y perfeccioné mis habilidades en desarrollo web. Apliqué activamente mis conocimientos a través de proyectos personales.",
-        icon: React.createElement(CgWorkAlt),
+          "Diversifiqué mi formación al aprender programación orientada a objetos, bases de datos, Git & GitHub, y complementé mis conocimientos en JavaScript con HTML, CSS y Responsive Design. Esto contribuyó significativamente a perfeccionar mis habilidades en el desarrollo web.",
+        icon: React.createElement(LuGraduationCap),
         date: "March 2022 - December 2022",
       },
       {
-        title: "Revelando la multiplataforma",
+        title: "Ampliando horizontes de JavaScript",
         location: "Argentina, Bs. As.",
         description:
-          "Mi trayectoria me llevó a adentrarme en el desarrollo móvil multiplataforma con React Native, lo que me permitió crear aplicaciones tanto para iOS como para Android.",
-        icon: React.createElement(CgWorkAlt),
+          "Estudié y llevé a cabo al menos un proyecto en cada una de estas bibliotecas de JavaScript: Node.js, Express, React, Next.js, y React Native. Esto me proporcionó un conocimiento integral sobre cómo funcionan las aplicaciones tanto en el front-end como en el back-end.",
+        icon: React.createElement(LuGraduationCap),
         date: "January 2023 - April 2023",
       },
       {
-        title: "Desarrollador Front-End Competente",
+        title: "Desarrollador Front-End",
         location: "Argentina, Bs. As.",
         description:
-          "Ahora soy un desarrollador front-end que trabaja como freelancer. Mi conjunto de tecnologías incluye React, Next.js, TypeScript, Tailwind, React Native y Firebase.",
+          "Soy un desarrollador Front-End especializado en aplicaciones web y multiplataforma para Android y iOS. Mi conjunto principal de tecnologías incluye React, Next.js, TypeScript, Tailwind, React Native, MongoDB y Firebase.",
         icon: React.createElement(FaReact),
         date: "May 2023 - Present",
       },
     ],
   },
   contact: {
-    title: "Contactame",
-    messageBefore: "Por favor, contáctame directamente a ",
-    messageAfter: " o a través de este formulario.",
-    placeholderEmail: "Tu email",
+    title: "Contáctame",
+    message:
+      "¡No dudes en contactarme! Estoy emocionado por nuevas oportunidades laborales. Puedes hacerlo a través de este formulario, enviándome un correo electrónico directo, o conectándote conmigo en LinkedIn o GitHub.",
+    placeholderEmail: "Tu correo electrónico",
     placeholderMessage: "Tu mensaje",
-    buttonSend: "Enviar",
+    buttonSubmit: "Enviar",
     buttonCopy: "Copiar correo electrónico",
-    toastSent: "¡Correo enviado exitosamente!",
+    toastSent: "¡Correo electrónico enviado exitosamente!",
     toastCopied: "¡Dirección de correo electrónico copiada al portapapeles!",
   },
   footer: {
     text: "Todos los derechos reservados.",
     subtitle: "Sobre este sitio:",
     about:
-      "Construido con React y Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, y alojado en Vercel.",
+      "Construido con React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, y alojado en Vercel.",
+  },
+  buttons: {
+    theme: "Cambiar tema",
+    language: "Cambiar idioma",
   },
 };
 

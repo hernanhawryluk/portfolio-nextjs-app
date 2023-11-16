@@ -30,12 +30,8 @@ export default function Contact() {
       className="mb-20 sm:mb-28 w-[min(100%,42rem)] text-center scroll-mt-28"
     >
       <SectionHeading>{t("contact.title")}</SectionHeading>
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        {t("contact.messageBefore")}
-        <a className="underline" href="mailto:hernanhawryluk@gmail.com">
-          hernanhawryluk@gmail.com
-        </a>
-        {t("contact.messageAfter")}
+      <p className="text-gray-700 mt-3 dark:text-white/80">
+        {t("contact.message")}
       </p>
 
       <form
@@ -52,7 +48,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 w-[100%] rounded-lg borderBlack outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
+          className="h-14 px-4 w-[100%] rounded-lg borderBlack outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all backdrop-blur-[0.4rem]"
           type="email"
           name="senderEmail"
           required
@@ -60,31 +56,36 @@ export default function Contact() {
           placeholder={t("contact.placeholderEmail")}
         />
         <textarea
-          className="h-52 my-3 p-4 w-[100%] rounded-lg borderBlack outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
+          className="h-52 my-3 p-4 w-[100%] rounded-lg borderBlack outline-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all backdrop-blur-[0.4rem]"
           placeholder={t("contact.placeholderMessage")}
           name="message"
           required
           maxLength={5000}
         />
-        <div className="flex gap-3">
-          <SubmitButton />
+        <div className="flex flex-wrap gap-3 justify-center mt-1">
+          <div className="flex gap-3 flex-wrap justify-center">
+            <SubmitButton />
 
-          <ClipboardButton />
-
-          <a
-            href="https://www.linkedin.com/in/hernan-hawryluk/"
-            target="_blank"
-            className="bg-white h-12 w-12 text-gray-700 flex justify-center items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/5"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/hernanhawryluk/"
-            target="_blank"
-            className="bg-white h-12 w-12 text-gray-700 flex items-center justify-center rounded-full outline-none text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/5"
-          >
-            <BsGithub />
-          </a>
+            <ClipboardButton />
+          </div>
+          <div className="flex gap-3">
+            <a
+              href="https://www.linkedin.com/in/hernan-hawryluk/"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="bg-white h-12 w-12 text-gray-700 flex justify-center items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/10 backdrop-blur-[0.3rem]"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/hernanhawryluk/"
+              target="_blank"
+              aria-label="GitHub"
+              className="bg-white h-12 w-12 text-gray-700 flex items-center justify-center rounded-full outline-none text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/10 backdrop-blur-[0.3rem]"
+            >
+              <BsGithub />
+            </a>
+          </div>
         </div>
       </form>
     </motion.section>

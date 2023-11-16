@@ -17,6 +17,7 @@ type timelineElementProps = {
 export default function TimelineElement({ item }: timelineElementProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
+    threshold: 0.6,
   });
   const { theme } = useTheme();
 
@@ -31,6 +32,7 @@ export default function TimelineElement({ item }: timelineElementProps) {
           border: "1px solid rgba(0, 0, 0, 0.05)",
           textAlign: "left",
           padding: "1.3rem 2rem",
+          backdropFilter: "blur(0.5rem)",
         }}
         contentArrowStyle={{
           borderRight:

@@ -28,7 +28,7 @@ export default function Intro() {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.5 }}
+            transition={{ type: "tween", duration: 0.8 }}
           >
             <Image
               src={portrait}
@@ -58,19 +58,19 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
         <span>{t("intro.greeting")}</span>
         <br />
         <h1>{t("intro.heading")}</h1>
-        <p className="text-xl font-light">{t("intro.main")}</p>
-        <p className="text-xl font-light">{t("intro.occupation")}</p>
+        <p className="text-xl font-light pt-4">{t("intro.main")}</p>
+        <p className="text-xl font-light pt-2">{t("intro.occupation")}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
+        transition={{ delay: 0.1, duration: 0.8 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
       >
         <Link
@@ -79,7 +79,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
           }}
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 transition active:scale-105 cursor-pointer borderBlack"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 transition active:scale-105 cursor-pointer borderBlack backdrop-blur-[0.5rem]"
         >
           {t("intro.contactButton")}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -88,7 +88,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
         >
           {t("intro.downloadCV")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
@@ -98,7 +98,8 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/hernan-hawryluk/"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90"
+            aria-label="LinkedIn"
+            className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
           >
             <BsLinkedin />
           </a>
@@ -106,7 +107,8 @@ export default function Intro() {
           <a
             href="https://github.com/hernanhawryluk/"
             target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90"
+            aria-label="GitHub"
+            className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
           >
             <BsGithub />
           </a>
