@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Hernan Hawryluk | Portfolio",
   description:
-    "Hernan Hawryluk is a Front-end Developer skilled in React and React Native, dedicated to delivering high-quality digital experiences.",
+    "Hernan Hawryluk is a Front-end Developer skilled in React, Next.js and React Native, dedicated to delivering high-quality digital experiences.",
 };
 
 export default function RootLayout({

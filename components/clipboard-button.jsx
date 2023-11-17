@@ -1,16 +1,27 @@
 import React from "react";
 import { LuClipboardCopy } from "react-icons/lu";
 import { I18nContext } from "@/context/i18n-context";
-import { useToast } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import toast from "react-hot-toast";
 
 export default function ClipboardButton() {
-  const { t, language } = React.useContext(I18nContext);
+  const { t } = React.useContext(I18nContext);
   const { theme } = useTheme();
 
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText("hernanhawryluk@gmail.com");
-    useToast(t("contact.toastCopied"), "success", theme);
+
+    toast.success(t("contact.toastCopied"), {
+      style: {
+        borderRadius: "10px",
+        backdropFilter: "blur(4px)",
+        background:
+          theme === "light"
+            ? "rgba(240, 240, 240, 0.8)"
+            : "rgba(50, 50, 50, 0.7)",
+        color: theme === "light" ? "#000" : "#fff",
+      },
+    });
   };
 
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useSectionInView, useToast } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
@@ -10,6 +10,7 @@ import { useI18nContext } from "@/context/i18n-context";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ClipboardButton from "./clipboard-button";
 import { useTheme } from "@/context/theme-context";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { language, t } = useI18nContext();
@@ -18,6 +19,18 @@ export default function Contact() {
     language === "en" ? "Contact" : "Contacto",
     0.5
   );
+
+  const toastOptions = {
+    style: {
+      borderRadius: "10px",
+      backdropFilter: "blur(4px)",
+      background:
+        theme === "light"
+          ? "rgba(240, 240, 240, 0.8)"
+          : "rgba(50, 50, 50, 0.7)",
+      color: theme === "light" ? "#000" : "#fff",
+    },
+  };
 
   return (
     <motion.section
@@ -40,11 +53,11 @@ export default function Contact() {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
-            useToast(error.toString(), "error", theme);
+            toast.error(error.toString(), toastOptions);
             return;
           }
 
-          useToast(t("contact.toastSent"), "success", theme);
+          toast.success(t("contact.toastSent"), toastOptions);
         }}
       >
         <input
