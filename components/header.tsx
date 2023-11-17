@@ -20,7 +20,7 @@ export default function Header() {
 
   useEffect(() => {
     setLinks(t("links"));
-  }, [language]);
+  }, [language, t]);
 
   return (
     <header className="z-[999] relative sm:flex sm:justify-center">

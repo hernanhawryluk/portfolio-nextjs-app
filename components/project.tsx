@@ -10,7 +10,7 @@ import { useI18nContext } from "@/context/i18n-context";
 
 type ProjectProps = (typeof en.projects.data)[number];
 
-export default function ({
+export default function Project({
   title,
   description,
   tags,
