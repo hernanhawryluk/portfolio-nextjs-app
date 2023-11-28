@@ -62,7 +62,7 @@ const en = {
   about: {
     title: "About me",
     first:
-      "I am a Front-end developer with Back-end knowledge, enabling me to independently create high-quality websites and cross-platform applications for iOS and Android. My core stack includes React, Next.js, and React Native. I am fluent in both Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
+      "I am a Front-end developer with Back-end knowledge, enabling me to independently create high-quality websites and cross-platform applications for iOS and Android. My core stack includes React, Next.js, and React Native. I am fluent in Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
     second:
       "In my personal life, beyond my role as a developer, I stand out for my conciliation skills and willingness to listen and learn. Furthermore, my passion for music, playing the violin and guitar, and my enjoyment of video games and anime contribute a creative perspective to my approach in development. These experiences and skills enrich my profile, contributing to shaping a professional identity characterized by creativity and collaboration.",
   },

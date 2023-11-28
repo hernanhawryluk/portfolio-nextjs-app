@@ -1,4 +1,4 @@
-# instagram-clone-app
+# portfolio-nextjs-app
 
 <div>
 <h4>Language options</h4>
