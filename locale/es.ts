@@ -10,6 +10,7 @@ import {
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
+  SiPrisma,
   SiPython,
   SiReact,
   SiTailwindcss,
@@ -21,6 +22,7 @@ import instagramClonImg from "@/public/instagram-clon.png";
 import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
 import portfolioWebImg from "@/public/portfolio-web.png";
+import ecommerceAppImg from "@/public/ecommerce-app.png";
 
 const es = {
   links: [
@@ -52,7 +54,9 @@ const es = {
   intro: {
     greeting: "¡Hola! Soy Hernán.",
     heading: "Desarrollador Front-End Multiplataforma.",
-    main: "Desarrollo aplicaciones web y multiplataforma de alta calidad para iOS y Android. Hablo fluidamente tanto español como inglés. Te invito a explorar mi portafolio para descubrir proyectos destacados que he desarrollado de manera independiente.",
+    main: "Desarrollo aplicaciones web y multiplataforma de alta calidad para iOS y Android.",
+    second:
+      "Hablo fluidamente tanto español como inglés. Te invito a explorar mi portafolio para descubrir proyectos destacados que he desarrollado de manera independiente.",
     occupation:
       "Si estás buscando un desarrollador con experiencia en React, Next.js y React Native, ¡no dudes en ponerte en contacto!",
     contactButton: "Contactame aquí",
@@ -61,7 +65,7 @@ const es = {
   about: {
     title: "Sobre mi",
     first:
-      "Soy un desarrollador Front-end con conocimientos de Back-end, lo que me capacita para crear de manera autónoma sitios web y aplicaciones multiplataforma para iOS y Android. Mi conjunto principal de tecnologías abarca React, Next.js y React Native. Hablo fluidamente tanto español, mi lengua materna, como inglés. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
+      "Soy un desarrollador Front-end con conocimientos de Back-end, lo que me capacita para crear de manera autónoma aplicaciones web y multiplataforma para iOS y Android. Mi conjunto principal de tecnologías abarca React, Next.js y React Native. Hablo fluidamente tanto español, mi lengua materna, como inglés. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
     second:
       "En mi vida personal, más allá de mi faceta como desarrollador, destaco por mi capacidad de conciliación y disposición para escuchar y aprender. Además, mi pasión por la música, al tocar el violín y la guitarra, y mi gusto por los videojuegos y el anime aporta una perspectiva creativa a mi enfoque en el desarrollo. Estas vivencias y habilidades enriquecen mi perfil, contribuyendo a forjar una identidad profesional caracterizada por la creatividad y la colaboración.",
   },
@@ -69,12 +73,31 @@ const es = {
     title: "Mis Proyectos",
     data: [
       {
-        title: "Portfolio Website",
+        title: "Tienda Online",
+        description:
+          "Diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, panel de control para gestion de productos y ordenes.",
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Mongo-DB",
+          "Prisma",
+        ],
+        imageUrl: ecommerceAppImg,
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/nextjs-commerce-app/blob/main/README.es.md",
+        demoType: "Deploy",
+        demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
+      },
+      {
+        title: "Portafolio Web",
         description:
           "Este portafolio se adapta completamente a todas las pantallas, ofrece soporte multilingüe, modos de luz y oscuro, animaciones, y validación de formularios.",
-        tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
         imageUrl: portfolioWebImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/portfolio-nextjs-app/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "#",
       },
@@ -84,7 +107,8 @@ const es = {
           "Una réplica funcional de Instagram compatible con iOS y Android. Incluye autenticación de usuarios, creación de publicaciones, notificaciones, interacciones en tiempo real y otras características.",
         tags: ["React Native", "Expo", "Firebase"],
         imageUrl: instagramClonImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app",
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/instagram-clone-app/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/llQH79EdmfU",
       },
@@ -94,7 +118,8 @@ const es = {
           "Un sitio web desarrollado desde cero para resaltar renders arquitectónicos de alta calidad. Incluye un diseño responsivo, sistema de cotización en línea en tiempo real, animaciones y validación de formularios.",
         tags: ["HTML5", "CSS", "JavaScript"],
         imageUrl: renderWebImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase",
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/web-renders-showcase/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
       },
@@ -102,10 +127,10 @@ const es = {
         title: "Render Interactivo",
         description:
           "Un apartamento diseñado en un motor de videojuegos que ofrece la libertad de explorar, interactuar con todos sus elementos y personalizar acabados.",
-        tags: ["Unreal Engine 5", "Blueprints", "SketchUp"],
+        tags: ["Unreal Engine 5", "Blueprints", "SketchUp", "3D Warehouse"],
         imageUrl: interactiveRenderImg,
         repositoryUrl:
-          "https://github.com/hernanhawryluk/ue5-interactive-render",
+          "https://github.com/hernanhawryluk/ue5-interactive-render/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/7X-eYt_Ll30",
       },
@@ -172,6 +197,11 @@ const es = {
       {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
+        color: "#4db33d",
+      },
+      {
+        skill: "Prisma",
+        icon: React.createElement(SiPrisma),
         color: "#4db33d",
       },
       {

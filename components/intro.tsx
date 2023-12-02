@@ -65,6 +65,7 @@ export default function Intro() {
         <br />
         <h1>{t("intro.heading")}</h1>
         <p className="text-xl font-light pt-4">{t("intro.main")}</p>
+        <p className="text-xl font-light pt-2">{t("intro.second")}</p>
         <p className="text-xl font-light pt-2">{t("intro.occupation")}</p>
       </motion.div>
       <motion.div
@@ -86,7 +87,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/CV.pdf"
+          href={language === "es" ? "/es/CV.pdf" : "/en/CV.pdf"}
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
         >

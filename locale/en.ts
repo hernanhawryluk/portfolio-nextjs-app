@@ -11,6 +11,7 @@ import {
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
+  SiPrisma,
   SiPython,
   SiReact,
   SiTailwindcss,
@@ -22,6 +23,7 @@ import instagramClonImg from "@/public/instagram-clon.png";
 import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
 import portfolioWebImg from "@/public/portfolio-web.png";
+import ecommerceAppImg from "@/public/ecommerce-app.png";
 
 const en = {
   links: [
@@ -53,7 +55,9 @@ const en = {
   intro: {
     greeting: "Hello! I'm Hernan.",
     heading: "Cross-Platform Front-End Developer",
-    main: "I develop high-quality web and cross-platform applications for iOS and Android. I am fluent in both Spanish and English. I invite you to explore my portfolio to discover standout projects that I have independently developed.",
+    main: "I develop high-quality web and cross-platform applications for iOS and Android.",
+    second:
+      " I am fluent in both Spanish and English. I invite you to explore my portfolio to discover standout projects that I have independently developed.",
     occupation:
       "If you're seeking a developer experienced in React, Next.js and React Native, feel free to get in touch!",
     contactButton: "Contact me here",
@@ -70,10 +74,27 @@ const en = {
     title: "My Projects",
     data: [
       {
+        title: "E-commerce Website",
+        description:
+          "Responsive design, user and google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Mongo-DB",
+          "Prisma",
+        ],
+        imageUrl: ecommerceAppImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/nextjs-commerce-app",
+        demoType: "Deploy",
+        demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
+      },
+      {
         title: "Portfolio Website",
         description:
           "This portfolio is fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.",
-        tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
         imageUrl: portfolioWebImg,
         repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
         demoType: "Deploy",
@@ -103,7 +124,7 @@ const en = {
         title: "Interactive Render",
         description:
           "An apartment designed in a game engine that provides the freedom to explore, interact with all its elements, change lighting, and customize finishes.",
-        tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro"],
+        tags: ["Unreal Engine 5", "Blueprints", "SketchUp Pro", "3D Warehouse"],
         imageUrl: interactiveRenderImg,
         repositoryUrl:
           "https://github.com/hernanhawryluk/ue5-interactive-render",
@@ -173,6 +194,11 @@ const en = {
       {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
+        color: "#4db33d",
+      },
+      {
+        skill: "Prisma",
+        icon: React.createElement(SiPrisma),
         color: "#4db33d",
       },
       {
