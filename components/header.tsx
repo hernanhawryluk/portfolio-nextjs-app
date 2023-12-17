@@ -7,8 +7,6 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useI18nContext } from "@/context/i18n-context";
 import { SectionName } from "@/lib/types";
-import portrait from "@/public/portrait.png";
-import Image from "next/image";
 
 type Links = [{ name: string; hash: string }];
 

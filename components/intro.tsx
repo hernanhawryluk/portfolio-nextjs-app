@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import portrait from "@/public/portrait.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28"
+      className="flex flex-col justify-center gap-2 sm:h-[100vh] pb-[10%] max-w-[61rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -59,12 +59,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="flex flex-col mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-5xl"
       >
         <span>{t("intro.greeting")}</span>
-        <br />
         <h1>{t("intro.heading")}</h1>
-        <p className="text-xl font-light pt-4">{t("intro.main")}</p>
+        <p className="text-xl font-light pt-6">{t("intro.main")}</p>
         <p className="text-xl font-light pt-2">{t("intro.second")}</p>
         <p className="text-xl font-light pt-2">{t("intro.occupation")}</p>
       </motion.div>
