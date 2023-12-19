@@ -23,6 +23,7 @@ import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
 import portfolioWebImg from "@/public/portfolio-web.png";
 import ecommerceAppImg from "@/public/ecommerce-app.png";
+import blogAppImg from "@/public/blog-app.png";
 
 const es = {
   links: [
@@ -73,9 +74,27 @@ const es = {
     title: "Mis Proyectos",
     data: [
       {
+        title: "Blog Sitio Web",
+        description:
+          "Un blog minimalista con autenticación de usuarios, filtrado por categorías y paginación, funcionalidad para escribir y comentar, un rendimiento óptimo y buen posicionamiento SEO.",
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Mongo-DB",
+          "Prisma",
+        ],
+        imageUrl: blogAppImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/blog-nextjs-app",
+        demoType: "Deploy",
+        demoUrl:
+          "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
+      },
+      {
         title: "Tienda Online",
         description:
-          "Diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, panel de control para gestion de productos y ordenes.",
+          "Diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, gestion de productos y ordenes.",
         tags: [
           "Next.js",
           "React",

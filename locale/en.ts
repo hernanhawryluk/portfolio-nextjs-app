@@ -1,5 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import {
   SiExpo,
@@ -24,6 +23,7 @@ import renderWebImg from "@/public/render-web.png";
 import interactiveRenderImg from "@/public/interactive-render.png";
 import portfolioWebImg from "@/public/portfolio-web.png";
 import ecommerceAppImg from "@/public/ecommerce-app.png";
+import blogAppImg from "@/public/blog-app.png";
 
 const en = {
   links: [
@@ -74,9 +74,27 @@ const en = {
     title: "My Projects",
     data: [
       {
+        title: "Blog Website",
+        description:
+          "A minimalistic blog, featuring Google and Github authentication, category filtering, content pagination, write and comment functionality, good performance and SEO practices.",
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Mongo-DB",
+          "Prisma",
+        ],
+        imageUrl: blogAppImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/blog-nextjs-app",
+        demoType: "Deploy",
+        demoUrl:
+          "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
+      },
+      {
         title: "E-commerce Website",
         description:
-          "Responsive design, user and google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
+          "Responsive design, user and Google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
         tags: [
           "Next.js",
           "React",
