@@ -6,11 +6,13 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useI18nContext } from "@/context/i18n-context";
 import en from "@/locale/en";
+import { useTheme } from "@/context/theme-context";
 
 type skillsProps = (typeof en.skills.data)[number];
 
 export default function Skills() {
   const { language, t } = useI18nContext();
+  const { theme } = useTheme();
   const { ref } = useSectionInView(
     language === "en" ? "Skills" : "Tecnologías",
     0.5
@@ -48,7 +50,17 @@ export default function Skills() {
             viewport={{ once: true }}
             custom={index}
           >
-            <span style={{ color: item.color }} className="text-2xl opacity-90">
+            <span
+              style={{
+                color:
+                  theme === "light"
+                    ? item.color
+                    : item.color === "#000000"
+                    ? "#ffffff"
+                    : item.color,
+              }}
+              className="text-2xl opacity-90"
+            >
               {item.icon}
             </span>
             {item.skill}

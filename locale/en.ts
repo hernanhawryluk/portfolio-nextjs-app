@@ -2,6 +2,7 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import {
   SiExpo,
+  SiExpress,
   SiFirebase,
   SiFramer,
   SiGit,
@@ -10,6 +11,7 @@ import {
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
+  SiNodedotjs,
   SiPrisma,
   SiPython,
   SiReact,
@@ -24,6 +26,7 @@ import interactiveRenderImg from "@/public/interactive-render.png";
 import portfolioWebImg from "@/public/portfolio-web.png";
 import ecommerceAppImg from "@/public/ecommerce-app.png";
 import blogAppImg from "@/public/blog-app.png";
+import taskManagerAppImg from "@/public/task-manager-app.png";
 
 const en = {
   links: [
@@ -54,25 +57,72 @@ const en = {
   ],
   intro: {
     greeting: "Hello! I'm Hernan.",
-    heading: "Cross-Platform Front-End Developer",
+    heading: "Full-Stack Web Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
-      " I am fluent in both Spanish and English. I invite you to explore my portfolio to discover standout projects that I have independently developed.",
+      "My main stack includes React, Node.js, Next.js, and TypeScript, among other key technologies.",
     occupation:
-      "If you're seeking a developer experienced in React, Next.js and React Native, feel free to get in touch!",
+      "I invite you to explore my portfolio to discover standout projects that I have independently developed.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
   about: {
     title: "About me",
     first:
-      "I am a Front-end developer with Back-end knowledge, enabling me to independently create high-quality websites and cross-platform applications for iOS and Android. My core stack includes React, Next.js, and React Native. I am fluent in Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
+      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android. My core set of technologies includes React, Node.js, Next.js, TypeScript, and React Native, among other key technologies. I am fluent in both Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
+    data: [
+      {
+        icon: React.createElement(SiReact),
+        color: "#61dafb",
+      },
+      {
+        icon: React.createElement(SiNodedotjs),
+        color: "#8cc84b",
+      },
+      {
+        icon: React.createElement(SiExpress),
+        color: "#000000",
+      },
+      {
+        icon: React.createElement(SiMongodb),
+        color: "#4db33d",
+      },
+      {
+        icon: React.createElement(SiNextdotjs),
+        color: "#000000",
+      },
+      {
+        icon: React.createElement(SiJavascript),
+        color: "#f0db4f",
+      },
+      {
+        icon: React.createElement(SiTypescript),
+        color: "#3178c6",
+      },
+    ],
     second:
       "In my personal life, beyond my role as a developer, I stand out for my conciliation skills and willingness to listen and learn. Furthermore, my passion for music, playing the violin and guitar, and my enjoyment of video games and anime contribute a creative perspective to my approach in development. These experiences and skills enrich my profile, contributing to shaping a professional identity characterized by creativity and collaboration.",
   },
   projects: {
     title: "My Projects",
     data: [
+      {
+        title: "Task Manager App",
+        description:
+          "A full-stack application developed with the MERN Stack, where users can manage and appoint their tasks. It features authentication, CRUD operations, and good performance.",
+        tags: [
+          "React",
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "Tailwind",
+          "Mongo-DB",
+        ],
+        imageUrl: taskManagerAppImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/tasks-nodejs-backend",
+        demoType: "Deploy",
+        demoUrl: "https://tasks-react-frontend.vercel.app",
+      },
       {
         title: "Blog Website",
         description:
@@ -180,6 +230,16 @@ const en = {
         color: "#61dafb",
       },
       {
+        skill: "Node.js",
+        icon: React.createElement(SiNodedotjs),
+        color: "#8cc84b",
+      },
+      {
+        skill: "Express",
+        icon: React.createElement(SiExpress),
+        color: "#000000",
+      },
+      {
         skill: "Next.js",
         icon: React.createElement(SiNextdotjs),
         color: "#000000",
@@ -205,14 +265,14 @@ const en = {
         color: "#000000",
       },
       {
-        skill: "Firebase",
-        icon: React.createElement(SiFirebase),
-        color: "#ffcb2b",
-      },
-      {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
         color: "#4db33d",
+      },
+      {
+        skill: "Firebase",
+        icon: React.createElement(SiFirebase),
+        color: "#ffcb2b",
       },
       {
         skill: "Prisma",
