@@ -20,7 +20,7 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, duration: 1 }}
-      className="my-24 sm:mt-0 sm:mb-40 max-w-[36rem] sm:max-w-[55rem] text-center scroll-mt-28 sm:text-xl"
+      className="my-24 sm:mt-0 sm:mb-40 max-w-[36rem] sm:max-w-[50rem] text-center scroll-mt-28 sm:text-xl"
       id="about"
     >
       <SectionHeading>{t("about.title")}</SectionHeading>

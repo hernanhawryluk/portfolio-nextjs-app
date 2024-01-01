@@ -19,13 +19,7 @@ export default function Home() {
         className="flex flex-col items-center justify-between relative"
       >
         <Intro />
-        <div
-          className={`${
-            inView ? "opacity-100" : "opacity-0"
-          } transition duration-1000 `}
-        >
-          <SectionDivider />
-        </div>
+        <SectionDivider inView={inView} />
       </div>
       <About />
       <Projects />

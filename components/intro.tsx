@@ -40,32 +40,18 @@ export default function Intro() {
               className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-x1"
             />
           </motion.div>
-          <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className="absolute bottom-0 right-0 text-4xl"
-          >
-            👋
-          </motion.span>
         </div>
       </div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-5xl"
+        className="flex flex-col mb-10 mt-4 px-1 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-5xl"
       >
         <span>{t("intro.greeting")}</span>
         <h1>{t("intro.heading")}</h1>
         <p className="text-xl font-light pt-6">{t("intro.main")}</p>
         <p className="text-xl font-light pt-2">{t("intro.second")}</p>
-        <p className="text-xl font-light pt-2">{t("intro.third")}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

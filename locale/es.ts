@@ -57,19 +57,19 @@ const es = {
   ],
   intro: {
     greeting: "Hernán Hawryluk",
-    heading: "Desarrollador Web Full-Stack",
-    main: "Desarrollo aplicaciones web y móbiles para iOS y Android en forma integral.",
+    heading: "Desarrollador Full-Stack",
+    main: "Desarrollo integral de aplicaciones web y móbiles para iOS y Android.",
     second:
       "Mi stack principal incluye React, Node.js, Next.js y TypeScript entre otras tecnologías clave.",
-    third:
-      "Te invito a explorar mi portafolio para descubrir proyectos destacados que he desarrollado de manera independiente.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
   about: {
     title: "Sobre mi",
     first:
-      "Soy un Desarrollador Full-Stack, capacitado para crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su deploy. Mi conjunto principal de tecnologías abarca React, Node.js, Next.js, TypeScript y React Native, y estoy familiarizado con el uso de herramientas de control de versiones como Git.",
+      "Soy un Desarrollador Full-Stack, capacitado para crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su despliegue. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones.",
+    second:
+      "Poseo un dominio nativo del español y un nivel avanzado de inglés que incluye habilidades de lectura, escucha y conversación, permitiéndome una comunicación fluida en ambos idiomas. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -99,9 +99,11 @@ const es = {
         icon: React.createElement(SiTypescript),
         color: "#3178c6",
       },
+      {
+        icon: React.createElement(SiGit),
+        color: "#f1502f",
+      },
     ],
-    second:
-      "Conozco las metodologías Agile y Scrum y sé trabajar en equipo para alcanzar objetivos definidos. Poseo un dominio nativo del español y un nivel avanzado de inglés que incluye habilidades de lectura, escucha y conversación, permitiéndome una comunicación fluida en ambos idiomas. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado, compartido en GitHub.",
   },
   projects: {
     title: "Mis Proyectos",

@@ -57,19 +57,19 @@ const en = {
   ],
   intro: {
     greeting: "Hernan Hawryluk",
-    heading: "Full-Stack Web Developer",
+    heading: "Full-Stack Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
       "My main stack includes React, Node.js, Next.js, and TypeScript among other key technologies.",
-    third:
-      "I invite you to explore my portfolio to discover standout projects that I have independently developed.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
   about: {
     title: "About me",
     first:
-      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. My core set of technologies includes React, Node.js, Next.js, TypeScript, and React Native, and I am familiar with version control tools such as Git.",
+      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools like Git.",
+    second:
+      "I am a native Spanish speaker with advanced proficiency in English, including reading, listening, and conversation skills, enabling me to communicate fluently in both languages. My dedication and experience are evident in polished and high-quality projects that I have developed and shared on GitHub.",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -100,8 +100,6 @@ const en = {
         color: "#3178c6",
       },
     ],
-    second:
-      "I am well-versed with Agile and Scrum methodologies, and I am skilled in working collaboratively to achieve defined objectives. I am a native Spanish speaker with advanced proficiency in English, encompassing reading, listening, and conversation skills, enabling me to communicate fluently in both languages. My dedication and experience are evident in polished and high-quality projects that I have developed and shared on GitHub.",
   },
   projects: {
     title: "My Projects",
