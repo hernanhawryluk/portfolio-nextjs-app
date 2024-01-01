@@ -13,10 +13,10 @@ export default function SectionDivider() {
       transition={{ delay: 0.125 }}
     >
       <Link
-        className="sm:flex flex-col items-center justify-end h-[2.8rem] w-[1.8rem] 2xl:h-[3.3rem] 2xl:w-[2rem] border-2 rounded-full"
+        className="border-gray-600 dark:border-gray-200 sm:flex flex-col items-center justify-end h-[2.8rem] w-[1.8rem] 2xl:h-[3.3rem] 2xl:w-[2rem] border-2 rounded-full"
         href="#about"
       >
-        <div className="bg-gray-200 h-2 w-2 mb-2 animate-bounce rounded-full"></div>
+        <div className="bg-gray-600 dark:bg-gray-200 h-2 w-2 mb-2 animate-bounce rounded-full"></div>
       </Link>
     </motion.div>
   );

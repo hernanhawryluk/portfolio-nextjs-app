@@ -56,12 +56,12 @@ const es = {
     },
   ],
   intro: {
-    greeting: "¡Hola! Soy Hernán.",
+    greeting: "Hernán Hawryluk",
     heading: "Desarrollador Web Full-Stack",
     main: "Desarrollo aplicaciones web y móbiles para iOS y Android en forma integral.",
     second:
-      "Mi stack principal incluye React, Node.js, Next.js y TypeScript, entre otras tecnologías clave.",
-    occupation:
+      "Mi stack principal incluye React, Node.js, Next.js y TypeScript entre otras tecnologías clave.",
+    third:
       "Te invito a explorar mi portafolio para descubrir proyectos destacados que he desarrollado de manera independiente.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
@@ -69,7 +69,7 @@ const es = {
   about: {
     title: "Sobre mi",
     first:
-      "Soy un Desarrollador Full-Stack, capacitado para crear de manera autónoma aplicaciones web y multiplataforma para iOS y Android. Mi conjunto principal de tecnologías abarca React, Node.js, Next.js, TypeScript y React Native entre otras tecnologías clave. Hablo fluidamente tanto español, mi lengua materna, como inglés. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
+      "Soy un Desarrollador Full-Stack, capacitado para crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su deploy. Mi conjunto principal de tecnologías abarca React, Node.js, Next.js, TypeScript y React Native, y estoy familiarizado con el uso de herramientas de control de versiones como Git.",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -101,7 +101,7 @@ const es = {
       },
     ],
     second:
-      "En mi vida personal, más allá de mi faceta como desarrollador, destaco por mi capacidad de conciliación y disposición para escuchar y aprender. Además, mi pasión por la música, al tocar el violín y la guitarra, y mi gusto por los videojuegos y el anime aporta una perspectiva creativa a mi enfoque en el desarrollo. Estas vivencias y habilidades enriquecen mi perfil, contribuyendo a forjar una identidad profesional caracterizada por la creatividad y la colaboración.",
+      "Conozco las metodologías Agile y Scrum y sé trabajar en equipo para alcanzar objetivos definidos. Poseo un dominio nativo del español y un nivel avanzado de inglés que incluye habilidades de lectura, escucha y conversación, permitiéndome una comunicación fluida en ambos idiomas. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado, compartido en GitHub.",
   },
   projects: {
     title: "Mis Proyectos",

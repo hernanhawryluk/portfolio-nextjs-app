@@ -20,13 +20,13 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, duration: 1 }}
-      className="my-24 sm:mt-0 sm:mb-40 max-w-[55rem] text-center scroll-mt-28 sm:text-lg"
+      className="my-24 sm:mt-0 sm:mb-40 max-w-[36rem] sm:max-w-[55rem] text-center scroll-mt-28 sm:text-xl"
       id="about"
     >
       <SectionHeading>{t("about.title")}</SectionHeading>
-      <p className="mb-10 leading-[38px]">{t("about.first")}</p>
+      <p className="mb-10 leading-9 sm:leading-[46px]">{t("about.first")}</p>
 
-      <div className="flex items-center justify-center gap-7 mb-10">
+      <div className="flex flex-wrap items-center justify-center gap-7 mb-10">
         {t("about.data").map((item: skillsProps, index: number) => (
           <li className="flex gap-2 items-center" key={index}>
             <span
@@ -46,7 +46,7 @@ export default function About() {
         ))}
       </div>
 
-      <p className="leading-[38px]">{t("about.second")}</p>
+      <p className="hidden sm:block leading-[46px]">{t("about.second")}</p>
     </motion.section>
   );
 }

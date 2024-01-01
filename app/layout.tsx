@@ -8,7 +8,6 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import LanguageSwitch from "@/components/language-switch";
 import { I18nProvider } from "@/context/i18n-context";
-import ParticlesContainer from "@/components/particles-container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,7 +38,6 @@ export default function RootLayout({
         <ThemeContextProvider>
           <I18nProvider>
             <ActiveSectionContextProvider>
-              <ParticlesContainer />
               <Header />
               {children}
               <Toaster position="top-right" />

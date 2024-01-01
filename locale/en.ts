@@ -56,12 +56,12 @@ const en = {
     },
   ],
   intro: {
-    greeting: "Hello! I'm Hernan.",
+    greeting: "Hernan Hawryluk",
     heading: "Full-Stack Web Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
-      "My main stack includes React, Node.js, Next.js, and TypeScript, among other key technologies.",
-    occupation:
+      "My main stack includes React, Node.js, Next.js, and TypeScript among other key technologies.",
+    third:
       "I invite you to explore my portfolio to discover standout projects that I have independently developed.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
@@ -69,7 +69,7 @@ const en = {
   about: {
     title: "About me",
     first:
-      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android. My core set of technologies includes React, Node.js, Next.js, TypeScript, and React Native, among other key technologies. I am fluent in both Spanish, my native language, and English. My dedication and expertise are reflected in polished and high-quality projects that I have developed and shared on GitHub.",
+      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. My core set of technologies includes React, Node.js, Next.js, TypeScript, and React Native, and I am familiar with version control tools such as Git.",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -101,7 +101,7 @@ const en = {
       },
     ],
     second:
-      "In my personal life, beyond my role as a developer, I stand out for my conciliation skills and willingness to listen and learn. Furthermore, my passion for music, playing the violin and guitar, and my enjoyment of video games and anime contribute a creative perspective to my approach in development. These experiences and skills enrich my profile, contributing to shaping a professional identity characterized by creativity and collaboration.",
+      "I am well-versed with Agile and Scrum methodologies, and I am skilled in working collaboratively to achieve defined objectives. I am a native Spanish speaker with advanced proficiency in English, encompassing reading, listening, and conversation skills, enabling me to communicate fluently in both languages. My dedication and experience are evident in polished and high-quality projects that I have developed and shared on GitHub.",
   },
   projects: {
     title: "My Projects",

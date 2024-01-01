@@ -20,7 +20,7 @@ export default function Project({
   demoUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const { t } = useI18nContext();
+  const { t, language } = useI18nContext();
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
   const { scrollYProgress } = useScroll({
@@ -75,7 +75,7 @@ export default function Project({
             className="px-2 py-1 bg-white/70 backdrop-blur-[0.5rem] rounded-2xl text-gray-800 dark:bg-red-950/60 dark:text-gray-300 font-medium borderBlack hover:scale-110 focus:scale-105 transition hover:dark:text-gray-200 shadow-md dark:shadow-gray-900"
           >
             <span className="flex items-center text-xl gap-2">
-              <FaGitAlt /> REPOSITORY
+              <FaGitAlt /> {language === "en" ? "REPOSITORY" : "REPOSITORIO"}
             </span>
           </a>
           <a

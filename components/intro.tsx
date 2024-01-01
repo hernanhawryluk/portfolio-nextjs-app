@@ -65,7 +65,7 @@ export default function Intro() {
         <h1>{t("intro.heading")}</h1>
         <p className="text-xl font-light pt-6">{t("intro.main")}</p>
         <p className="text-xl font-light pt-2">{t("intro.second")}</p>
-        <p className="text-xl font-light pt-2">{t("intro.occupation")}</p>
+        <p className="text-xl font-light pt-2">{t("intro.third")}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

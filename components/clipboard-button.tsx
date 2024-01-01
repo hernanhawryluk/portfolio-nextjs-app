@@ -1,11 +1,11 @@
 import React from "react";
 import { LuClipboardCopy } from "react-icons/lu";
-import { I18nContext } from "@/context/i18n-context";
+import { useI18nContext } from "@/context/i18n-context";
 import { useTheme } from "@/context/theme-context";
 import toast from "react-hot-toast";
 
 export default function ClipboardButton() {
-  const { t } = React.useContext(I18nContext);
+  const { t } = useI18nContext();
   const { theme } = useTheme();
 
   const handleCopyToClipboard = () => {
