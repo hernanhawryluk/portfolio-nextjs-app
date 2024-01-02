@@ -29,11 +29,11 @@ export default function RootLayout({
       >
         <div
           style={{ transform: "translate3d(0,0,0)" }}
-          className="bg-[#fbe2e3] absolute top-[-1rem] -z-10 right-[2rem] h-[50vh] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#905263] lg:transition-colors duration-300 2xl:right-[22rem] 2xl:blur-[20rem] 2xl:top-[-4rem]"
+          className="bg-[#fbe2e3] absolute top-[-1rem] -z-10 right-[2rem] h-[50vh] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#905263] lg:transition-colors lg:duration-300 2xl:right-[22rem] 2xl:blur-[20rem] 2xl:top-[-4rem]"
         ></div>
         <div
           style={{ transform: "translate3d(0,0,0)" }}
-          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[50vh] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[10rem] dark:bg-[#676394] lg:transition-colors duration-300 2xl:blur-[16rem]"
+          className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[50vh] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[10rem] dark:bg-[#676394] lg:transition-colors lg:duration-300 2xl:blur-[16rem]"
         ></div>
         <ThemeContextProvider>
           <I18nProvider>

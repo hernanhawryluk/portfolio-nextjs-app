@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
+import { FaCode, FaReact } from "react-icons/fa";
 import {
   SiExpo,
   SiExpress,
@@ -311,36 +311,28 @@ const es = {
     title: "Mi Experiencia",
     data: [
       {
-        title: "Proyectos iniciales",
+        title: "Estudiante Autodidacta",
         location: "Argentina, Bs. As.",
         description:
-          "Comencé a estudiar programación con Python y JavaScript por medio de la plataforma Platzi. En poco tiempo, tras alcanzar un nivel intermedio de Python desarrollé aplicaciones y juegos sencillos los cuales están disponibles en mi repositorio de GitHub.",
+          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, y desarrollo en el stack MERN, entre otras tecnologías. Certifiqué varias de estas habilidades en la plataforma Platzi.",
         icon: React.createElement(LuGraduationCap),
-        date: "December 2021 - February 2022",
+        date: "Diciembre 2021 - Diciembre 2022",
       },
       {
-        title: "Perfeccionamiento de habilidades",
+        title: "Experiencia en Desarrollo",
         location: "Argentina, Bs. As.",
         description:
-          "Diversifiqué mi formación al aprender programación orientada a objetos, bases de datos, Git & GitHub, y complementé mis conocimientos en JavaScript con HTML, CSS y Responsive Design. Esto contribuyó significativamente a perfeccionar mis habilidades en el desarrollo web.",
-        icon: React.createElement(LuGraduationCap),
-        date: "March 2022 - December 2022",
-      },
-      {
-        title: "Ampliando horizontes de JavaScript",
-        location: "Argentina, Bs. As.",
-        description:
-          "Estudié y llevé a cabo al menos un proyecto en cada una de estas bibliotecas de JavaScript: Node.js, Express, React, Next.js, y React Native. Esto me proporcionó un conocimiento integral sobre cómo funcionan las aplicaciones tanto en el front-end como en el back-end.",
-        icon: React.createElement(LuGraduationCap),
-        date: "January 2023 - April 2023",
-      },
-      {
-        title: "Desarrollador Front-End",
-        location: "Argentina, Bs. As.",
-        description:
-          "Soy un desarrollador Front-End especializado en aplicaciones web y multiplataforma para Android y iOS. Mi conjunto principal de tecnologías incluye React, Next.js, TypeScript, Tailwind, React Native, MongoDB y Firebase.",
+          "Desarrollé numerosos proyectos en diversas tecnologías. Resolviendo eficientemente los desafios sin depender de un equipo. Estas experiencias me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
         icon: React.createElement(FaReact),
-        date: "May 2023 - Present",
+        date: "Enero 2023 - Diciembre 2023",
+      },
+      {
+        title: "Desarrollador Full-Stack",
+        location: "Argentina, Bs. As.",
+        description:
+          "Actualmente, busco oportunidades como desarrollador Full Stack. Paralelamente, continúo enriqueciendo mi formación, obteniendo certificaciones y participando en proyectos adicionales para seguir ampliando mis habilidades y conocimientos.",
+        icon: React.createElement(FaCode),
+        date: "Enero 2024 - Present",
       },
     ],
   },

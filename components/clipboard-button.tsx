@@ -26,7 +26,7 @@ export default function ClipboardButton() {
 
   return (
     <button
-      className="group flex items-center justify-center gap-2 h-[3rem] px-5 bg-white text-gray-700 rounded-full outline-none borderBlack transition-all focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 cursor-pointer dark:bg-white dark:bg-opacity-10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/10 backdrop-blur-[0.3rem]"
+      className="group flex items-center justify-center gap-2 h-[3rem] px-5 bg-white text-gray-700 rounded-full outline-none borderBlack transition focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 cursor-pointer dark:bg-white dark:bg-opacity-10 dark:text-white/60 dark:hover:text-white/90 dark:border-white/10 backdrop-blur-[0.3rem]"
       type="button"
       onClick={() => handleCopyToClipboard()}
     >
