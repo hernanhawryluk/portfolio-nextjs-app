@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
@@ -9,7 +10,7 @@ import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 import { useInView } from "react-intersection-observer";
 
-export default function Home() {
+function Home() {
   const { ref, inView } = useInView({ threshold: 0.9 });
 
   return (
@@ -29,3 +30,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default React.memo(Home);
