@@ -370,6 +370,11 @@ const es = {
         title: "Google",
         description: "",
       },
+      {
+        icon: React.createElement(SiReact),
+        title: "IBM",
+        description: "Desarrollow Web Full Stack",
+      },
     ],
   },
 };
