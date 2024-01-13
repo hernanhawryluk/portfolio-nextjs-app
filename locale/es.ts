@@ -357,6 +357,21 @@ const es = {
     theme: "Cambiar tema",
     language: "Cambiar idioma",
   },
+  education: {
+    title: "Educación",
+    data: [
+      {
+        icon: React.createElement(SiReact),
+        title: "Platzi",
+        description: "Desarrollo Web Full Stack",
+      },
+      {
+        icon: React.createElement(SiReact),
+        title: "Google",
+        description: "",
+      },
+    ],
+  },
 };
 
 export default es;
