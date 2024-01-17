@@ -3,6 +3,7 @@ import { FaCode, FaReact } from "react-icons/fa";
 import {
   SiExpo,
   SiExpress,
+  SiFigma,
   SiFirebase,
   SiFramer,
   SiGit,
@@ -286,6 +287,11 @@ const en = {
         skill: "GitHub",
         icon: React.createElement(SiGithub),
         color: "#000000",
+      },
+      {
+        skill: "Figma",
+        icon: React.createElement(SiFigma),
+        color: "#f24e1e",
       },
       {
         skill: "Python",
