@@ -364,7 +364,7 @@ const es = {
     language: "Cambiar idioma",
   },
   education: {
-    title: "Educación",
+    title: "Certificaciones",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -374,12 +374,18 @@ const es = {
       {
         icon: React.createElement(SiReact),
         title: "Google",
-        description: "",
+        description: "Agile Project Management",
       },
       {
         icon: React.createElement(SiReact),
         title: "IBM",
-        description: "Desarrollow Web Full Stack",
+        description: "Front End with React - Back End with Node.js",
+      },
+      {
+        icon: React.createElement(SiReact),
+        title: "Meta",
+        description:
+          "Advanced React - React Native - Principles of UX/UI Design",
       },
     ],
   },
