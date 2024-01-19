@@ -16,6 +16,7 @@ import {
   SiPrisma,
   SiPython,
   SiReact,
+  SiSqlite,
   SiTailwindcss,
   SiTypescript,
   SiUnrealengine,
@@ -280,6 +281,11 @@ const es = {
         skill: "Firebase",
         icon: React.createElement(SiFirebase),
         color: "#ffcb2b",
+      },
+      {
+        skill: "SQLite",
+        icon: React.createElement(SiSqlite),
+        color: "#3498db",
       },
       {
         skill: "Prisma",
