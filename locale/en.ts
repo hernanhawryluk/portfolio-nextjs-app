@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCode, FaReact } from "react-icons/fa";
 import {
+  SiBootstrap,
   SiExpo,
   SiExpress,
   SiFigma,
@@ -248,6 +249,11 @@ const en = {
         skill: "Tailwind",
         icon: React.createElement(SiTailwindcss),
         color: "#38bdf8",
+      },
+      {
+        skill: "Bootstrap",
+        icon: React.createElement(SiBootstrap),
+        color: "#7952b3",
       },
       {
         skill: "Framer Motion",
