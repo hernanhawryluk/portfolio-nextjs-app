@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCode, FaReact } from "react-icons/fa";
 import {
+  SiAsana,
   SiBootstrap,
   SiExpo,
   SiExpress,
@@ -234,6 +235,11 @@ const es = {
         color: "#3178c6",
       },
       {
+        skill: "Python",
+        icon: React.createElement(SiPython),
+        color: "#3572A5",
+      },
+      {
         skill: "React",
         icon: React.createElement(SiReact),
         color: "#61dafb",
@@ -314,9 +320,9 @@ const es = {
         color: "#f24e1e",
       },
       {
-        skill: "Python",
-        icon: React.createElement(SiPython),
-        color: "#3572A5",
+        skill: "Asana",
+        icon: React.createElement(SiAsana),
+        color: "#0e76a8",
       },
       {
         skill: "Unreal Engine",
