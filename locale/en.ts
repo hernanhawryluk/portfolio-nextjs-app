@@ -314,7 +314,7 @@ const en = {
       {
         skill: "Asana",
         icon: React.createElement(SiAsana),
-        color: "#0e76a8",
+        color: "#fc636b",
       },
       {
         skill: "Unreal Engine",
