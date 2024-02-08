@@ -3,6 +3,7 @@ import { FaCode, FaReact } from "react-icons/fa";
 import {
   SiAsana,
   SiBootstrap,
+  SiDjango,
   SiExpo,
   SiExpress,
   SiFigma,
@@ -227,11 +228,6 @@ const en = {
         color: "#3178c6",
       },
       {
-        skill: "Python",
-        icon: React.createElement(SiPython),
-        color: "#3572A5",
-      },
-      {
         skill: "React",
         icon: React.createElement(SiReact),
         color: "#61dafb",
@@ -275,6 +271,16 @@ const en = {
         skill: "Expo",
         icon: React.createElement(SiExpo),
         color: "#000000",
+      },
+      {
+        skill: "Python",
+        icon: React.createElement(SiPython),
+        color: "#3572A5",
+      },
+      {
+        skill: "Django",
+        icon: React.createElement(SiDjango),
+        color: "#rrggbb",
       },
       {
         skill: "MongoDB",
