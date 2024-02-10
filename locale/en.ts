@@ -400,6 +400,7 @@ const en = {
     buttonSubmit: "Submit",
     buttonCopy: "Copy Email Address",
     toastSent: "Email sent successfully!",
+    toastCaptcha: "Verify captcha before sending.",
     toastCopied: "Email address copied to clipboard!",
   },
   footer: {

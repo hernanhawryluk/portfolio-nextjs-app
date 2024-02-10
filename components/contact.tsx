@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
@@ -11,6 +11,8 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ClipboardButton from "./clipboard-button";
 import { useTheme } from "@/context/theme-context";
 import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
+import { verifyCaptcha } from "@/actions/verifyCaptcha";
 
 export default function Contact() {
   const { language, t } = useI18nContext();
@@ -19,6 +21,14 @@ export default function Contact() {
     language === "en" ? "Contact" : "Contacto",
     0.5
   );
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isVerified, setIsverified] = useState<boolean>(false);
+
+  async function handleCaptchaSubmission(token: string | null) {
+    await verifyCaptcha(token)
+      .then(() => setIsverified(true))
+      .catch(() => setIsverified(false));
+  }
 
   const toastOptions = {
     style: {
@@ -50,14 +60,20 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col items-center dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          if (isVerified) {
+            const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error.toString(), toastOptions);
-            return;
+            if (error) {
+              toast.error(error.toString(), toastOptions);
+              return;
+            }
+
+            toast.success(t("contact.toastSent"), toastOptions);
+            recaptchaRef.current?.reset();
+            setIsverified(false);
+          } else {
+            toast.error(t("contact.toastCaptcha"), toastOptions);
           }
-
-          toast.success(t("contact.toastSent"), toastOptions);
         }}
       >
         <input
@@ -75,10 +91,17 @@ export default function Contact() {
           required
           maxLength={5000}
         />
+        <ReCAPTCHA
+          className="mb-2 mt-1"
+          hl={language == "en" ? "en" : "es"}
+          theme={theme === "light" ? "light" : "dark"}
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+          ref={recaptchaRef}
+          onChange={handleCaptchaSubmission}
+        />
         <div className="flex flex-wrap gap-3 justify-center mt-1">
           <div className="flex gap-3 flex-wrap justify-center">
             <SubmitButton />
-
             <ClipboardButton />
           </div>
           <div className="flex gap-3">

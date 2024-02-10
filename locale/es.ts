@@ -408,6 +408,7 @@ const es = {
     buttonSubmit: "Enviar",
     buttonCopy: "Copiar correo electrónico",
     toastSent: "¡Correo electrónico enviado exitosamente!",
+    toastCaptcha: "Verifica el captcha antes de enviar.",
     toastCopied: "¡Dirección de correo electrónico copiada al portapapeles!",
   },
   footer: {
