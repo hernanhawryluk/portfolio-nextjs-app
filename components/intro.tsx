@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 import portrait from "@/public/portrait.png";
 import { motion } from "framer-motion";
 import Link from "next/link";

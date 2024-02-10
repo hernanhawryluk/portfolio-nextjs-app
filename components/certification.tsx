@@ -1,19 +1,14 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import en from "@/locale/en";
-import { FaGitAlt } from "react-icons/fa";
 import { useI18nContext } from "@/context/i18n-context";
-import { TbWorldCheck } from "react-icons/tb";
 
 type CertificationProps = (typeof en.certifications.data)[number];
 
-export default function Certification({
-  imageUrl,
-  validationUrl,
-}: CertificationProps) {
+export default function Certification({ imageUrl }: CertificationProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { t, language } = useI18nContext();
 
