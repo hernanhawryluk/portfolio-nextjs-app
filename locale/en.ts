@@ -36,6 +36,8 @@ import googleProjectManagementImg from "@/public/certifications/google-project-m
 import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
 import metaFrontEndDeveloperImg from "@/public/certifications/meta-front-end-developer.png";
 import metaReactNativeSpecializationImg from "@/public/certifications/meta-react-native-specialization.png";
+import platziOOPImg from "@/public/certifications/platzi-oop.png";
+import platziHtmlCssImg from "@/public/certifications/platzi-html-css.png";
 
 const en = {
   links: [
@@ -337,6 +339,35 @@ const en = {
       },
     ],
   },
+  certifications: {
+    title: "Certificaciones",
+    data: [
+      {
+        imageUrl: metaFrontEndDeveloperImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: metaReactNativeSpecializationImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: googleProjectManagementImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: ibmNodeJsImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: platziOOPImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: platziHtmlCssImg,
+        validationUrl: "",
+      },
+    ],
+  },
   experience: {
     title: "My Experience",
     data: [
@@ -386,27 +417,6 @@ const en = {
   buttons: {
     theme: "Change theme",
     language: "Change language",
-  },
-  certifications: {
-    title: "Certificaciones",
-    data: [
-      {
-        imageUrl: metaFrontEndDeveloperImg,
-        validationUrl: "",
-      },
-      {
-        imageUrl: metaReactNativeSpecializationImg,
-        validationUrl: "",
-      },
-      {
-        imageUrl: googleProjectManagementImg,
-        validationUrl: "",
-      },
-      {
-        imageUrl: ibmNodeJsImg,
-        validationUrl: "",
-      },
-    ],
   },
 };
 
