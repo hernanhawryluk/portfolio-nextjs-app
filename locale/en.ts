@@ -25,13 +25,17 @@ import {
   SiUnrealengine,
 } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import instagramClonImg from "@/public/instagram-clon.png";
-import renderWebImg from "@/public/render-web.png";
-import interactiveRenderImg from "@/public/interactive-render.png";
-import portfolioWebImg from "@/public/portfolio-web.png";
-import ecommerceAppImg from "@/public/ecommerce-app.png";
-import blogAppImg from "@/public/blog-app.png";
-import taskManagerAppImg from "@/public/task-manager-app.png";
+import instagramClonImg from "@/public/projects/instagram-clon.png";
+import renderWebImg from "@/public/projects/render-web.png";
+import interactiveRenderImg from "@/public/projects/interactive-render.png";
+import portfolioWebImg from "@/public/projects/portfolio-web.png";
+import ecommerceAppImg from "@/public/projects/ecommerce-app.png";
+import blogAppImg from "@/public/projects/blog-app.png";
+import taskManagerAppImg from "@/public/projects/task-manager-app.png";
+import googleProjectManagementImg from "@/public/certifications/google-project-management.png";
+import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
+import metaFrontEndDeveloperImg from "@/public/certifications/meta-front-end-developer.png";
+import metaReactNativeSpecializationImg from "@/public/certifications/meta-react-native-specialization.png";
 
 const en = {
   links: [
@@ -50,6 +54,10 @@ const en = {
     {
       name: "Skills",
       hash: "#skills",
+    },
+    {
+      name: "Certifications",
+      hash: "#certifications",
     },
     {
       name: "Experience",
@@ -378,6 +386,27 @@ const en = {
   buttons: {
     theme: "Change theme",
     language: "Change language",
+  },
+  certifications: {
+    title: "Certificaciones",
+    data: [
+      {
+        imageUrl: metaFrontEndDeveloperImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: metaReactNativeSpecializationImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: googleProjectManagementImg,
+        validationUrl: "",
+      },
+      {
+        imageUrl: ibmNodeJsImg,
+        validationUrl: "",
+      },
+    ],
   },
 };
 

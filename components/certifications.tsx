@@ -17,7 +17,7 @@ export default function Certifications() {
   );
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="certifications" className="scroll-mt-28 mb-28">
       <SectionHeading>{t("certifications.title")}</SectionHeading>
       <div className="flex flex-row flex-wrap items-center justify-center gap-4">
         {t("certifications.data").map(

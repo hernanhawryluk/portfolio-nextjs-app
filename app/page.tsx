@@ -8,6 +8,7 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Certifications from "@/components/certifications";
 import { useInView } from "react-intersection-observer";
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
       <About />
       <Projects />
       <Skills />
+      <Certifications />
       <Experience />
       <Contact />
     </main>

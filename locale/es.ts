@@ -25,13 +25,17 @@ import {
   SiUnrealengine,
 } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import instagramClonImg from "@/public/instagram-clon.png";
-import renderWebImg from "@/public/render-web.png";
-import interactiveRenderImg from "@/public/interactive-render.png";
-import portfolioWebImg from "@/public/portfolio-web.png";
-import ecommerceAppImg from "@/public/ecommerce-app.png";
-import blogAppImg from "@/public/blog-app.png";
-import taskManagerAppImg from "@/public/task-manager-app.png";
+import instagramClonImg from "@/public/projects/instagram-clon.png";
+import renderWebImg from "@/public/projects/render-web.png";
+import interactiveRenderImg from "@/public/projects/interactive-render.png";
+import portfolioWebImg from "@/public/projects/portfolio-web.png";
+import ecommerceAppImg from "@/public/projects/ecommerce-app.png";
+import blogAppImg from "@/public/projects/blog-app.png";
+import taskManagerAppImg from "@/public/projects/task-manager-app.png";
+import googleProjectManagementImg from "@/public/certifications/google-project-management.png";
+import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
+import metaFrontEndDeveloperImg from "@/public/certifications/meta-front-end-developer.png";
+import metaReactNativeSpecializationImg from "@/public/certifications/meta-react-native-specialization.png";
 
 const es = {
   links: [
@@ -50,6 +54,10 @@ const es = {
     {
       name: "Tecnologías",
       hash: "#skills",
+    },
+    {
+      name: "Certificaciones",
+      hash: "#certifications",
     },
     {
       name: "Experiencia",
@@ -387,29 +395,24 @@ const es = {
     theme: "Cambiar tema",
     language: "Cambiar idioma",
   },
-  education: {
+  certifications: {
     title: "Certificaciones",
     data: [
       {
-        icon: React.createElement(SiReact),
-        title: "Platzi",
-        description: "Desarrollo Web Full Stack",
+        imageUrl: metaFrontEndDeveloperImg,
+        validationUrl: "",
       },
       {
-        icon: React.createElement(SiReact),
-        title: "Google",
-        description: "Agile Project Management",
+        imageUrl: metaReactNativeSpecializationImg,
+        validationUrl: "",
       },
       {
-        icon: React.createElement(SiReact),
-        title: "IBM",
-        description: "Front End with React - Back End with Node.js",
+        imageUrl: googleProjectManagementImg,
+        validationUrl: "",
       },
       {
-        icon: React.createElement(SiReact),
-        title: "Meta",
-        description:
-          "Advanced React - React Native - Principles of UX/UI Design",
+        imageUrl: ibmNodeJsImg,
+        validationUrl: "",
       },
     ],
   },
