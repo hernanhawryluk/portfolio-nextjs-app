@@ -116,6 +116,14 @@ const es = {
         color: "#3178c6",
       },
       {
+        icon: React.createElement(SiPython),
+        color: "#3776ab",
+      },
+      {
+        icon: React.createElement(SiDjango),
+        color: "#44b78b",
+      },
+      {
         icon: React.createElement(SiGit),
         color: "#f1502f",
       },
@@ -299,7 +307,7 @@ const es = {
       {
         skill: "Django",
         icon: React.createElement(SiDjango),
-        color: "#rrggbb",
+        color: "#44b78b",
       },
       {
         skill: "MongoDB",

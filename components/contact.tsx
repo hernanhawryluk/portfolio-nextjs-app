@@ -91,14 +91,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <ReCAPTCHA
-          className="mb-2 mt-1"
-          hl={language == "en" ? "en" : "es"}
-          theme={theme === "light" ? "light" : "dark"}
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-          ref={recaptchaRef}
-          onChange={handleCaptchaSubmission}
-        />
+
         <div className="flex flex-wrap gap-3 justify-center mt-1">
           <div className="flex gap-3 flex-wrap justify-center">
             <SubmitButton />
@@ -122,6 +115,15 @@ export default function Contact() {
               <BsGithub />
             </a>
           </div>
+
+          <ReCAPTCHA
+            className="bg-gray-800 opacity-80 mb-2 mt-1 overflow-hidden rounded-[18px] border-2 w-[306px] h-[80px] dark:border-white/10"
+            hl={language == "en" ? "en" : "es"}
+            theme="dark"
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+            ref={recaptchaRef}
+            onChange={handleCaptchaSubmission}
+          />
         </div>
       </form>
     </motion.section>

@@ -26,7 +26,7 @@ export default function Header() {
         className={clsx(
           "fixed top-0 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:w-[44rem] sm:h-[3.25rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-70",
           {
-            "sm:w-[48.3rem]": language === "es",
+            "sm:w-[48.5rem]": language === "es",
           }
         )}
         initial={{ y: -100, opacity: 0 }}
