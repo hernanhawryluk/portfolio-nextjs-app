@@ -35,6 +35,7 @@ import taskManagerAppImg from "@/public/projects/task-manager-app.png";
 import googleProjectManagementImg from "@/public/certifications/google-project-management.png";
 import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
 import metaFrontEndDeveloperImg from "@/public/certifications/meta-front-end-developer.png";
+import metaBackEndDeveloper from "@/public/certifications/meta-back-end-developer.png";
 import metaReactNativeImg from "@/public/certifications/meta-react-native-specialization.png";
 import platziOOPImg from "@/public/certifications/platzi-oop.png";
 import platziHtmlCssImg from "@/public/certifications/platzi-html-css.png";
@@ -344,6 +345,9 @@ const en = {
     data: [
       {
         imageUrl: metaFrontEndDeveloperImg,
+      },
+      {
+        imageUrl: metaBackEndDeveloper,
       },
       {
         imageUrl: metaReactNativeImg,
