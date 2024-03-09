@@ -32,6 +32,7 @@ import portfolioWebImg from "@/public/projects/portfolio-web.png";
 import ecommerceAppImg from "@/public/projects/ecommerce-app.png";
 import blogAppImg from "@/public/projects/blog-app.png";
 import taskManagerAppImg from "@/public/projects/task-manager-app.png";
+import djangoAppImg from "@/public/projects/django-app.png";
 import googleProjectManagementImg from "@/public/certifications/google-project-management.png";
 import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
 import metaFrontEndDeveloperImg from "@/public/certifications/meta-front-end-developer.png";
@@ -76,7 +77,7 @@ const en = {
     heading: "Full-Stack Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
-      "My main stack includes React, Node.js, Next.js, and TypeScript among other key technologies.",
+      "My main stack includes React, Node.js, Next.js, and Django among other key technologies.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
@@ -133,7 +134,7 @@ const en = {
     title: "My Projects",
     data: [
       {
-        title: "Task Manager App",
+        title: "Node.js and React App",
         description:
           "A full-stack application developed with the MERN Stack, where users can manage and appoint their tasks. It features authentication, CRUD operations, and good performance.",
         tags: [
@@ -150,7 +151,27 @@ const en = {
         demoUrl: "https://tasks-react-frontend.vercel.app",
       },
       {
-        title: "Blog Website",
+        title: "Next.js Web App",
+        description:
+          "This portfolio is fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
+        imageUrl: portfolioWebImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
+        demoType: "Deploy",
+        demoUrl: "#",
+      },
+      {
+        title: "Django Web Server",
+        description:
+          "Full-stack application developed with Django, leveraging the MVT architecture, featuring dynamic content, secure forms, user authentication, and online booking.",
+        tags: ["Python", "Django", "PostreSQL", "Rest Framework", "Bootstrap"],
+        imageUrl: djangoAppImg,
+        repositoryUrl: "https://github.com/hernanhawryluk/little-lemon-django",
+        demoType: "Deploy",
+        demoUrl: "https://little-lemon-django.onrender.com",
+      },
+      {
+        title: "Next.js Web App",
         description:
           "A minimalistic blog, featuring Google and Github authentication, category filtering, content pagination, write and comment functionality, good performance and SEO practices.",
         tags: [
@@ -168,7 +189,7 @@ const en = {
           "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
       },
       {
-        title: "E-commerce Website",
+        title: "E-commerce Web Next.js",
         description:
           "Responsive design, user and Google authentication, intuitive shopping cart, Stripe payment integration, product reviews, dashboard for product and order management.",
         tags: [
@@ -185,16 +206,6 @@ const en = {
         demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
       },
       {
-        title: "Portfolio Website",
-        description:
-          "This portfolio is fully responsive for seamless adaptation to all screens, also providing multilingual support, light and dark modes, animations, and form validation.",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
-        imageUrl: portfolioWebImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/portfolio-nextjs-app",
-        demoType: "Deploy",
-        demoUrl: "#",
-      },
-      {
         title: "Instagram Clone App",
         description:
           "A fully functional Instagram replica seamlessly compatible with iOS and Android. It includes user authentication, post creation, notifications, real-time interactions, and other features.",
@@ -205,7 +216,7 @@ const en = {
         demoUrl: "https://youtu.be/llQH79EdmfU",
       },
       {
-        title: "Archviz Render Web",
+        title: "Renders Web Site",
         description:
           "A website developed from scratch with responsive design to effectively showcase high-quality architectural renders. It includes a real-time online quotation system, animations, and form validation.",
         tags: ["HTML5", "CSS", "JavaScript"],

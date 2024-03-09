@@ -31,6 +31,7 @@ import interactiveRenderImg from "@/public/projects/interactive-render.png";
 import portfolioWebImg from "@/public/projects/portfolio-web.png";
 import ecommerceAppImg from "@/public/projects/ecommerce-app.png";
 import blogAppImg from "@/public/projects/blog-app.png";
+import djangoAppImg from "@/public/projects/django-app.png";
 import taskManagerAppImg from "@/public/projects/task-manager-app.png";
 import googleProjectManagementImg from "@/public/certifications/google-project-management.png";
 import ibmNodeJsImg from "@/public/certifications/ibm-node-js.png";
@@ -76,7 +77,7 @@ const es = {
     heading: "Desarrollador Full-Stack",
     main: "Desarrollo integral de aplicaciones web y móbiles para iOS y Android.",
     second:
-      "Mi stack principal incluye React, Node.js, Next.js y TypeScript entre otras tecnologías clave.",
+      "Mi stack principal incluye React, Node.js, Next.js y Django entre otras tecnologías clave.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
@@ -133,7 +134,7 @@ const es = {
     title: "Mis Proyectos",
     data: [
       {
-        title: "Task Manager App",
+        title: "Aplicación Node - React",
         description:
           "Una aplicación full-stack desarrollada con el stack MERN, donde los usuarios pueden gestionar y programar sus tareas. Incluye autenticación y operaciones CRUD.",
         tags: [
@@ -150,7 +151,29 @@ const es = {
         demoUrl: "https://tasks-react-frontend.vercel.app",
       },
       {
-        title: "Blog Sitio Web",
+        title: "Aplicación Web Next.js",
+        description:
+          "Este portafolio se adapta completamente a todas las pantallas, ofrece soporte multilingüe, modos de luz y oscuro, animaciones, y validación de formularios.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
+        imageUrl: portfolioWebImg,
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/portfolio-nextjs-app/blob/main/README.es.md",
+        demoType: "Deploy",
+        demoUrl: "#",
+      },
+      {
+        title: "Servidor Web Django",
+        description:
+          "Aplicación full-stack desarrollada con Django, aprovechando la arquitectura MVT, con contenido dinámico, formularios seguros, autenticación de usuarios y reservas en línea.",
+        tags: ["Python", "Django", "PostreSQL", "Rest Framework", "Bootstrap"],
+        imageUrl: djangoAppImg,
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/little-lemon-django/blob/main/README.es.md",
+        demoType: "Deploy",
+        demoUrl: "https://little-lemon-django.onrender.com",
+      },
+      {
+        title: "Aplicación Web Next.js",
         description:
           "Un blog minimalista con autenticación de usuarios, filtrado por categorías, paginación, capacidad para escribir, comentar, y buenas practicas de SEO.",
         tags: [
@@ -168,7 +191,7 @@ const es = {
           "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
       },
       {
-        title: "Tienda Online",
+        title: "Tienda Online Next.js",
         description:
           "Diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, gestion de productos y ordenes.",
         tags: [
@@ -186,17 +209,6 @@ const es = {
         demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
       },
       {
-        title: "Portafolio Web",
-        description:
-          "Este portafolio se adapta completamente a todas las pantallas, ofrece soporte multilingüe, modos de luz y oscuro, animaciones, y validación de formularios.",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
-        imageUrl: portfolioWebImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/portfolio-nextjs-app/blob/main/README.es.md",
-        demoType: "Deploy",
-        demoUrl: "#",
-      },
-      {
         title: "Instagram Clone App",
         description:
           "Una réplica funcional de Instagram compatible con iOS y Android. Incluye autenticación de usuarios, creación de publicaciones, notificaciones, interacciones en tiempo real y otras características.",
@@ -208,7 +220,7 @@ const es = {
         demoUrl: "https://youtu.be/llQH79EdmfU",
       },
       {
-        title: "Archviz Render Web",
+        title: "Sitio Web Renders",
         description:
           "Un sitio web desarrollado desde cero para resaltar renders arquitectónicos de alta calidad. Incluye un diseño responsivo, sistema de cotización en línea en tiempo real, animaciones y validación de formularios.",
         tags: ["HTML5", "CSS", "JavaScript"],
