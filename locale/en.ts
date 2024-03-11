@@ -168,7 +168,7 @@ const en = {
         imageUrl: djangoAppImg,
         repositoryUrl: "https://github.com/hernanhawryluk/little-lemon-django",
         demoType: "Deploy",
-        demoUrl: "https://little-lemon-django.onrender.com",
+        demoUrl: "https://little-lemon-django-iota.vercel.app",
       },
       {
         title: "Next.js Web App",

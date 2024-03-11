@@ -146,7 +146,8 @@ const es = {
           "Mongo-DB",
         ],
         imageUrl: taskManagerAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/tasks-nodejs-backend",
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/tasks-nodejs-backend/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://tasks-react-frontend.vercel.app",
       },
@@ -170,7 +171,7 @@ const es = {
         repositoryUrl:
           "https://github.com/hernanhawryluk/little-lemon-django/blob/main/README.es.md",
         demoType: "Deploy",
-        demoUrl: "https://little-lemon-django.onrender.com",
+        demoUrl: "https://little-lemon-django-iota.vercel.app",
       },
       {
         title: "Aplicación Web Next.js",
@@ -185,7 +186,8 @@ const es = {
           "Prisma",
         ],
         imageUrl: blogAppImg,
-        repositoryUrl: "https://github.com/hernanhawryluk/blog-nextjs-app",
+        repositoryUrl:
+          "https://github.com/hernanhawryluk/blog-nextjs-app/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl:
           "https://blog-nextjs-app-hernan-hawryluks-projects.vercel.app/",
