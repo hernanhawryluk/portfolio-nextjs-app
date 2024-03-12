@@ -13,11 +13,11 @@ export default function Certifications() {
   const { language, t } = useI18nContext();
   const { ref } = useSectionInView(
     language === "en" ? "Certifications" : "Certificaciones",
-    0.5
+    0.3
   );
 
   return (
-    <section ref={ref} id="certifications" className="scroll-mt-28 mb-28">
+    <section id="certifications" ref={ref} className="scroll-mt-28 mb-28">
       <SectionHeading>{t("certifications.title")}</SectionHeading>
       <div className="flex flex-row flex-wrap items-center justify-center gap-4">
         {t("certifications.data").map(

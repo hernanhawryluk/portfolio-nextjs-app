@@ -16,6 +16,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
   SiPrisma,
   SiPython,
   SiReact,
@@ -134,9 +135,9 @@ const es = {
     title: "Mis Proyectos",
     data: [
       {
-        title: "Aplicación Node - React",
+        title: "React & Node.js App",
         description:
-          "Una aplicación full-stack desarrollada con el stack MERN, donde los usuarios pueden gestionar y programar sus tareas. Incluye autenticación y operaciones CRUD.",
+          "Aplicación desarrollada del lado cliente y del lado servidor, que contiene autenticación de usuarios, gestión de tareas a través de operaciones CRUD y un calendario dinámico.",
         tags: [
           "React",
           "Node.js",
@@ -152,9 +153,9 @@ const es = {
         demoUrl: "https://tasks-react-frontend.vercel.app",
       },
       {
-        title: "Aplicación Web Next.js",
+        title: "Next.js & Tailwind App",
         description:
-          "Este portafolio se adapta completamente a todas las pantallas, ofrece soporte multilingüe, modos de luz y oscuro, animaciones, y validación de formularios.",
+          "Portafolio completamente adaptable a todos los tamaños de pantallas, ofrece soporte multilingüe, modo claro y oscuro, animaciones, y validación de formularios.",
         tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
         imageUrl: portfolioWebImg,
         repositoryUrl:
@@ -163,10 +164,10 @@ const es = {
         demoUrl: "#",
       },
       {
-        title: "Servidor Web Django",
+        title: "Django & Bootstrap App",
         description:
-          "Aplicación full-stack desarrollada con Django, aprovechando la arquitectura MVT, con contenido dinámico, formularios seguros, autenticación de usuarios y reservas en línea.",
-        tags: ["Python", "Django", "PostreSQL", "Rest Framework", "Bootstrap"],
+          "Aplicación desarrollada aprovechando la arquitectura MVT de Django. Ofrece contenido dinámico, formularios seguros, autenticación de usuarios y reservas en línea.",
+        tags: ["Python", "Django", "PostgreSQL", "Rest Framework", "Bootstrap"],
         imageUrl: djangoAppImg,
         repositoryUrl:
           "https://github.com/hernanhawryluk/little-lemon-django/blob/main/README.es.md",
@@ -174,7 +175,7 @@ const es = {
         demoUrl: "https://little-lemon-django-iota.vercel.app",
       },
       {
-        title: "Aplicación Web Next.js",
+        title: "Next.js & Tailwind App",
         description:
           "Un blog minimalista con autenticación de usuarios, filtrado por categorías, paginación, capacidad para escribir, comentar, y buenas practicas de SEO.",
         tags: [
@@ -195,7 +196,7 @@ const es = {
       {
         title: "Tienda Online Next.js",
         description:
-          "Diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, gestion de productos y ordenes.",
+          "Ofrece un diseño responsivo, autentificación de usuarios, carrito de compras intuitivo, integración de pagos con Stripe, reseñas de articulos, gestion de productos y ordenes.",
         tags: [
           "Next.js",
           "React",
@@ -211,7 +212,7 @@ const es = {
         demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
       },
       {
-        title: "Instagram Clone App",
+        title: "Instagram React Native",
         description:
           "Una réplica funcional de Instagram compatible con iOS y Android. Incluye autenticación de usuarios, creación de publicaciones, notificaciones, interacciones en tiempo real y otras características.",
         tags: ["React Native", "Expo", "Firebase"],
@@ -324,6 +325,11 @@ const es = {
         color: "#44b78b",
       },
       {
+        skill: "REST Framework",
+        icon: React.createElement(SiDjango),
+        color: "#44b78b",
+      },
+      {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
         color: "#4db33d",
@@ -336,6 +342,11 @@ const es = {
       {
         skill: "SQLite",
         icon: React.createElement(SiSqlite),
+        color: "#3498db",
+      },
+      {
+        skill: "PostgreSQL",
+        icon: React.createElement(SiPostgresql),
         color: "#3498db",
       },
       {
@@ -411,17 +422,17 @@ const es = {
         title: "Experiencia en Desarrollo",
         location: "Argentina, Bs. As.",
         description:
-          "Desarrollé numerosos proyectos en diversas tecnologías. Resolviendo eficientemente los desafios sin depender de un equipo. Estas experiencias me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
+          "Desarrollé numerosos proyectos en diversas tecnologías, resolviendo los desafios sin depender de un equipo. Estas experiencias rápidamente me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
         icon: React.createElement(FaReact),
-        date: "Enero 2023 - Diciembre 2023",
+        date: "Enero 2023 - Enero 2024",
       },
       {
         title: "Desarrollador Full-Stack",
         location: "Argentina, Bs. As.",
         description:
-          "Actualmente, busco oportunidades como desarrollador Full Stack. Paralelamente, continúo enriqueciendo mi formación, obteniendo certificaciones y participando en proyectos adicionales para seguir ampliando mis habilidades y conocimientos.",
+          "Actualmente, busco oportunidades como desarrollador Full Stack. Paralelamente, continúo enriqueciendo mi formación, obteniendo certificaciones y creando proyectos para seguir ampliando mis habilidades y conocimientos.",
         icon: React.createElement(FaCode),
-        date: "Enero 2024 - Present",
+        date: "Febrero 2024 - Present",
       },
     ],
   },

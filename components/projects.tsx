@@ -13,7 +13,7 @@ export default function Projects() {
   const { language, t } = useI18nContext();
   const { ref } = useSectionInView(
     language === "en" ? "Projects" : "Proyectos",
-    0.5
+    0.3
   );
 
   return (

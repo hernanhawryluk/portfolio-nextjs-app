@@ -16,6 +16,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
   SiPrisma,
   SiPython,
   SiReact,
@@ -317,6 +318,11 @@ const en = {
         color: "#44b78b",
       },
       {
+        skill: "REST Framework",
+        icon: React.createElement(SiDjango),
+        color: "#44b78b",
+      },
+      {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
         color: "#4db33d",
@@ -329,6 +335,11 @@ const en = {
       {
         skill: "SQLite",
         icon: React.createElement(SiSqlite),
+        color: "#3498db",
+      },
+      {
+        skill: "PostgreSQL",
+        icon: React.createElement(SiPostgresql),
         color: "#3498db",
       },
       {
@@ -398,7 +409,7 @@ const en = {
         description:
           "I acquired skills in web design, object-oriented programming, version control, and development in the MERN stack, among other technologies. I certified several of these skills on the Platzi platform.",
         icon: React.createElement(LuGraduationCap),
-        date: "Diciembre 2021 - Diciembre 2022",
+        date: "December 2021 - December 2022",
       },
       {
         title: "Development Experience",
@@ -406,7 +417,7 @@ const en = {
         description:
           "I developed numerous projects in various technologies, efficiently solving challenges without depending on a team. These experiences provided me with extensive expertise in both front-end and back-end.",
         icon: React.createElement(FaReact),
-        date: "Enero 2023 - Diciembre 2023",
+        date: "January 2023 - January 2024",
       },
       {
         title: "Full-Stack Developer",
@@ -414,7 +425,7 @@ const en = {
         description:
           "Currently, I am seeking opportunities as a Full Stack developer. Simultaneously, I continue to enhance my education by obtaining certifications and engaging in additional projects to further expand my skills and knowledge.",
         icon: React.createElement(FaCode),
-        date: "Enero 2024 - Present",
+        date: "February 2024 - Present",
       },
     ],
   },

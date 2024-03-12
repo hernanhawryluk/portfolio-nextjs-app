@@ -14,6 +14,7 @@ export default function About() {
   const { language, t } = useI18nContext();
   const { theme } = useTheme();
   const { ref } = useSectionInView(language === "en" ? "About" : "Perfil", 0.5);
+
   return (
     <motion.section
       ref={ref}
@@ -46,7 +47,7 @@ export default function About() {
         ))}
       </div>
 
-      <p className="hidden sm:block leading-[46px]">{t("about.second")}</p>
+      <p className="block leading-9 sm:leading-[46px]">{t("about.second")}</p>
     </motion.section>
   );
 }
