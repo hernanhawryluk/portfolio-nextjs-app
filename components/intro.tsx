@@ -21,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col justify-center gap-2 sm:h-[100vh] pb-[10%] max-w-[61rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28"
+      className="flex flex-col justify-center gap-2 sm:h-[100vh] pb-[12%] max-w-[61rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -65,7 +65,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
           }}
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 transition active:scale-105 cursor-pointer borderBlack backdrop-blur-[0.5rem]"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 hover:z-10 transition active:scale-105 cursor-pointer borderBlack backdrop-blur-[0.5rem]"
         >
           {t("intro.contactButton")}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -74,7 +74,7 @@ export default function Intro() {
         <a
           href={language === "es" ? "/es/CV.pdf" : "/en/CV.pdf"}
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:z-10 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
         >
           {t("intro.downloadCV")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />

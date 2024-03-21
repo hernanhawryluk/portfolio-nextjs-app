@@ -16,7 +16,7 @@ export default function SectionDivider({ inView }: SectionDividerProps) {
       } transition duration-1000 `}
     >
       <motion.div
-        className="hidden sm:block absolute bottom-12 2xl:bottom-14"
+        className="hidden sm:block absolute bottom-[50px] 2xl:bottom-14"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.125 }}
