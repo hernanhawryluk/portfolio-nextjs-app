@@ -407,7 +407,7 @@ const en = {
         title: "Self-taught Student",
         location: "Argentina, Bs. As.",
         description:
-          "I acquired skills in web design, object-oriented programming, version control, and development in the MERN stack, among other technologies. I certified several of these skills on the Platzi platform.",
+          "I acquired skills in web design, object-oriented programming, version control, application development with React, Node.js, and Next.js, among other technologies.",
         icon: React.createElement(LuGraduationCap),
         date: "December 2021 - December 2022",
       },
@@ -423,7 +423,7 @@ const en = {
         title: "Full-Stack Developer",
         location: "Argentina, Bs. As.",
         description:
-          "Currently, I am seeking opportunities as a Full Stack developer. Simultaneously, I continue to enhance my education by obtaining certifications and engaging in additional projects to further expand my skills and knowledge.",
+          "Currently, I work as a Full-Stack Web Developer, leveraging my technical and creative skills to create secure, dynamic, and amazing digital experiences.",
         icon: React.createElement(FaCode),
         date: "February 2024 - Present",
       },

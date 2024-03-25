@@ -414,7 +414,7 @@ const es = {
         title: "Estudiante Autodidacta",
         location: "Argentina, Bs. As.",
         description:
-          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, y desarrollo en el stack MERN, entre otras tecnologías. Certifiqué varias de estas habilidades en la plataforma Platzi.",
+          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, desarrollo de aplicaciones con React, Node.js, y Next.js, entre otras tecnologías.",
         icon: React.createElement(LuGraduationCap),
         date: "Diciembre 2021 - Diciembre 2022",
       },
@@ -430,7 +430,7 @@ const es = {
         title: "Desarrollador Full-Stack",
         location: "Argentina, Bs. As.",
         description:
-          "Actualmente, busco oportunidades como desarrollador Full Stack. Paralelamente, continúo enriqueciendo mi formación, obteniendo certificaciones y creando proyectos para seguir ampliando mis habilidades y conocimientos.",
+          "Actualmente trabajo como Desarrollador Web Full-Stack, aprovechando mis habilidades técnicas y creativas para crear experiencias digitales seguras, dinámicas y sorprendentes.",
         icon: React.createElement(FaCode),
         date: "Febrero 2024 - Present",
       },
