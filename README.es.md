@@ -38,7 +38,7 @@ Mi portafolio web desarrollado para ser adaptativo a todos los tamaños de panta
 
 ## Visita la página web
 
-- https://portfolio-hernan-hawryluks-projects.vercel.app/
+- https://hernan-hawryluk.vercel.app/
 
 ## ¿Donde encontrarme?
 
