@@ -13,6 +13,7 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
+  SiJirasoftware,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -373,6 +374,11 @@ const es = {
         skill: "Asana",
         icon: React.createElement(SiAsana),
         color: "#fc636b",
+      },
+      {
+        skill: "Jira",
+        icon: React.createElement(SiJirasoftware),
+        color: "#0052cc",
       },
       {
         skill: "Unreal Engine",
