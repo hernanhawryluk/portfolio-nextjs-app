@@ -86,7 +86,7 @@ const es = {
   about: {
     title: "Sobre mi",
     first:
-      "Soy un Desarrollador Full-Stack, capacitado para crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su despliegue. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones.",
+      "Soy un Desarrollador Full-Stack con experiencia en crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su despliegue. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones.",
     second:
       "Poseo un dominio nativo del español y un nivel avanzado de inglés que incluye habilidades de lectura, escucha y conversación, permitiéndome una comunicación fluida en ambos idiomas. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
     data: [

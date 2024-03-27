@@ -86,7 +86,7 @@ const en = {
   about: {
     title: "About me",
     first:
-      "I am a Full-Stack Developer, skilled in independently creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools like Git.",
+      "I am a Full-Stack Developer skilled in creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools like Git.",
     second:
       "I am a native Spanish speaker with advanced proficiency in English, including reading, listening, and conversation skills, enabling me to communicate fluently in both languages. My dedication and experience are evident in polished and high-quality projects that I have developed and shared on GitHub.",
     data: [
