@@ -418,7 +418,7 @@ const en = {
         date: "December 2021 - December 2022",
       },
       {
-        title: "Development Experience",
+        title: "Personal Projects",
         location: "Argentina, Bs. As.",
         description:
           "I developed numerous projects in various technologies, efficiently solving challenges without depending on a team. These experiences provided me with extensive expertise in both front-end and back-end.",

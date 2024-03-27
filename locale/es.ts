@@ -425,7 +425,7 @@ const es = {
         date: "Diciembre 2021 - Diciembre 2022",
       },
       {
-        title: "Experiencia en Desarrollo",
+        title: "Proyectos Personales",
         location: "Argentina, Bs. As.",
         description:
           "Desarrollé numerosos proyectos en diversas tecnologías, resolviendo los desafios sin depender de un equipo. Estas experiencias rápidamente me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
