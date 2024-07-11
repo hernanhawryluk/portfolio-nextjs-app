@@ -417,26 +417,26 @@ const es = {
     title: "Mi Experiencia",
     data: [
       {
-        title: "Estudiante Autodidacta",
-        location: "Argentina, Bs. As.",
+        role: "Estudiante Autodidacta",
+        location: "Platzi - Coursera",
         description:
-          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, desarrollo de aplicaciones con React, Node.js, y Next.js, entre otras tecnologías.",
+          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, desarrollo de aplicaciones con React, Next.js, React Native, Node.js, Django, entre otras tecnologías.",
         icon: React.createElement(LuGraduationCap),
-        date: "Diciembre 2021 - Diciembre 2022",
+        date: "Diciembre 2021 - Septiembre 2023",
       },
       {
-        title: "Proyectos Personales",
-        location: "Argentina, Bs. As.",
+        role: "Desarrollador Full-Stack",
+        location: "Trabajador Autónomo",
         description:
           "Desarrollé numerosos proyectos en diversas tecnologías, resolviendo los desafios sin depender de un equipo. Estas experiencias rápidamente me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
         icon: React.createElement(FaReact),
-        date: "Enero 2023 - Enero 2024",
+        date: "Octubre 2023 - Enero 2024",
       },
       {
-        title: "Desarrollador Full-Stack",
-        location: "Argentina, Bs. As.",
+        role: "Desarrollador Front-End",
+        location: "Bytewave - Innovation in Software",
         description:
-          "Actualmente trabajo como Desarrollador Web Full-Stack, aprovechando mis habilidades técnicas y creativas para crear experiencias digitales seguras, dinámicas y sorprendentes.",
+          "Actualmente me desempeño como desarrollador front-end, enfocado principalmente en el desarrollo de aplicaciones móviles multiplataforma, utilizando principalmente React Native, TypeScript y Expo.",
         icon: React.createElement(FaCode),
         date: "Febrero 2024 - Present",
       },

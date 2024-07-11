@@ -37,7 +37,7 @@ export default function Intro() {
               height={192}
               quality={100}
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-x1"
+              className="h-20 w-20 xl:h-24 xl:w-24 rounded-full border-[0.35rem] border-white shadow-x1"
             />
           </motion.div>
         </div>
@@ -46,18 +46,22 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col mb-10 mt-4 px-1 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-5xl"
+        className="flex flex-col mb-10 mt-4 px-1 sm:px-4 text-xl font-medium !leading-[1.5] sm:text-3xl xl:text-4xl"
       >
         <span>{t("intro.greeting")}</span>
         <h1>{t("intro.heading")}</h1>
-        <p className="text-xl font-light pt-6">{t("intro.main")}</p>
-        <p className="text-xl font-light pt-2">{t("intro.second")}</p>
+        <p className="text-base xl:text-lg font-light pt-6">
+          {t("intro.main")}
+        </p>
+        <p className="text-base xl:text-lg font-light pt-2">
+          {t("intro.second")}
+        </p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.8 }}
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col text-sm 2xl:text-lg sm:flex-row items-center justify-center gap-2 px-4 font-medium"
       >
         <Link
           href="#contact"
@@ -94,7 +98,7 @@ export default function Intro() {
             href="https://github.com/hernanhawryluk/"
             target="_blank"
             aria-label="GitHub"
-            className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
+            className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 backdrop-blur-[0.5rem]"
           >
             <BsGithub />
           </a>

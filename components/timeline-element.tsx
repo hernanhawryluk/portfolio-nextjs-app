@@ -6,7 +6,7 @@ import { useTheme } from "@/context/theme-context";
 
 type timelineElementProps = {
   item: {
-    title: string;
+    role: string;
     location: string;
     description: string;
     date: string;
@@ -28,8 +28,9 @@ export default function TimelineElement({ item }: timelineElementProps) {
         contentStyle={{
           background:
             theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
-          boxShadow: "none",
-          border: "1px solid rgba(0, 0, 0, 0.05)",
+          boxShadow: "7px 7px 10px 0 rgba(0, 0, 0, 0.07)",
+          border: "1.2px solid rgba(0, 0, 0, 0.05)",
+          borderRadius: "0.5rem",
           textAlign: "left",
           padding: "1.3rem 2rem",
           backdropFilter: "blur(0.5rem)",
@@ -47,9 +48,11 @@ export default function TimelineElement({ item }: timelineElementProps) {
           fontSize: "1.5rem",
         }}
       >
-        <h3 className="font-semibold capitalize">{item.title}</h3>
-        <p className="font-normal !mt-0">{item.location}</p>
-        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+        <h3 className="font-semibold capitalize">{item.location}</h3>
+        <p className="!font-medium !mt-[2px] text-gray-800 dark:text-white/80">
+          {item.role}
+        </p>
+        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/60">
           {item.description}
         </p>
       </VerticalTimelineElement>

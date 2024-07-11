@@ -410,26 +410,26 @@ const en = {
     title: "My Experience",
     data: [
       {
-        title: "Self-taught Student",
-        location: "Argentina, Bs. As.",
+        role: "Self-taught Student",
+        location: "Platzi - Coursera",
         description:
-          "I acquired skills in web design, object-oriented programming, version control, application development with React, Node.js, and Next.js, among other technologies.",
+          "I acquired skills in web design, object-oriented programming, version control, application development with React, Next.js, React Native, Node.js, Django, among other technologies.",
         icon: React.createElement(LuGraduationCap),
-        date: "December 2021 - December 2022",
+        date: "December 2021 - September 2023",
       },
       {
-        title: "Personal Projects",
-        location: "Argentina, Bs. As.",
+        role: "Full-Stack Developer",
+        location: "Freelancer",
         description:
           "I developed numerous projects in various technologies, efficiently solving challenges without depending on a team. These experiences provided me with extensive expertise in both front-end and back-end.",
         icon: React.createElement(FaReact),
-        date: "January 2023 - January 2024",
+        date: "October 2023 - January 2024",
       },
       {
-        title: "Full-Stack Developer",
-        location: "Argentina, Bs. As.",
+        role: "Front-end Developer",
+        location: "Bytewave - Innovation in Software",
         description:
-          "Currently, I work as a Full-Stack Web Developer, leveraging my technical and creative skills to create secure, dynamic, and amazing digital experiences.",
+          "Currently, I work as a front-end developer, primarily focused on developing cross-platform mobile applications using React Native, TypeScript, and Expo.",
         icon: React.createElement(FaCode),
         date: "February 2024 - Present",
       },
