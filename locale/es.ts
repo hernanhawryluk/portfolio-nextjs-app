@@ -14,6 +14,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiJirasoftware,
+  SiKotlin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -22,6 +23,7 @@ import {
   SiPython,
   SiReact,
   SiSqlite,
+  SiSwift,
   SiTailwindcss,
   SiTypescript,
   SiUnrealengine,
@@ -79,40 +81,32 @@ const es = {
     heading: "Desarrollador Full-Stack",
     main: "Desarrollo integral de aplicaciones web y móbiles para iOS y Android.",
     second:
-      "Mi stack principal incluye React, Node.js, Next.js y Django entre otras tecnologías clave.",
+      "Mi stack principal incluye React Native, Swift, Next.js y Django entre otras tecnologías clave.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
   about: {
     title: "Sobre mi",
     first:
-      "Soy un Desarrollador Full-Stack con experiencia en crear aplicaciones web y multiplataforma para iOS y Android de manera integral, desde su concepción inicial hasta su despliegue. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones.",
+      "Soy un Desarrollador con sólida experiencia en desarrollo de aplicaciones móviles nativas y multiplataforma, así como habilidades en desarrollo web, back-end y bases de datos. Esto me permite colaborar en el diseño integral de aplicaciones web y móviles, abarcando desde su concepción inicial hasta su despliegue.",
     second:
-      "Poseo un dominio nativo del español y un nivel avanzado de inglés que incluye habilidades de lectura, escucha y conversación, permitiéndome una comunicación fluida en ambos idiomas. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado y compartido en GitHub.",
+      "Poseo un dominio nativo del español y un nivel avanzado de inglés. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado para clientes o que he compartido en GitHub.",
     data: [
       {
         icon: React.createElement(SiReact),
         color: "#61dafb",
       },
       {
-        icon: React.createElement(SiNodedotjs),
-        color: "#8cc84b",
+        icon: React.createElement(SiSwift),
+        color: "#3178c6",
       },
       {
-        icon: React.createElement(SiExpress),
-        color: "#000000",
-      },
-      {
-        icon: React.createElement(SiMongodb),
-        color: "#4db33d",
+        icon: React.createElement(SiKotlin),
+        color: "#7F52B0",
       },
       {
         icon: React.createElement(SiNextdotjs),
         color: "#000000",
-      },
-      {
-        icon: React.createElement(SiJavascript),
-        color: "#f0db4f",
       },
       {
         icon: React.createElement(SiTypescript),
@@ -125,10 +119,6 @@ const es = {
       {
         icon: React.createElement(SiDjango),
         color: "#44b78b",
-      },
-      {
-        icon: React.createElement(SiGit),
-        color: "#f1502f",
       },
     ],
   },
@@ -306,6 +296,21 @@ const es = {
         color: "#000000",
       },
       {
+        skill: "Swift",
+        icon: React.createElement(SiSwift),
+        color: "#F05138",
+      },
+      {
+        skill: "SwiftUI",
+        icon: React.createElement(SiSwift),
+        color: "#3178c6",
+      },
+      {
+        skill: "Kotlin",
+        icon: React.createElement(SiKotlin),
+        color: "#7F52B0",
+      },
+      {
         skill: "React Native",
         icon: React.createElement(SiReact),
         color: "#61dafb",
@@ -433,7 +438,7 @@ const es = {
         date: "Octubre 2023 - Enero 2024",
       },
       {
-        role: "Desarrollador Front-End",
+        role: "Desarrollador Mobile",
         location: "Bytewave - Innovation in Software",
         description:
           "Actualmente me desempeño como desarrollador front-end, enfocado principalmente en el desarrollo de aplicaciones móviles multiplataforma, utilizando principalmente React Native, TypeScript y Expo.",

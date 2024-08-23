@@ -14,6 +14,7 @@ import {
   SiHtml5,
   SiJavascript,
   SiJirasoftware,
+  SiKotlin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -22,6 +23,7 @@ import {
   SiPython,
   SiReact,
   SiSqlite,
+  SiSwift,
   SiTailwindcss,
   SiTypescript,
   SiUnrealengine,
@@ -79,40 +81,32 @@ const en = {
     heading: "Full-Stack Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
-      "My main stack includes React, Node.js, Next.js, and Django among other key technologies.",
+      "My main stack includes React Native, Swift, Next.js, and Django among other key technologies.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
   about: {
     title: "About me",
     first:
-      "I am a Full-Stack Developer skilled in creating web and cross-platform applications for iOS and Android, from the initial conception to deployment. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools like Git.",
+      "I am a Developer with solid experience in native and cross-platform mobile application development, as well as skills in web development, back-end, and databases. This allows me to collaborate in the comprehensive design of web and mobile applications, from their initial conception to deployment.",
     second:
-      "I am a native Spanish speaker with advanced proficiency in English, including reading, listening, and conversation skills, enabling me to communicate fluently in both languages. My dedication and experience are evident in polished and high-quality projects that I have developed and shared on GitHub.",
+      "I am a native Spanish speaker with an advanced level of English. I am familiar with Agile and Scrum methodologies, as well as the use of version control tools. My dedication and experience are reflected in the polished, high-quality projects I have developed for clients or shared on GitHub.",
     data: [
       {
         icon: React.createElement(SiReact),
         color: "#61dafb",
       },
       {
-        icon: React.createElement(SiNodedotjs),
-        color: "#8cc84b",
+        icon: React.createElement(SiSwift),
+        color: "#3178c6",
       },
       {
-        icon: React.createElement(SiExpress),
-        color: "#000000",
-      },
-      {
-        icon: React.createElement(SiMongodb),
-        color: "#4db33d",
+        icon: React.createElement(SiKotlin),
+        color: "#7F52B0",
       },
       {
         icon: React.createElement(SiNextdotjs),
         color: "#000000",
-      },
-      {
-        icon: React.createElement(SiJavascript),
-        color: "#f0db4f",
       },
       {
         icon: React.createElement(SiTypescript),
@@ -125,10 +119,6 @@ const en = {
       {
         icon: React.createElement(SiDjango),
         color: "#44b78b",
-      },
-      {
-        icon: React.createElement(SiGit),
-        color: "#f1502f",
       },
     ],
   },
@@ -299,6 +289,21 @@ const en = {
         color: "#000000",
       },
       {
+        skill: "Swift",
+        icon: React.createElement(SiSwift),
+        color: "#F05138",
+      },
+      {
+        skill: "SwiftUI",
+        icon: React.createElement(SiSwift),
+        color: "#3178c6",
+      },
+      {
+        skill: "Kotlin",
+        icon: React.createElement(SiKotlin),
+        color: "#7F52B0",
+      },
+      {
         skill: "React Native",
         icon: React.createElement(SiReact),
         color: "#61dafb",
@@ -426,7 +431,7 @@ const en = {
         date: "October 2023 - January 2024",
       },
       {
-        role: "Front-end Developer",
+        role: "Mobile Developer",
         location: "Bytewave - Innovation in Software",
         description:
           "Currently, I work as a front-end developer, primarily focused on developing cross-platform mobile applications using React Native, TypeScript, and Expo.",
