@@ -81,7 +81,7 @@ const en = {
     heading: "Full-Stack Developer",
     main: "I develop high-quality web and cross-platform applications for iOS and Android.",
     second:
-      "My main stack includes React Native, Swift, Next.js, and Django among other key technologies.",
+      "My main stack includes React Native, Swift, Kotlin, Next.js, and Django among other key technologies.",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
@@ -434,7 +434,7 @@ const en = {
         role: "Mobile Developer",
         location: "Bytewave - Innovation in Software",
         description:
-          "Currently, I work as a front-end developer, primarily focused on developing cross-platform mobile applications using React Native, TypeScript, and Expo.",
+          "Currently, I work as a front-end developer, primarily focused on developing native and cross-platform mobile applications (Swift, Kotlin, React Native).",
         icon: React.createElement(FaCode),
         date: "February 2024 - Present",
       },

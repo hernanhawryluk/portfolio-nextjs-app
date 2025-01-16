@@ -81,7 +81,7 @@ const es = {
     heading: "Desarrollador Full-Stack",
     main: "Desarrollo integral de aplicaciones web y móbiles para iOS y Android.",
     second:
-      "Mi stack principal incluye React Native, Swift, Next.js y Django entre otras tecnologías clave.",
+      "Mi stack principal incluye React Native, Swift, Kotlin, Next.js y Django entre otras tecnologías clave.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
@@ -441,7 +441,7 @@ const es = {
         role: "Desarrollador Mobile",
         location: "Bytewave - Innovation in Software",
         description:
-          "Actualmente me desempeño como desarrollador front-end, enfocado principalmente en el desarrollo de aplicaciones móviles multiplataforma, utilizando principalmente React Native, TypeScript y Expo.",
+          "Actualmente me desempeño como desarrollador front-end, enfocado principalmente en el desarrollo de aplicaciones móviles nativas y multiplataforma (Swift, Kotlin, React Native).",
         icon: React.createElement(FaCode),
         date: "Febrero 2024 - Present",
       },
