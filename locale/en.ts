@@ -479,7 +479,7 @@ const en = {
         description:
           "Throughout my career, I have developed multiple commercial projects using various technologies, including interactive renders and websites. Additionally, as a personal project, I created a fully functional Instagram clone using React Native. These experiences quickly provided me with a comprehensive understanding of the entire process of developing and publishing real-world applications.",
         icon: React.createElement(FaReact),
-        date: "October 2023 - January 2024",
+        date: "October 2022 - January 2024",
       },
       {
         role: "Mobile Developer",

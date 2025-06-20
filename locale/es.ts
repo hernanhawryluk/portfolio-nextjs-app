@@ -486,7 +486,7 @@ const es = {
         description:
           "A lo largo de mi carrera, desarrollé múltiples proyectos comerciales con distintas tecnologías, incluyendo renders interactivos y sitios web. Además, como proyecto personal, creé una aplicación funcional que replica Instagram utilizando React Native. Estas experiencias me permitieron obtener rápidamente una visión integral de todo el proceso de desarrollo y publicación de aplicaciones reales.",
         icon: React.createElement(FaReact),
-        date: "Octubre 2023 - Marzo 2024",
+        date: "Octubre 2022 - Marzo 2024",
       },
       {
         role: "Desarrollador Mobile",
