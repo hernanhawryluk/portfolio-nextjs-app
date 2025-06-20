@@ -84,7 +84,7 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
         </a>
 
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-4">
           <a
             href="https://www.linkedin.com/in/hernan-hawryluk/"
             target="_blank"
