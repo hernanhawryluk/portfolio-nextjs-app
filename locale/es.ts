@@ -1,6 +1,8 @@
 import React from "react";
-import { FaCode, FaReact } from "react-icons/fa";
+import { FaCode, FaJava, FaReact } from "react-icons/fa";
 import {
+  SiAmazonaws,
+  SiAppstore,
   SiAsana,
   SiBootstrap,
   SiDjango,
@@ -11,20 +13,25 @@ import {
   SiFramer,
   SiGit,
   SiGithub,
+  SiGoogleplay,
   SiHtml5,
   SiJavascript,
+  SiJetpackcompose,
   SiJirasoftware,
   SiKotlin,
   SiMongodb,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
   SiPython,
   SiReact,
+  SiSpring,
   SiSqlite,
   SiSwift,
   SiTailwindcss,
+  SiTrello,
   SiTypescript,
   SiUnrealengine,
 } from "react-icons/si";
@@ -78,19 +85,19 @@ const es = {
   ],
   intro: {
     greeting: "Hernán Hawryluk",
-    heading: "Desarrollador Full-Stack",
-    main: "Desarrollo integral de aplicaciones web y móbiles para iOS y Android.",
+    heading: "Full-Stack Developer especializado en Mobile",
+    main: "Desarrollo aplicaciones móviles nativas y multiplataforma, enfocadas en la calidad y la experiencia del usuario.",
     second:
-      "Mi stack principal incluye React Native, Swift, Kotlin, Next.js y Django entre otras tecnologías clave.",
+      "Especialista en React Native, Swift y Kotlin, con experiencia sólida en React, Next.js, Node.js, Django y Spring Boot para el desarrollo web y backend.",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
   about: {
-    title: "Sobre mi",
+    title: "Sobre mí",
     first:
-      "Soy un Desarrollador con sólida experiencia en desarrollo de aplicaciones móviles nativas y multiplataforma, así como habilidades en desarrollo web, back-end y bases de datos. Esto me permite colaborar en el diseño integral de aplicaciones web y móviles, abarcando desde su concepción inicial hasta su despliegue.",
+      "Tengo sólida experiencia en React Native, Swift con SwiftUI y Kotlin con Jetpack Compose, desarrollando aplicaciones multiplataforma y nativas para iOS y Android. Como desarrollador full-stack, intervengo activamente en todas las capas: mobile, web y backend. Me especializo en la gestión integral de proyectos, desde la interacción con clientes, la planificación y la implementación, hasta la publicación en tiendas (App Store y Google Play) y el despliegue de aplicaciones en AWS.",
     second:
-      "Poseo un dominio nativo del español y un nivel avanzado de inglés. Estoy familiarizado con las metodologías Agile y Scrum, así como el uso de herramientas de control de versiones. Mi dedicación y experiencia se manifiesta en proyectos pulidos y de alta calidad que he desarrollado para clientes o que he compartido en GitHub.",
+      "Cuento con experiencia trabajando y liderando equipos de desarrollo, aportando soluciones efectivas, promoviendo la colaboración y cumpliendo objetivos de manera eficiente gracias a mi organización y aplicación de metodologías Agile y Scrum. Poseo un nivel avanzado de comprensión y nivel intermedio de conversación en inglés. Todo esto me permite garantizar procesos de desarrollo organizados, eficientes y de alta calidad.",
     data: [
       {
         icon: React.createElement(SiReact),
@@ -119,6 +126,10 @@ const es = {
       {
         icon: React.createElement(SiDjango),
         color: "#44b78b",
+      },
+      {
+        icon: React.createElement(SiSpring),
+        color: "#6db33f",
       },
     ],
   },
@@ -311,6 +322,11 @@ const es = {
         color: "#7F52B0",
       },
       {
+        skill: "Jetpack Compose",
+        icon: React.createElement(SiJetpackcompose),
+        color: "#7F52B0",
+      },
+      {
         skill: "React Native",
         icon: React.createElement(SiReact),
         color: "#61dafb",
@@ -336,6 +352,16 @@ const es = {
         color: "#44b78b",
       },
       {
+        skill: "Java",
+        icon: React.createElement(FaJava),
+        color: "#f89820",
+      },
+      {
+        skill: "Spring Boot",
+        icon: React.createElement(SiSpring),
+        color: "#6db33f",
+      },
+      {
         skill: "MongoDB",
         icon: React.createElement(SiMongodb),
         color: "#4db33d",
@@ -348,6 +374,11 @@ const es = {
       {
         skill: "SQLite",
         icon: React.createElement(SiSqlite),
+        color: "#3498db",
+      },
+      {
+        skill: "MySQL",
+        icon: React.createElement(SiMysql),
         color: "#3498db",
       },
       {
@@ -371,6 +402,21 @@ const es = {
         color: "#000000",
       },
       {
+        skill: "Google Play",
+        icon: React.createElement(SiGoogleplay),
+        color: "#4285F4",
+      },
+      {
+        skill: "App Store",
+        icon: React.createElement(SiAppstore),
+        color: "#000000",
+      },
+      {
+        skill: "AWS",
+        icon: React.createElement(SiAmazonaws),
+        color: "#FF9900",
+      },
+      {
         skill: "Figma",
         icon: React.createElement(SiFigma),
         color: "#f24e1e",
@@ -384,6 +430,11 @@ const es = {
         skill: "Jira",
         icon: React.createElement(SiJirasoftware),
         color: "#0052cc",
+      },
+      {
+        skill: "Trello",
+        icon: React.createElement(SiTrello),
+        color: "#0079bf",
       },
       {
         skill: "Unreal Engine",
@@ -425,23 +476,23 @@ const es = {
         role: "Estudiante Autodidacta",
         location: "Platzi - Coursera",
         description:
-          "Adquirí habiliades en diseño web, programación orientada a objetos, control de versiones, desarrollo de aplicaciones con React, Next.js, React Native, Node.js, Django, entre otras tecnologías.",
+          "Comencé mi formación en la plataforma Platzi, donde aprendí desarrollo web y Python como lenguaje de programación orientado a objetos. Desde el inicio descubrí que leer y escribir código me resultaba natural, por lo que enfoqué mi aprendizaje en la creación de productos reales. Más adelante, profundicé mis conocimientos en Coursera, donde completé especializaciones en front-end, back-end y desarrollo mobile, a través de cursos dictados íntegramente en inglés.",
         icon: React.createElement(LuGraduationCap),
-        date: "Diciembre 2021 - Septiembre 2023",
+        date: "Diciembre 2021 - Febrero 2024",
       },
       {
         role: "Desarrollador Full-Stack",
         location: "Trabajador Autónomo",
         description:
-          "Desarrollé numerosos proyectos en diversas tecnologías, resolviendo los desafios sin depender de un equipo. Estas experiencias rápidamente me proporcionaron un amplio caudal de experiencia tanto del front-end como del back-end.",
+          "A lo largo de mi carrera, desarrollé múltiples proyectos comerciales con distintas tecnologías, incluyendo renders interactivos y sitios web. Además, como proyecto personal, creé una aplicación funcional que replica Instagram utilizando React Native. Estas experiencias me permitieron obtener rápidamente una visión integral de todo el proceso de desarrollo y publicación de aplicaciones reales.",
         icon: React.createElement(FaReact),
-        date: "Octubre 2023 - Enero 2024",
+        date: "Octubre 2023 - Marzo 2024",
       },
       {
         role: "Desarrollador Mobile",
         location: "Bytewave - Innovation in Software",
         description:
-          "Actualmente me desempeño como desarrollador front-end, enfocado principalmente en el desarrollo de aplicaciones móviles nativas y multiplataforma (Swift, Kotlin, React Native).",
+          "Actualmente trabajo como desarrollador front-end, especializado en aplicaciones móviles nativas y multiplataforma con Swift, Kotlin y React Native. Además, colaboro activamente en tareas de back-end, gestión de bases de datos y despliegues en servidores AWS, lo que me permite participar en todo el ciclo de vida del producto.",
         icon: React.createElement(FaCode),
         date: "Febrero 2024 - Present",
       },

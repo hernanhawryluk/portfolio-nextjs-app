@@ -23,12 +23,9 @@ export default function Header() {
   return (
     <header className="z-[999] relative md:flex md:justify-center">
       <motion.div
-        className={clsx(
-          "fixed top-0 h-[4.5rem] sm:h-[3.3rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] md:top-6 md:w-[40rem] lg:h-[3.25rem] md:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-70",
-          {
-            "lg:w-[48.5rem]": language === "es",
-          }
-        )}
+        className={`fixed top-0 h-[4.5rem] sm:h-[3.3rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] md:top-6 lg:h-[3.25rem] md:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-70 ${
+          language === "en" ? "md:w-[43.3rem]" : "md:w-[47.5rem]"
+        }`}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}

@@ -92,8 +92,8 @@ export default function Contact() {
           maxLength={5000}
         />
 
-        <div className="flex flex-wrap gap-3 justify-center mt-1">
-          <div className="flex gap-3 flex-wrap justify-center">
+        <div className="flex flex-wrap gap-4 justify-center mt-1">
+          <div className="flex gap-4 flex-wrap justify-center">
             <SubmitButton />
             <ClipboardButton />
           </div>

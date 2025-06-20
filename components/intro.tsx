@@ -61,7 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.8 }}
-        className="flex flex-col text-sm 2xl:text-lg sm:flex-row items-center justify-center gap-2 px-4 font-medium"
+        className="flex flex-col text-sm 2xl:text-lg sm:flex-row items-center justify-center gap-4 px-4 font-medium"
       >
         <Link
           href="#contact"
