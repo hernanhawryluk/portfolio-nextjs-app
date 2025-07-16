@@ -6,6 +6,7 @@ import {
   SiAsana,
   SiBootstrap,
   SiDjango,
+  SiDocker,
   SiExpo,
   SiExpress,
   SiFigma,
@@ -410,6 +411,11 @@ const es = {
         skill: "App Store",
         icon: React.createElement(SiAppstore),
         color: "#000000",
+      },
+      {
+        skill: "Docker",
+        icon: React.createElement(SiDocker),
+        color: "#2496ed",
       },
       {
         skill: "AWS",
