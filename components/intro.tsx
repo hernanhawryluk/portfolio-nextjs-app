@@ -50,7 +50,7 @@ export default function Intro() {
       >
         <span>{t("intro.greeting")}</span>
         <h1>{t("intro.heading")}</h1>
-        <p className="text-base xl:text-lg font-light pt-6">
+        <p className="text-base xl:text-lg font-light pt-6 px-6">
           {t("intro.main")}
         </p>
         <p className="text-base xl:text-lg font-light pt-2">
