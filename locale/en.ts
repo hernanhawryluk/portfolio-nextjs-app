@@ -160,7 +160,7 @@ const en = {
       {
         title: "Smart Store - E-Commerce",
         description:
-          "E-commerce platform with a responsive admin panel, user management, advanced search and filtering, intuitive shopping cart, and secure Stripe payment integration.",
+          "Complete e-commerce platform with product management, shopping cart, advanced search, secure payments via Stripe, and an admin panel to manage products and orders.",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         imageUrl: ecommerceAppImg,
         repositoryUrl:

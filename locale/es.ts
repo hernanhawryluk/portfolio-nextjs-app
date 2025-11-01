@@ -159,7 +159,7 @@ const es = {
       {
         title: "Smart Store - Tienda",
         description:
-          "Plataforma de e-commerce con panel de administración responsivo, gestión de usuarios, búsqueda y filtrado avanzados, carrito de compras intuitivo e integración de pagos segura mediante Stripe.",
+          "Plataforma de e-commerce completa con gestión de productos, carrito de compras, búsqueda avanzada, pagos seguros mediante Stripe y panel de administración para gestionar productos y pedidos.",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         imageUrl: ecommerceAppImg,
         repositoryUrl:
