@@ -85,36 +85,20 @@ const en = {
   ],
   intro: {
     greeting: "Hernan Hawryluk",
-    heading: "Full-Stack Mobile Developer",
-    main: "Native and cross-platform development focused on quality, performance, and user experience.",
+    heading: "Full-Stack Developer · Backend Specialist",
+    main: "Specialized in Java and Spring Boot, with experience designing and implementing REST APIs, microservices, and distributed systems, as well as deploying applications in cloud environments.",
     second:
-      "Experience with React Native, Swift, and Kotlin. I build back-ends with Spring Boot and other technologies, deploying to production environments such as AWS, App Store, and Google Play.",
+      "I focus on building scalable, high-performance backend systems while applying best practices in architecture, security, and relational database management (SQL).",
     contactButton: "Contact me here",
     downloadCV: "Download CV",
   },
   about: {
     title: "About Me",
     first:
-      "As a full-stack developer, I actively participate in every layer of a project —mobile, web, and back-end— with a strong focus on quality, performance, security, and continuous integration (CI/CD). I specialize in end-to-end project management, from requirements definition and client planning to deployment on AWS and publishing on the App Store and Google Play.",
+      "I apply security best practices (OWASP) when designing and developing APIs and backend services. I have implemented secure authentication (JWT / OAuth2), access control, sensitive data protection, and rate limiting. I also optimize performance using Redis caching, real-time communication with WebSockets, and automated testing with JUnit.",
     second:
-      "I've worked with and led development teams, driving effective solutions, promoting collaboration, and ensuring goals are met through Agile and Scrum methodologies. I possess an advanced level of technical comprehension and intermediate spoken English, allowing me to communicate effectively in international technical environments. This ensures organized, efficient, and high-quality development processes.",
+      "I work with Cloud infrastructure and DevOps practices, mainly on AWS, using Docker and configuring CI/CD pipelines to automate deployments and manage production environments. I also have experience in web development with React, Next.js, and Tailwind, as well as mobile development with React Native, Swift / SwiftUI, and Kotlin / Jetpack Compose, including publishing and maintaining apps on the App Store and Google Play.",
     data: [
-      {
-        icon: React.createElement(SiTypescript),
-        color: "#3178c6",
-      },
-      {
-        icon: React.createElement(SiReact),
-        color: "#61dafb",
-      },
-      {
-        icon: React.createElement(SiSwift),
-        color: "#F05138",
-      },
-      {
-        icon: React.createElement(SiKotlin),
-        color: "#7F52B0",
-      },
       {
         skill: "Java",
         icon: React.createElement(FaJava),
@@ -125,12 +109,27 @@ const en = {
         color: "#6db33f",
       },
       {
-        icon: React.createElement(SiPython),
-        color: "#3572A5",
+        icon: React.createElement(SiTypescript),
+        color: "#3178c6",
       },
       {
-        icon: React.createElement(SiDjango),
-        color: "#44b78b",
+        icon: React.createElement(SiReact),
+        color: "#61dafb",
+      },
+      {
+        skill: "MySQL",
+        icon: React.createElement(SiMysql),
+        color: "#3498db",
+      },
+      {
+        skill: "AWS",
+        icon: React.createElement(SiAmazonaws),
+        color: "#FF9900",
+      },
+      {
+        skill: "Bash",
+        icon: React.createElement(SiGnubash),
+        color: "#000000",
       },
     ],
   },
@@ -139,13 +138,11 @@ const en = {
     data: [
       {
         title: "Metropistas - Route Assistance",
-        description:
-          "Road assistance app for highways in Puerto Rico. Integrates geolocation, coverage validation, and push notifications.",
-        tags: ["SwiftUI", "Kotlin", "Spring Boot"],
+        description: "Road assistance app for highways in Puerto Rico. Integrates geolocation, coverage validation, and push notifications.",
+        tags: ["Spring Boot", "SwiftUI", "Kotlin"],
         imageUrl: metropistasAppImg,
         demoType: "Deploy",
-        demoUrl:
-          "https://apps.apple.com/ar/app/metropistas/id6742114670?l=en-GBMetropistas",
+        demoUrl: "https://apps.apple.com/ar/app/metropistas/id6742114670?l=en-GBMetropistas",
       },
       {
         title: "OUT - Bars & Experiences",
@@ -154,8 +151,7 @@ const en = {
         tags: ["React Native", "TypeScript", "Expo"],
         imageUrl: outAppImg,
         demoType: "Deploy",
-        demoUrl:
-          "https://apps.apple.com/ar/app/out-bares-experiencias/id6670214771",
+        demoUrl: "https://apps.apple.com/ar/app/out-bares-experiencias/id6670214771",
       },
       {
         title: "Smart Store - E-Commerce",
@@ -163,8 +159,7 @@ const en = {
           "Complete e-commerce platform with product management, shopping cart, advanced search, secure payments via Stripe, and an admin panel to manage products and orders.",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         imageUrl: ecommerceAppImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/nextjs-commerce-app/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/nextjs-commerce-app/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
       },
@@ -174,8 +169,7 @@ const en = {
           "Fully functional Instagram replica that reproduces the core features and user experience of the original platform, offering a modern, smooth, and fully operational interface.",
         tags: ["React Native", "Expo", "Firebase"],
         imageUrl: instagramClonImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/instagram-clone-app/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/llQH79EdmfU",
       },
@@ -185,8 +179,7 @@ const en = {
           "Promotional website for high-quality architectural renders, featuring animations, custom design, and unique illustrations, optimized to attract clients and deliver an exceptional user experience.",
         tags: ["HTML5", "CSS", "JavaScript"],
         imageUrl: renderWebImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/web-renders-showcase/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
       },
@@ -196,8 +189,7 @@ const en = {
           "Interactive 3D experience that allows users to explore and customize an apartment, adjusting finishes and lighting for an immersive and detailed visualization.",
         tags: ["Unreal Engine 5", "SketchUp"],
         imageUrl: interactiveRenderImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/ue5-interactive-render/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/ue5-interactive-render/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/7X-eYt_Ll30",
       },
@@ -433,28 +425,28 @@ const en = {
     title: "My Experience",
     data: [
       {
-        role: "Self-Taught Student",
-        location: "Platzi - Coursera",
+        role: "Full-Stack Developer",
+        location: "Bytewave - Innovation in Software",
         description:
-          "Completed specializations in front-end, back-end, and mobile development through advanced international courses on Platzi and Coursera, strengthening my skills by creating real-world products and commercial projects.",
-        icon: React.createElement(LuGraduationCap),
-        date: "December 2021 - February 2024",
+          "I develop and maintain backend services and REST APIs in Java with Spring Boot for production environments used by applications with thousands of active users. I collaborate on web interfaces with React and mobile applications with React Native. I manage AWS infrastructure, CI/CD pipelines, GitHub repositories, and the deployment of releases to the App Store and Google Play. I also collaborate with clients on defining technical requirements and planning features.",
+        icon: React.createElement(FaCode),
+        date: "February 2024 - Present",
       },
       {
         role: "Full-Stack Developer",
         location: "Freelance",
         description:
-          "Designed and developed complete commercial projects, including mobile apps and web platforms with API integration, authentication, and admin dashboards. Some projects reached over 10,000 active users and received excellent client feedback.",
+          "Designed and developed complete commercial projects including backend services, web and mobile applications, as well as AWS infrastructure configuration and CI/CD pipelines. I also managed publishing and maintaining apps on the App Store and Google Play. Some of these projects exceeded 10,000 active users and received excellent client feedback.",
         icon: React.createElement(FaReact),
         date: "October 2022 - March 2024",
       },
       {
-        role: "Mobile Developer",
-        location: "Bytewave - Innovation in Software",
+        role: "Self-Taught Student",
+        location: "Platzi - Coursera",
         description:
-          "Responsible for developing native and cross-platform applications (iOS, Android, React Native). Collaborate in architecture design, back-end development, and AWS deployment, participating in all stages of the product lifecycle.",
-        icon: React.createElement(FaCode),
-        date: "February 2024 - Present",
+          "Completed front-end, back-end, and mobile development specializations through advanced courses on international platforms such as Platzi and Coursera, strengthening my skills through real products and commercial projects.",
+        icon: React.createElement(LuGraduationCap),
+        date: "December 2021 - February 2024",
       },
     ],
   },
@@ -473,8 +465,7 @@ const en = {
   footer: {
     text: "All rights reserved.",
     subtitle: "About this website",
-    about:
-      "built with React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.",
+    about: "built with React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.",
   },
   buttons: {
     theme: "Change theme",

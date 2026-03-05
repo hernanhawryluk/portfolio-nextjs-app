@@ -84,36 +84,21 @@ const es = {
   ],
   intro: {
     greeting: "Hernán Hawryluk",
-    heading: "Full-Stack Mobile Developer",
-    main: "Desarrollo nativo y multiplataforma enfocado en la calidad, el rendimiento y la experiencia del usuario.",
+    heading: "Full-Stack Developer · Backend Specialist",
+    main: "Especializado en Java y Spring Boot, con experiencia en el diseño e implementación de REST APIs, microservicios y sistemas distribuidos, así como en el despliegue de aplicaciones en entornos Cloud.",
     second:
-      "Experiencia en React Native, Swift y Kotlin. Desarrollo back-ends con Spring Boot y otras tecnologías, con despliegues en entornos productivos como AWS, App Store y Google Play.",
+      "Me enfoco en construir sistemas backend escalables y de alto rendimiento, aplicando buenas prácticas de arquitectura, seguridad y gestión de bases de datos relacionales (SQL).",
     contactButton: "Contactame aquí",
     downloadCV: "Descargar CV",
   },
   about: {
     title: "Sobre mí",
     first:
-      "Como desarrollador full-stack, participo activamente en todas las capas del proyecto -mobile, web y back-end-, con especial enfoque en la calidad, el rendimiento, la seguridad y la integración continua (CI/CD). Me especializo en la gestión integral de proyectos, desde la definición de requisitos y planificación con el cliente, hasta la publicación en App Store y Google Play, y el despliegue en AWS.",
+      "Aplico buenas prácticas de seguridad (OWASP) en el diseño y desarrollo de APIs y servicios backend. He implementado autenticación segura (JWT / OAuth2), control de accesos, protección de datos y rate limiting. También optimizo el rendimiento mediante caching con Redis, comunicación en tiempo real con WebSockets y testing automatizado con JUnit.",
+
     second:
-      "He trabajado y liderado equipos de desarrollo, impulsando soluciones efectivas, promoviendo la colaboración y asegurando el cumplimiento de objetivos mediante la aplicación de metodologías Agile y Scrum. Poseo un nivel avanzado de comprensión y un nivel intermedio de conversación en inglés, lo que me permite comunicarme eficazmente en entornos técnicos internacionales. Todo esto garantiza procesos de desarrollo organizados, eficientes y de alta calidad.",
+      "Trabajo con infraestructura Cloud y prácticas DevOps, principalmente en AWS, utilizando Docker y configurando pipelines de integración continua (CI/CD) para automatizar despliegues y gestionar entornos productivos. Complemento mi perfil con experiencia en desarrollo web con React, Next.js y Tailwind, y en desarrollo mobile con React Native, Swift / SwiftUI y Kotlin / Jetpack Compose, incluyendo su publicación y mantenimiento en App Store y Google Play.",
     data: [
-      {
-        icon: React.createElement(SiTypescript),
-        color: "#3178c6",
-      },
-      {
-        icon: React.createElement(SiReact),
-        color: "#61dafb",
-      },
-      {
-        icon: React.createElement(SiSwift),
-        color: "#F05138",
-      },
-      {
-        icon: React.createElement(SiKotlin),
-        color: "#7F52B0",
-      },
       {
         skill: "Java",
         icon: React.createElement(FaJava),
@@ -124,12 +109,27 @@ const es = {
         color: "#6db33f",
       },
       {
-        icon: React.createElement(SiPython),
-        color: "#3572A5",
+        icon: React.createElement(SiTypescript),
+        color: "#3178c6",
       },
       {
-        icon: React.createElement(SiDjango),
-        color: "#44b78b",
+        icon: React.createElement(SiReact),
+        color: "#61dafb",
+      },
+      {
+        skill: "MySQL",
+        icon: React.createElement(SiMysql),
+        color: "#3498db",
+      },
+      {
+        skill: "AWS",
+        icon: React.createElement(SiAmazonaws),
+        color: "#FF9900",
+      },
+      {
+        skill: "Bash",
+        icon: React.createElement(SiGnubash),
+        color: "#000000",
       },
     ],
   },
@@ -140,11 +140,10 @@ const es = {
         title: "Metropistas - Route Assistance",
         description:
           "Aplicación orientada a brindar asistencia vial en autopistas de Puerto Rico. Integra geolocalización, validación de cobertura, y notificaciones push.",
-        tags: ["SwiftUI", "Kotlin", "Spring Boot"],
+        tags: ["Spring Boot", "SwiftUI", "Kotlin"],
         imageUrl: metropistasAppImg,
         demoType: "Deploy",
-        demoUrl:
-          "https://apps.apple.com/ar/app/metropistas/id6742114670?l=en-GBMetropistas",
+        demoUrl: "https://apps.apple.com/ar/app/metropistas/id6742114670?l=en-GBMetropistas",
       },
       {
         title: "OUT - Bares & Experiencias",
@@ -153,8 +152,7 @@ const es = {
         tags: ["React Native", "TypeScript", "Expo"],
         imageUrl: outAppImg,
         demoType: "Deploy",
-        demoUrl:
-          "https://apps.apple.com/ar/app/out-bares-experiencias/id6670214771",
+        demoUrl: "https://apps.apple.com/ar/app/out-bares-experiencias/id6670214771",
       },
       {
         title: "Smart Store - Tienda",
@@ -162,8 +160,7 @@ const es = {
           "Plataforma de e-commerce completa con gestión de productos, carrito de compras, búsqueda avanzada, pagos seguros mediante Stripe y panel de administración para gestionar productos y pedidos.",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         imageUrl: ecommerceAppImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/nextjs-commerce-app/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/nextjs-commerce-app/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://nextjs-commerce-app-pi.vercel.app",
       },
@@ -173,8 +170,7 @@ const es = {
           "Réplica funcional de Instagram que reproduce de forma integral la experiencia y funcionalidades principales de la plataforma original, ofreciendo una interfaz moderna, fluida y completamente operativa.",
         tags: ["React Native", "Expo", "Firebase"],
         imageUrl: instagramClonImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/instagram-clone-app/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/instagram-clone-app/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/llQH79EdmfU",
       },
@@ -184,8 +180,7 @@ const es = {
           "Web promocional de renders arquitectónicos de alta calidad, con animaciones, diseño personalizado e ilustraciones únicas, optimizada para atraer clientes y ofrecer una experiencia de usuario excepcional.",
         tags: ["HTML5", "CSS", "JavaScript"],
         imageUrl: renderWebImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/web-renders-showcase/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/web-renders-showcase/blob/main/README.es.md",
         demoType: "Deploy",
         demoUrl: "https://hernanhawryluk.github.io/web-renders-showcase/",
       },
@@ -195,8 +190,7 @@ const es = {
           "Experiencia interactiva tipo videojuego que permite explorar y personalizar el departamento, ajustar acabados e iluminación, ofreciendo una visualización inmersiva y detallada del espacio.",
         tags: ["Unreal Engine 5", "SketchUp"],
         imageUrl: interactiveRenderImg,
-        repositoryUrl:
-          "https://github.com/hernanhawryluk/ue5-interactive-render/blob/main/README.es.md",
+        repositoryUrl: "https://github.com/hernanhawryluk/ue5-interactive-render/blob/main/README.es.md",
         demoType: "Video",
         demoUrl: "https://youtu.be/7X-eYt_Ll30",
       },
@@ -432,28 +426,28 @@ const es = {
     title: "Mi Experiencia",
     data: [
       {
+        role: "Desarrollador Full-Stack",
+        location: "Bytewave - Innovation in Software",
+        description:
+          "Desarrollo y mantengo servicios backend y REST APIs en Java con Spring Boot para entornos de producción utilizados por aplicaciones con miles de usuarios activos. Colaboro en el desarrollo de interfaces web con React y aplicaciones móviles con React Native. Gestiono infraestructura en AWS, pipelines CI/CD, repositorios en GitHub y el despliegue de versiones en App Store y Google Play. Colaboro con clientes en la definición de requisitos técnicos y planificación de funcionalidades.",
+        icon: React.createElement(FaCode),
+        date: "Febrero 2024 - Present",
+      },
+      {
+        role: "Desarrollador Full-Stack",
+        location: "Freelance",
+        description:
+          "Desarrollé proyectos comerciales completos, incluyendo servicios backend, aplicaciones web y móviles, así como la configuración de infraestructura en AWS y pipelines de integración continua (CI/CD). Participé en la publicación y gestión de aplicaciones en App Store y Google Play, administrando el proceso desde el desarrollo hasta su despliegue en producción. Algunos de estos proyectos superaron los 10.000 usuarios activos y recibieron excelentes valoraciones por parte de los clientes.",
+        icon: React.createElement(FaReact),
+        date: "Octubre 2022 - Marzo 2024",
+      },
+      {
         role: "Estudiante Autodidacta",
         location: "Platzi - Coursera",
         description:
           "He completado especializaciones en front-end, back-end y desarrollo móvil a través de cursos avanzados en plataformas internacionales como Platzi y Coursera, reforzando mis habilidades con la creación de productos reales y proyectos comerciales.",
         icon: React.createElement(LuGraduationCap),
         date: "Diciembre 2021 - Febrero 2024",
-      },
-      {
-        role: "Desarrollador Full-Stack",
-        location: "Freelance",
-        description:
-          "Diseñé y desarrollé proyectos comerciales completos, incluyendo aplicaciones móviles y plataformas web con integración de APIs, autenticación y paneles administrativos. Algunos de estos proyectos alcanzaron más de 10.000 usuarios activos y recibieron excelentes valoraciones de los clientes.",
-        icon: React.createElement(FaReact),
-        date: "Octubre 2022 - Marzo 2024",
-      },
-      {
-        role: "Desarrollador Mobile",
-        location: "Bytewave - Innovation in Software",
-        description:
-          "Responsable del desarrollo de aplicaciones nativas y multiplataforma (iOS, Android, React Native). Colaboro en el diseño de arquitectura, desarrollo de back-end y despliegue de servicios en AWS, participando activamente en todas las etapas del ciclo de vida del producto.",
-        icon: React.createElement(FaCode),
-        date: "Febrero 2024 - Present",
       },
     ],
   },
@@ -472,8 +466,7 @@ const es = {
   footer: {
     text: "Todos los derechos reservados.",
     subtitle: "Sobre este sitio:",
-    about:
-      "Construido con React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, y alojado en Vercel.",
+    about: "Construido con React, Next.js, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, y alojado en Vercel.",
   },
   buttons: {
     theme: "Cambiar tema",

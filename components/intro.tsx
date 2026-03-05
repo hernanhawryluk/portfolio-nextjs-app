@@ -14,22 +14,13 @@ import { useI18nContext } from "@/context/i18n-context";
 export default function Intro() {
   const { language, t } = useI18nContext();
   const { ref } = useSectionInView(language === "en" ? "Home" : "Inicio", 0.5);
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="flex flex-col justify-center gap-2 sm:h-[100vh] pb-[12%] max-w-[61rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28"
-    >
+    <section ref={ref} id="home" className="flex flex-col justify-center gap-2 sm:h-[100vh] pb-[12%] max-w-[61rem] text-center sm:mt-7 sm:mb-0 scroll-mt-28">
       <div className="flex items-center justify-center">
         <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.8 }}
-          >
+          <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: "tween", duration: 0.8 }}>
             <Image
               src={portrait}
               alt="Hernan Hawryluk portrait"
@@ -50,12 +41,8 @@ export default function Intro() {
       >
         <span>{t("intro.greeting")}</span>
         <h1>{t("intro.heading")}</h1>
-        <p className="text-base xl:text-lg font-light pt-6 px-6">
-          {t("intro.main")}
-        </p>
-        <p className="text-base xl:text-lg font-light pt-2">
-          {t("intro.second")}
-        </p>
+        <p className="text-base xl:text-lg font-light pt-6 px-6">{t("intro.main")}</p>
+        <p className="text-base xl:text-lg font-light pt-2">{t("intro.second")}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -71,17 +58,15 @@ export default function Intro() {
           }}
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 hover:z-10 transition active:scale-105 cursor-pointer borderBlack backdrop-blur-[0.5rem]"
         >
-          {t("intro.contactButton")}{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          {t("intro.contactButton")} <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          href={language === "es" ? "/es/CV.pdf" : "/en/CV.pdf"}
+          href={language === "es" ? "/es/CV-Hernan-Hawryluk.pdf" : "/en/CV-Hernan-Hawryluk.pdf"}
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:z-10 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 backdrop-blur-[0.5rem]"
         >
-          {t("intro.downloadCV")}{" "}
-          <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
+          {t("intro.downloadCV")} <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
         </a>
 
         <div className="flex items-center justify-center gap-4">
