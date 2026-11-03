@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Portfolio personal de Hernán Hawryluk (CTO y full-stack engineer), publicado en https://hernan-hawryluk.vercel.app y desplegado en Vercel. Es un sitio de una sola página en inglés y español, con tema claro y oscuro, animaciones con Framer Motion y un formulario de contacto que envía emails.
+Portfolio personal de Hernán Hawryluk (CTO y full-stack engineer), publicado en https://hernan-hawryluk.vercel.app y desplegado en Vercel. Es un sitio de una sola página en inglés y español (más las políticas de privacidad de las apps publicadas), con tema claro y oscuro, animaciones con Framer Motion y un formulario de contacto que envía emails.
 
 El dueño suele escribir los pedidos en español. El código, los comentarios y los mensajes de commit van en inglés.
 
@@ -28,13 +28,15 @@ Variables de entorno (`.env.local`; nunca commitees ni muestres sus valores): `R
 ## Estructura
 
 ```
-app/layout.tsx        Providers (Theme > I18n > ActiveSection), Header, botones flotantes, Footer, <metadata>
-app/page.tsx          Página "use client" que apila las secciones en orden
+app/layout.tsx        Providers (Theme > I18n), botones flotantes, Footer, <metadata>. Lo comparten todas las rutas
+app/page.tsx          Home "use client": ActiveSection provider, Header y las secciones en orden
+app/privacy/[app]/    Política de privacidad de cada app publicada, en /privacy/<slug> (estática, sin Header)
 components/           Un archivo por sección, más componentes de ítem y botones
 context/              i18n-context, theme-context, active-section-context
 locale/en.ts, es.ts   TODOS los textos y datos del sitio (links, proyectos, skills, experiencia...)
 lib/hooks.ts          useSectionInView: resalta en el menú la sección visible
-lib/types.ts          Tipos SectionName, derivados de los links de los locales
+lib/types.ts          Tipos SectionName (derivados de los links de los locales) y de las políticas de privacidad
+content/privacy/      Una política por app (<slug>.ts, con en y es) y el registro de apps en index.ts
 actions/              Server Actions: sendEmail (Resend), verifyCaptcha (reCAPTCHA)
 email/                Plantilla de React Email para los mensajes de contacto
 public/projects/      Capturas de los proyectos (importadas de forma estática desde los locales)
@@ -55,6 +57,7 @@ Todos los textos visibles y todas las listas (proyectos, skills, experiencia, ce
 - Una `,` suelta entre ítems de un array (`},\n      ,\n      {`) deja un hueco, y TypeScript marca "possibly undefined" en el componente. Ya pasó antes.
 - El español de los textos recientes es rioplatense ("Buscás", "Contactame"). Sigue el estilo del texto que lo rodea.
 - La introducción de Proyectos dice que esos proyectos se hicieron **sin asistencia de IA**. No cambies ese enfoque ni agregues proyectos bajo esa sección sin preguntar.
+- **Excepción: las políticas de privacidad** viven en `content/privacy/<slug>.ts`, con los dos idiomas en el mismo archivo (`content.en` y `content.es`). Los locales solo tienen los textos de la plantilla (`privacy.title`, `privacy.lastUpdated`, `privacy.contact`). Son textos legales: no los reescribas ni "mejores" sin pedirlo.
 
 ### Estructura de los datos
 
@@ -80,7 +83,7 @@ Cada sección tiene además un `title`, y `projects` tiene una `description` que
   - forma: `rounded-lg` o `rounded-xl`; las tarjetas de contenido son `max-w-[42rem]`
 - **Modo oscuro:** se activa agregando `dark` a `<html>` (`theme-context`) y la elección se guarda en `localStorage.theme`. Los íconos con color `#000000` se muestran blancos en modo oscuro. Respeta esa regla al agregar colores de íconos.
 - **Idioma:** se guarda en `localStorage.language`; si no hay valor, usa el idioma del navegador y, si no es compatible, `en`.
-- **Header fijo:** la barra de navegación mide `md:w-[47.5rem]` en ambos idiomas. Si agregas o renombras links, puede que haya que ajustar ese ancho. En mobile, `body` tiene `pt-28` para dejar lugar al header.
+- **Header fijo:** la barra de navegación mide `md:w-[47.5rem]` en ambos idiomas. Si agregas o renombras links, puede que haya que ajustar ese ancho. En mobile, el `<main>` del home tiene `pt-28` para dejar lugar al header. El header solo existe en el home.
 - **Animaciones:** Framer Motion. Los ítems aparecen con `variants` + `whileInView` + `custom={index}` (con `delay` escalonado). Las tarjetas de proyectos y certificaciones se escalan con `useScroll`/`useTransform`. No agregues `whileHover` a un elemento cuya variante `animate` tenga un delay escalonado, porque vuelve a su estado con ese mismo delay. Usa clases de hover de CSS.
 - **Tarjetas de proyecto:** `sm:flex sm:min-h-[17rem]`, con la imagen alternando de lado entre tarjetas pares e impares (`group-even:`). Con descripciones de hasta unas 5 líneas en la columna de texto (54% del ancho), la tarjeta se mantiene en 17rem; si el texto es más largo, esa tarjeta crece.
 - **Tooltip de skills** (`components/skill.tsx`): se abre al pasar el mouse, con un tap en pantallas táctiles (se cierra tocando afuera) y con foco de teclado (se cierra con Escape). Se ajusta horizontalmente para no salirse de la pantalla y se abre hacia abajo si la skill está a menos de 220px del borde superior, para que no lo tape el header.
@@ -90,6 +93,7 @@ Cada sección tiene además un `title`, y `projects` tiene una `description` que
 - **Agregar un proyecto:** pon la captura en `public/projects/`, impórtala al principio de los dos locales y agrega el ítem a `projects.data` en ambos archivos, en la misma posición.
 - **Agregar una skill:** importa el ícono de `react-icons/si` (o `fa`) en los dos locales y agrega `{ skill, icon, color, description }` a `skills.data` en ambos archivos.
 - **Agregar una sección:** crea el componente siguiendo el patrón de sección, agrégalo a `app/page.tsx`, suma una entrada en `links` en los dos locales y usa los mismos nombres en `useSectionInView`.
+- **Publicar la política de privacidad de una app:** crea `content/privacy/<slug>.ts` siguiendo `leeme.ts` (bloques: un string es un párrafo, `{ list: [...] }` es una lista, y un ítem `{ label, text }` se muestra como "**label:** text") y agrégala a `privacyPolicies` en `content/privacy/index.ts`. Queda en `/privacy/<slug>`; los slugs que no están en el registro dan 404. Al cambiar el contenido, actualiza `lastUpdated` (`YYYY-MM-DD`); la fecha se formatea sola en cada idioma. Si ya hay una app publicada con esa URL, no cambies el slug.
 - **Actualizar el CV:** reemplaza `public/en/CV-Hernan-Hawryluk.pdf` y/o `public/es/...`, sin cambiar los nombres de archivo.
 
 ## Problemas conocidos

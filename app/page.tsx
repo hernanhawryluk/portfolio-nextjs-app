@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Header from "@/components/header";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
@@ -15,21 +17,24 @@ function Home() {
   const { ref, inView } = useInView({ threshold: 0.9 });
 
   return (
-    <main className="flex flex-col items-center px-4 2xl:px-[5%]">
-      <div
-        ref={ref}
-        className="flex flex-col items-center justify-between relative"
-      >
-        <Intro />
-        <SectionDivider inView={inView} />
-      </div>
-      <About />
-      <Projects />
-      <Skills />
-      <Certifications />
-      <Experience />
-      <Contact />
-    </main>
+    <ActiveSectionContextProvider>
+      <Header />
+      <main className="flex flex-col items-center px-4 pt-28 sm:pt-0 2xl:px-[5%]">
+        <div
+          ref={ref}
+          className="flex flex-col items-center justify-between relative"
+        >
+          <Intro />
+          <SectionDivider inView={inView} />
+        </div>
+        <About />
+        <Projects />
+        <Skills />
+        <Certifications />
+        <Experience />
+        <Contact />
+      </main>
+    </ActiveSectionContextProvider>
   );
 }
 
