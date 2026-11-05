@@ -3,7 +3,7 @@ import type { AppPrivacyPolicy } from "@/lib/types";
 const leeme: AppPrivacyPolicy = {
   slug: "leeme",
   appName: "Léeme – Escuchá y aprobá",
-  lastUpdated: "2026-11-03",
+  lastUpdated: "2026-11-04",
   contactEmail: "hernanhawryluk@gmail.com",
   content: {
     en: {
@@ -37,6 +37,12 @@ const leeme: AppPrivacyPolicy = {
           ],
         },
         {
+          heading: "Voluntary contributions",
+          body: [
+            "If you want, you can make a voluntary contribution from Settings. The payment is processed by Google Play with your Google account, under its own privacy policy. Léeme doesn't see your payment details: it only receives the confirmation from Google Play, on your phone, and doesn't send it anywhere. Contributing doesn't unlock anything.",
+          ],
+        },
+        {
           heading: "Permissions",
           body: [
             {
@@ -56,6 +62,10 @@ const leeme: AppPrivacyPolicy = {
                 {
                   label: "Storage (Android 8 and 9 only)",
                   text: "to save audio files to the Music folder.",
+                },
+                {
+                  label: "Google Play Billing",
+                  text: "for voluntary contributions. It lets the app request the payment from the Play Store app; it doesn't give internet access.",
                 },
               ],
             },
@@ -106,6 +116,12 @@ const leeme: AppPrivacyPolicy = {
           ],
         },
         {
+          heading: "Contribuciones voluntarias",
+          body: [
+            "Si querés, podés hacer una contribución voluntaria desde Ajustes. El pago lo procesa Google Play con tu cuenta de Google, bajo su propia política de privacidad. Léeme no ve tus datos de pago: solo recibe la confirmación de Google Play, en el teléfono, y no la envía a ningún lado. La contribución no desbloquea nada.",
+          ],
+        },
+        {
           heading: "Permisos",
           body: [
             {
@@ -125,6 +141,10 @@ const leeme: AppPrivacyPolicy = {
                 {
                   label: "Almacenamiento (solo Android 8 y 9)",
                   text: "para guardar audios en la carpeta Música.",
+                },
+                {
+                  label: "Facturación de Google Play",
+                  text: "para las contribuciones voluntarias. Permite pedirle el pago a la app Play Store; no da acceso a internet.",
                 },
               ],
             },
