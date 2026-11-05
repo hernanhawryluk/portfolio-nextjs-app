@@ -547,10 +547,8 @@ const es = {
     toastCaptcha: "Verifica el captcha antes de enviar.",
     toastCopied: "¡Dirección de correo electrónico copiada al portapapeles!",
   },
-  privacy: {
-    title: "Política de privacidad",
+  legal: {
     lastUpdated: "Última actualización",
-    contact: "Contacto",
   },
   footer: {
     text: "Todos los derechos reservados.",

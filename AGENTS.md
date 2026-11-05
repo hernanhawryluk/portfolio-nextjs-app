@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Portfolio personal de Hernán Hawryluk (CTO y full-stack engineer), publicado en https://hernan-hawryluk.vercel.app y desplegado en Vercel. Es un sitio de una sola página en inglés y español (más las políticas de privacidad de las apps publicadas), con tema claro y oscuro, animaciones con Framer Motion y un formulario de contacto que envía emails.
+Portfolio personal de Hernán Hawryluk (CTO y full-stack engineer), publicado en https://hernan-hawryluk.vercel.app y desplegado en Vercel. Es un sitio de una sola página en inglés y español (más la política de privacidad y las condiciones del servicio de cada app publicada), con tema claro y oscuro, animaciones con Framer Motion y un formulario de contacto que envía emails.
 
 El dueño suele escribir los pedidos en español. El código, los comentarios y los mensajes de commit van en inglés.
 
@@ -31,12 +31,14 @@ Variables de entorno (`.env.local`; nunca commitees ni muestres sus valores): `R
 app/layout.tsx        Providers (Theme > I18n), botones flotantes, Footer, <metadata>. Lo comparten todas las rutas
 app/page.tsx          Home "use client": ActiveSection provider, Header y las secciones en orden
 app/privacy/[app]/    Política de privacidad de cada app publicada, en /privacy/<slug> (estática, sin Header)
+app/terms/[app]/      Condiciones del servicio de cada app publicada, en /terms/<slug> (estática, sin Header)
 components/           Un archivo por sección, más componentes de ítem y botones
 context/              i18n-context, theme-context, active-section-context
 locale/en.ts, es.ts   TODOS los textos y datos del sitio (links, proyectos, skills, experiencia...)
 lib/hooks.ts          useSectionInView: resalta en el menú la sección visible
-lib/types.ts          Tipos SectionName (derivados de los links de los locales) y de las políticas de privacidad
-content/privacy/      Una política por app (<slug>.ts, con en y es) y el registro de apps en index.ts
+lib/types.ts          Tipos SectionName (derivados de los links de los locales) y LegalDocument
+content/privacy/      Una política de privacidad por app (<slug>.ts, con en y es) y el registro en index.ts
+content/terms/        Las condiciones del servicio de cada app, con la misma estructura
 actions/              Server Actions: sendEmail (Resend), verifyCaptcha (reCAPTCHA)
 email/                Plantilla de React Email para los mensajes de contacto
 public/projects/      Capturas de los proyectos (importadas de forma estática desde los locales)
@@ -57,7 +59,7 @@ Todos los textos visibles y todas las listas (proyectos, skills, experiencia, ce
 - Una `,` suelta entre ítems de un array (`},\n      ,\n      {`) deja un hueco, y TypeScript marca "possibly undefined" en el componente. Ya pasó antes.
 - El español de los textos recientes es rioplatense ("Buscás", "Contactame"). Sigue el estilo del texto que lo rodea.
 - La introducción de Proyectos dice que esos proyectos se hicieron **sin asistencia de IA**. No cambies ese enfoque ni agregues proyectos bajo esa sección sin preguntar.
-- **Excepción: las políticas de privacidad** viven en `content/privacy/<slug>.ts`, con los dos idiomas en el mismo archivo (`content.en` y `content.es`). Los locales solo tienen los textos de la plantilla (`privacy.title`, `privacy.lastUpdated`, `privacy.contact`). Son textos legales: no los reescribas ni "mejores" sin pedirlo.
+- **Excepción: los textos legales de las apps** (políticas de privacidad y condiciones del servicio) viven en `content/privacy/<slug>.ts` y `content/terms/<slug>.ts`, con los dos idiomas en el mismo archivo (`content.en` y `content.es`, cada uno con su `title`). Los locales solo tienen `legal.lastUpdated`. El dueño escribe los dos idiomas; en Léeme salen de `docs/PRIVACIDAD*.md` y `docs/CONDICIONES*.md` del repo de la app. Cópialos tal cual (sin el título `#` ni las notas `>` para quien publica), y no los reescribas ni "mejores" sin pedirlo.
 
 ### Estructura de los datos
 
@@ -93,7 +95,7 @@ Cada sección tiene además un `title`, y `projects` tiene una `description` que
 - **Agregar un proyecto:** pon la captura en `public/projects/`, impórtala al principio de los dos locales y agrega el ítem a `projects.data` en ambos archivos, en la misma posición.
 - **Agregar una skill:** importa el ícono de `react-icons/si` (o `fa`) en los dos locales y agrega `{ skill, icon, color, description }` a `skills.data` en ambos archivos.
 - **Agregar una sección:** crea el componente siguiendo el patrón de sección, agrégalo a `app/page.tsx`, suma una entrada en `links` en los dos locales y usa los mismos nombres en `useSectionInView`.
-- **Publicar la política de privacidad de una app:** crea `content/privacy/<slug>.ts` siguiendo `leeme.ts` (bloques: un string es un párrafo, `{ list: [...] }` es una lista, y un ítem `{ label, text }` se muestra como "**label:** text") y agrégala a `privacyPolicies` en `content/privacy/index.ts`. Queda en `/privacy/<slug>`; los slugs que no están en el registro dan 404. Al cambiar el contenido, actualiza `lastUpdated` (`YYYY-MM-DD`); la fecha se formatea sola en cada idioma. Si ya hay una app publicada con esa URL, no cambies el slug.
+- **Publicar la política de privacidad o las condiciones de una app:** crea `content/privacy/<slug>.ts` o `content/terms/<slug>.ts` siguiendo los de `leeme`, y agrégalo a `privacyPolicies` (`content/privacy/index.ts`) o a `termsOfService` (`content/terms/index.ts`). Queda en `/privacy/<slug>` o `/terms/<slug>`; los slugs que no están en el registro dan 404. Bloques: un string es un párrafo; `{ list: [...] }` es una lista; un ítem de lista que es un array tiene varios bloques (por ejemplo, una línea, una lista anidada y un párrafo). Dentro del texto, `**negrita**` se muestra en negrita y las URLs y los emails se convierten en links. El `## Contacto` es una sección más. Al cambiar el contenido, actualiza `lastUpdated` (`YYYY-MM-DD`); la fecha se formatea sola en cada idioma. Si ya hay una app publicada con esa URL, no cambies el slug.
 - **Actualizar el CV:** reemplaza `public/en/CV-Hernan-Hawryluk.pdf` y/o `public/es/...`, sin cambiar los nombres de archivo.
 
 ## Problemas conocidos

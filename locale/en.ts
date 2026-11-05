@@ -540,10 +540,8 @@ const en = {
     toastCaptcha: "Please complete the CAPTCHA before sending.",
     toastCopied: "Email address copied to clipboard!",
   },
-  privacy: {
-    title: "Privacy Policy",
+  legal: {
     lastUpdated: "Last updated",
-    contact: "Contact",
   },
   footer: {
     text: "All rights reserved.",

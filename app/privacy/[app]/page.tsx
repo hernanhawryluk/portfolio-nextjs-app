@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import PrivacyPolicy from "@/components/privacy-policy";
+import LegalDocument from "@/components/legal-document";
 import { privacyPolicies } from "@/content/privacy";
-import en from "@/locale/en";
 
 type PrivacyPageProps = {
   params: { app: string };
@@ -23,7 +22,7 @@ export function generateMetadata({ params }: PrivacyPageProps): Metadata {
   if (!policy) return {};
 
   return {
-    title: `${policy.appName} | ${en.privacy.title}`,
+    title: `${policy.appName} | ${policy.content.en.title}`,
     description: policy.content.en.intro[0],
   };
 }
@@ -32,5 +31,5 @@ export default function PrivacyPage({ params }: PrivacyPageProps) {
   const policy = getPolicy(params.app);
   if (!policy) notFound();
 
-  return <PrivacyPolicy {...policy} />;
+  return <LegalDocument {...policy} />;
 }

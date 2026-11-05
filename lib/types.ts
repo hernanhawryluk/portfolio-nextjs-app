@@ -5,20 +5,21 @@ export type SectionName = (typeof en.links)[number]["name"];
 
 export type SectionNameEs = (typeof es.links)[number]["name"];
 
-// A plain string is a paragraph; `list` items with a `label` render as "**label:** text".
-export type PrivacyPolicyBlock =
-  | string
-  | { list: (string | { label: string; text: string })[] };
+// A plain string is a paragraph. Text can use **bold**; URLs and email addresses become links.
+export type LegalBlock = string | { list: LegalListItem[] };
 
-export type PrivacyPolicyContent = {
+// An array is a list item with several blocks, such as a line followed by a nested list.
+export type LegalListItem = string | LegalBlock[];
+
+export type LegalDocumentContent = {
+  title: string;
   intro: string[];
-  sections: { heading: string; body: PrivacyPolicyBlock[] }[];
+  sections: { heading: string; body: LegalBlock[] }[];
 };
 
-export type AppPrivacyPolicy = {
-  slug: string; // URL: /privacy/<slug>
+export type LegalDocument = {
+  slug: string; // URL: /privacy/<slug> or /terms/<slug>
   appName: string;
   lastUpdated: string; // YYYY-MM-DD
-  contactEmail: string;
-  content: Record<"en" | "es", PrivacyPolicyContent>;
+  content: Record<"en" | "es", LegalDocumentContent>;
 };
