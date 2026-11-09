@@ -8,9 +8,11 @@ import type {
   LegalDocument as LegalDocumentProps,
 } from "@/lib/types";
 
-// Captures **bold**, URLs (without trailing punctuation) and email addresses.
+// Captures **bold**, [text](url) links, bare URLs (without trailing
+// punctuation) and email addresses.
 const inlinePattern =
-  /(\*\*.+?\*\*|https?:\/\/\S*[^\s.,;:!?)»]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/;
+  /(\*\*.+?\*\*|\[[^\]]+\]\([^)\s]+\)|https?:\/\/\S*[^\s.,;:!?)»]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/;
+const markdownLinkPattern = /^\[([^\]]+)\]\(([^)\s]+)\)$/;
 
 export default function LegalDocument({
   appName,
@@ -120,24 +122,52 @@ function InlineText({ text }: { text: string }) {
               key={index}
               className="font-semibold text-gray-950 dark:text-white/90"
             >
-              {part.slice(2, -2)}
+              <InlineText text={part.slice(2, -2)} />
             </strong>
           );
         }
 
-        const isUrl = part.startsWith("http");
+        const markdownLink = part.match(markdownLinkPattern);
+        if (markdownLink) {
+          return (
+            <TextLink key={index} href={markdownLink[2]}>
+              {markdownLink[1]}
+            </TextLink>
+          );
+        }
+
+        if (part.startsWith("http")) {
+          return (
+            <TextLink key={index} href={part}>
+              <WrappableUrl url={part} />
+            </TextLink>
+          );
+        }
 
         return (
-          <a
-            key={index}
-            href={isUrl ? part : `mailto:${part}`}
-            className="font-medium text-gray-950 underline underline-offset-4 decoration-black/20 break-words hover:decoration-black transition dark:text-white dark:decoration-white/30 dark:hover:decoration-white"
-          >
-            {isUrl ? <WrappableUrl url={part} /> : part}
-          </a>
+          <TextLink key={index} href={`mailto:${part}`}>
+            {part}
+          </TextLink>
         );
       })}
     </>
+  );
+}
+
+function TextLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      className="font-medium [strong_&]:font-semibold text-gray-950 underline underline-offset-4 decoration-black/20 break-words hover:decoration-black transition dark:text-white dark:decoration-white/30 dark:hover:decoration-white"
+    >
+      {children}
+    </a>
   );
 }
 
