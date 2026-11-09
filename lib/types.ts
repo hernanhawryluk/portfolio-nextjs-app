@@ -5,8 +5,13 @@ export type SectionName = (typeof en.links)[number]["name"];
 
 export type SectionNameEs = (typeof es.links)[number]["name"];
 
-// A plain string is a paragraph. Text can use **bold**; URLs and email addresses become links.
-export type LegalBlock = string | { list: LegalListItem[] };
+// A plain string is a paragraph. Text can use **bold**, *italics* and [text](url)
+// links; bare URLs, email addresses and +phone numbers become links too.
+export type LegalBlock =
+  | string
+  | { list: LegalListItem[] }
+  | { subheading: string }
+  | { table: { head: string[]; rows: string[][] } };
 
 // An array is a list item with several blocks, such as a line followed by a nested list.
 export type LegalListItem = string | LegalBlock[];

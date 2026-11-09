@@ -8,10 +8,10 @@ import type {
   LegalDocument as LegalDocumentProps,
 } from "@/lib/types";
 
-// Captures **bold**, [text](url) links, bare URLs (without trailing
-// punctuation) and email addresses.
+// Captures **bold**, *italics*, [text](url) links, bare URLs (without
+// trailing punctuation), +phone numbers and email addresses.
 const inlinePattern =
-  /(\*\*.+?\*\*|\[[^\]]+\]\([^)\s]+\)|https?:\/\/\S*[^\s.,;:!?)»]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/;
+  /(\*\*.+?\*\*|\*[^*\s](?:[^*]*[^*\s])?\*|\[[^\]]+\]\([^)\s]+\)|https?:\/\/\S*[^\s.,;:!?)»]|\+\d{7,15}|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/;
 const markdownLinkPattern = /^\[([^\]]+)\]\(([^)\s]+)\)$/;
 
 export default function LegalDocument({
@@ -86,6 +86,49 @@ function LegalBlock({
     );
   }
 
+  if ("subheading" in block) {
+    return (
+      <h3 className="pt-3 text-lg font-semibold text-gray-950 xl:text-xl dark:text-white">
+        {block.subheading}
+      </h3>
+    );
+  }
+
+  if ("table" in block) {
+    return (
+      <div className="overflow-x-auto">
+        <table className="w-full text-left">
+          <thead>
+            <tr className="border-b border-black/10 dark:border-white/20">
+              {block.table.head.map((cell, index) => (
+                <th
+                  key={index}
+                  className="py-2 pr-4 font-semibold text-gray-950 dark:text-white/90"
+                >
+                  <InlineText text={cell} />
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.table.rows.map((row, rowIndex) => (
+              <tr
+                key={rowIndex}
+                className="border-b border-black/5 last:border-0 dark:border-white/10"
+              >
+                {row.map((cell, index) => (
+                  <td key={index} className="py-2 pr-4 align-top">
+                    <InlineText text={cell} />
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
   return (
     <ul
       className={`${
@@ -127,6 +170,14 @@ function InlineText({ text }: { text: string }) {
           );
         }
 
+        if (part.startsWith("*")) {
+          return (
+            <em key={index}>
+              <InlineText text={part.slice(1, -1)} />
+            </em>
+          );
+        }
+
         const markdownLink = part.match(markdownLinkPattern);
         if (markdownLink) {
           return (
@@ -140,6 +191,14 @@ function InlineText({ text }: { text: string }) {
           return (
             <TextLink key={index} href={part}>
               <WrappableUrl url={part} />
+            </TextLink>
+          );
+        }
+
+        if (part.startsWith("+")) {
+          return (
+            <TextLink key={index} href={`tel:${part}`}>
+              {part}
             </TextLink>
           );
         }
