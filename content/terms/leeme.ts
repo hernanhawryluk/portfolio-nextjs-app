@@ -58,7 +58,8 @@ const leeme: LegalDocument = {
           body: [
             {
               list: [
-                "Léeme is a study tool. Importing can make mistakes (especially when recognizing the text of scanned documents), and pronunciation depends on the text-to-speech engine. If something is important, check it in the original document.",
+                "Léeme is a study tool: it helps you study, but it doesn’t guarantee exam results. “Listen, Learn & Pass” is its motto, not a promise.",
+                "Importing can make mistakes (especially when recognizing the text of scanned documents), and pronunciation depends on the text-to-speech engine. If something is important, check it in the original document.",
                 "The durations the app shows are estimates.",
                 "I do my best to make the app work well and I fix the bugs I find. Some features depend on Android, the text-to-speech engine and Google Play, which I don’t control, and may vary from phone to phone.",
                 "New versions may change or improve features.",
@@ -186,7 +187,8 @@ const leeme: LegalDocument = {
           body: [
             {
               list: [
-                "Léeme es una herramienta de estudio. La importación puede tener errores (sobre todo al reconocer el texto de documentos escaneados) y la pronunciación depende del motor de voz. Si algo es importante, revisalo en el documento original.",
+                "Léeme es una herramienta de estudio: ayuda a estudiar, pero no garantiza resultados en los exámenes. «Escuchá y aprobá» es su lema, no una promesa.",
+                "La importación puede tener errores (sobre todo al reconocer el texto de documentos escaneados) y la pronunciación depende del motor de voz. Si algo es importante, revisalo en el documento original.",
                 "Las duraciones que muestra la app son estimaciones.",
                 "Hago lo posible para que la app funcione bien y corrijo los errores que encuentro. Algunas funciones dependen de Android, del motor de voz y de Google Play, que no controlo, y pueden variar según el teléfono.",
                 "Las versiones nuevas pueden cambiar o mejorar las funciones.",
