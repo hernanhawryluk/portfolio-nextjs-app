@@ -2,13 +2,14 @@ import type { LegalDocument } from "@/lib/types";
 
 const leeme: LegalDocument = {
   slug: "leeme",
-  appName: "Léeme – Escuchá y aprobá",
-  lastUpdated: "2026-11-04",
+  appName: "Léeme",
+  lastUpdated: "2026-11-12",
   content: {
     en: {
       title: "Terms of Service",
       intro: [
-        "These terms explain the rules for using Léeme, an Android app that reads aloud the texts and documents you import, and for making a voluntary contribution.",
+        "These terms explain the rules for using Léeme (on Google Play, “Léeme: PDF Text to Speech”), an Android app that reads aloud the texts and documents you import, and for making a voluntary contribution.",
+        "[Withdrawal button (Botón de arrepentimiento)](mailto:hernanhawryluk@gmail.com?subject=Refund%20of%20a%20contribution%20to%20L%C3%A9eme): if you change your mind about a contribution, use it or write to me at hernanhawryluk@gmail.com within 14 calendar days of the payment. In the app it’s in Settings, as “Refund a contribution”. Details are in section 6.",
       ],
       sections: [
         {
@@ -22,7 +23,7 @@ const leeme: LegalDocument = {
           body: [
             {
               list: [
-                "It imports notes (pasted text, PDF, Word or TXT), cleans them up and reads them aloud with the text-to-speech engine installed on your phone. It can also save the reading as an audio file.",
+                "It imports notes (pasted text, PDF, Word, EPUB books, TXT or photos), cleans them up and reads them aloud with the text-to-speech engine installed on your phone. It can also save the reading as an audio file.",
                 "It is free: every feature is available without paying.",
                 "It has no accounts, servers, ads or usage analytics, and it has no permission to connect to the internet.",
                 "The voice comes from your phone’s text-to-speech engine, which is a separate app. Léeme only offers the voices the engine reports as installed on the phone and available offline; voices that need the internet aren’t shown. That’s why reading aloud and exporting work without internet. To download new voices, the engine itself may need a connection.",
@@ -36,7 +37,7 @@ const leeme: LegalDocument = {
           body: [
             "I give you permission to install and use Léeme on your devices, for your personal use. This permission is free, non-exclusive and personal: you can’t transfer it.",
             "You may not sell, rent or redistribute the app, or present it as your own. You also may not use it for anything illegal or that infringes other people’s rights.",
-            "The Léeme name, its icon, its design and its code are mine, except for the third-party libraries it includes, which have their own licenses. Using the app doesn’t give you any rights over them.",
+            "The Léeme name, its icon, its design and its code are mine, except for the third-party libraries it includes, which have their own licenses, and the piano recordings used as background music, which are in the public domain. Using the app doesn’t give you any rights over them.",
           ],
         },
         {
@@ -80,7 +81,7 @@ const leeme: LegalDocument = {
                   {
                     list: [
                       "from Google Play, under its refund policies;",
-                      "by writing to me at hernanhawryluk@gmail.com within 14 calendar days of the payment. If you have it, include the order number from Google’s receipt (it starts with “GPA.”) so I can find it faster. I’ll refund the full amount through Google Play, and you don’t need to give a reason.",
+                      "with “Refund a contribution” in the app’s Settings or by writing to me at hernanhawryluk@gmail.com, within 14 calendar days of the payment. If you have it, include the order number from Google’s receipt (it starts with “GPA.”) so I can find it faster. Within 24 hours I’ll reply the same way with a code that identifies your request, and I’ll refund the full amount through Google Play. You don’t need to give a reason.",
                     ],
                   },
                   "If the law of your country gives you a longer period or more rights, those apply.",
@@ -92,7 +93,7 @@ const leeme: LegalDocument = {
         {
           heading: "7. Other services",
           body: [
-            "The app uses services I don’t control, each with its own terms: your phone’s text-to-speech engine; Google Play, to install, update and rate the app and to pay for contributions; and the apps you open or share documents from.",
+            "The app uses services I don’t control, each with its own terms: your phone’s text-to-speech engine; Google Play, to install, update and rate the app and to pay for contributions; Android Auto and the voice assistant, if you listen in the car or ask for a document by voice; and the apps you open, share or drag documents from.",
           ],
         },
         {
@@ -135,7 +136,8 @@ const leeme: LegalDocument = {
     es: {
       title: "Condiciones del servicio",
       intro: [
-        "Estas condiciones explican las reglas para usar Léeme, una app para Android que lee en voz alta los textos y documentos que importás, y para hacer una contribución voluntaria.",
+        "Estas condiciones explican las reglas para usar Léeme (en Google Play, «Léeme: leer PDF en voz alta»), una app para Android que lee en voz alta los textos y documentos que importás, y para hacer una contribución voluntaria.",
+        "[Botón de arrepentimiento](mailto:hernanhawryluk@gmail.com?subject=Arrepentimiento%20de%20una%20contribuci%C3%B3n%20a%20L%C3%A9eme): si te arrepentís de una contribución, tocalo o escribime a hernanhawryluk@gmail.com dentro de los 14 días corridos desde el pago. En la app está en Ajustes. Los detalles, en el punto 6.",
       ],
       sections: [
         {
@@ -149,7 +151,7 @@ const leeme: LegalDocument = {
           body: [
             {
               list: [
-                "Importa apuntes (texto pegado, PDF, Word o TXT), los limpia y los lee en voz alta con el motor de voz instalado en tu teléfono. También puede guardar la lectura como un archivo de audio.",
+                "Importa apuntes (texto pegado, PDF, Word, libros EPUB, TXT o fotos), los limpia y los lee en voz alta con el motor de voz instalado en tu teléfono. También puede guardar la lectura como un archivo de audio.",
                 "Es gratuita: todas sus funciones están disponibles sin pagar.",
                 "No tiene cuentas, servidores, publicidad ni estadísticas de uso, y no tiene permiso para conectarse a internet.",
                 "La voz la pone el motor de voz de tu teléfono, que es otra app. Léeme solo ofrece las voces que el motor indica como instaladas en el teléfono y disponibles sin conexión; las que requieren internet no aparecen. Por eso la lectura y la exportación funcionan sin internet. Para descargar voces nuevas, el motor sí puede necesitar conexión.",
@@ -163,7 +165,7 @@ const leeme: LegalDocument = {
           body: [
             "Te doy permiso para instalar y usar Léeme en tus dispositivos, para tu uso personal. Es un permiso gratuito, no exclusivo y personal: no podés cederlo.",
             "No podés vender, alquilar ni redistribuir la app, ni presentarla como propia. Tampoco podés usarla para algo ilegal o que afecte los derechos de otras personas.",
-            "El nombre Léeme, su ícono, su diseño y su código son míos, salvo las bibliotecas de terceros que incluye, que tienen sus propias licencias. Usar la app no te da derechos sobre ellos.",
+            "El nombre Léeme, su ícono, su diseño y su código son míos, salvo las bibliotecas de terceros que incluye, que tienen sus propias licencias, y las grabaciones de piano de la música de fondo, que son de dominio público. Usar la app no te da derechos sobre ellos.",
           ],
         },
         {
@@ -207,7 +209,7 @@ const leeme: LegalDocument = {
                   {
                     list: [
                       "a Google Play, según sus políticas de reembolso;",
-                      "escribiéndome a hernanhawryluk@gmail.com dentro de los 14 días corridos desde el pago. Si lo tenés, sumá el número de pedido del recibo de Google (empieza con «GPA.»), así lo encuentro más rápido. Te devuelvo el monto completo a través de Google Play, sin que tengas que explicar el motivo.",
+                      "con el «Botón de arrepentimiento» de la app (en Ajustes) o escribiéndome a hernanhawryluk@gmail.com, dentro de los 14 días corridos desde el pago. Si lo tenés, sumá el número de pedido del recibo de Google (empieza con «GPA.»), así lo encuentro más rápido. Dentro de las 24 horas te respondo por el mismo medio con un código que identifica tu pedido, y te devuelvo el monto completo a través de Google Play, sin que tengas que explicar el motivo.",
                     ],
                   },
                   "Si la ley de tu país te da un plazo más largo o más derechos, se aplican esos.",
@@ -219,7 +221,7 @@ const leeme: LegalDocument = {
         {
           heading: "7. Servicios de otros",
           body: [
-            "La app usa servicios que no controlo, cada uno con sus propias condiciones: el motor de voz de tu teléfono; Google Play, para instalar, actualizar, calificar la app y pagar las contribuciones; y las apps desde las que abrís o compartís documentos.",
+            "La app usa servicios que no controlo, cada uno con sus propias condiciones: el motor de voz de tu teléfono; Google Play, para instalar, actualizar, calificar la app y pagar las contribuciones; Android Auto y el asistente de voz, si escuchás en el auto o pedís un apunte por voz; y las apps desde las que abrís, compartís o arrastrás documentos.",
           ],
         },
         {
