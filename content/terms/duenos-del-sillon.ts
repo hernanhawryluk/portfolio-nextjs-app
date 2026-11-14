@@ -126,13 +126,54 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "7. Changes to the game",
+          heading: "7. “Visita”: duels and trades with whoever is next to you",
+          body: [
+            "“Visita” connects your phone with the phone of someone who is next to you, without the internet, to play a duel or trade cards. It’s optional.",
+            {
+              list: [
+                [
+                  "**Trades:**",
+                  {
+                    list: [
+                      "one card for another of the same kind (the same rarity and the same shine), up to 5 cards a day;",
+                      "both players see both cards and both accept;",
+                      "once made, a trade can’t be undone.",
+                    ],
+                  },
+                ],
+                "**No money:** cards have no money value. They aren’t bought or sold outside the game, and they can’t be exchanged for latitas or for anything outside it.",
+                [
+                  "**Both phones are trusted:** the phones make the trade between themselves, with no server checking it.",
+                  {
+                    list: [
+                      "We can’t verify which cards the other player has, or undo a trade.",
+                      "If the connection drops right as a trade is accepted, it may be made on only one phone, and we have no way to restore it.",
+                    ],
+                  },
+                ],
+                [
+                  "**Duels:**",
+                  {
+                    list: [
+                      "the phone that invites to the duel referees it;",
+                      "if the connection drops and doesn’t come back within a minute, the duel has no winner and counts for no one;",
+                      "leaving is losing, as in any duel.",
+                    ],
+                  },
+                ],
+                "**You may not** use a name that offends other people, or modify the game or its data to trade cards you don’t have.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "8. Changes to the game",
           body: [
             "To improve the game, we may change cards, rules, prices and content, or add and remove features. New prices apply to future purchases, never to ones already made. If we stop offering the game on Google Play, the copy you already have installed keeps working offline.",
           ],
         },
         {
-          heading: "8. Liability",
+          heading: "9. Liability",
           body: [
             {
               list: [
@@ -144,7 +185,7 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "9. Governing law and complaints",
+          heading: "10. Governing law and complaints",
           body: [
             "These terms are governed by the laws of Argentina.",
             "If you are a consumer and live in another country, you keep the protection given by the mandatory rules of your country, and you can bring a claim before its courts. This includes the European Union and the United Kingdom.",
@@ -152,13 +193,13 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "10. Changes to these terms",
+          heading: "11. Changes to these terms",
           body: [
             "If we change these terms, the new version will be on this same page, with its date. If the change is important, we’ll also announce it in the game or on its Google Play listing. Purchases already made remain governed by the terms in force when they were made.",
           ],
         },
         {
-          heading: "11. Contact",
+          heading: "12. Contact",
           body: [
             "For questions, problems with a purchase or complaints: **hernanhawryluk@gmail.com**.",
           ],
@@ -286,13 +327,54 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "7. Cambios en el juego",
+          heading: "7. «Visita»: duelos y cambios con quien está al lado",
+          body: [
+            "«Visita» conecta tu teléfono con el de alguien que está al lado, sin internet, para jugar un duelo o cambiar cartas. Es opcional.",
+            {
+              list: [
+                [
+                  "**Los cambios:**",
+                  {
+                    list: [
+                      "una carta por otra del mismo tipo (la misma rareza y el mismo brillo), hasta 5 cartas por día;",
+                      "los dos ven las dos cartas y los dos lo aceptan;",
+                      "una vez hecho, no se deshace.",
+                    ],
+                  },
+                ],
+                "**Sin dinero:** las cartas no tienen valor en dinero. No se compran ni se venden fuera del juego, y no se cambian por latitas ni por nada fuera de él.",
+                [
+                  "**Se confía en los dos teléfonos:** el cambio lo hacen los teléfonos entre sí, sin un servidor que lo controle.",
+                  {
+                    list: [
+                      "No podemos verificar qué cartas tiene el otro, ni deshacer un cambio.",
+                      "Si la conexión se corta justo al aceptar, el cambio puede quedar hecho en un solo teléfono, y no tenemos cómo reponerlo.",
+                    ],
+                  },
+                ],
+                [
+                  "**Los duelos:**",
+                  {
+                    list: [
+                      "el teléfono que invita al duelo lo arbitra;",
+                      "si la conexión se corta y no vuelve en un minuto, el duelo no tiene ganador y no cuenta para nadie;",
+                      "abandonar es perder, como en cualquier duelo.",
+                    ],
+                  },
+                ],
+                "**No podés** usar un nombre que ofenda a otras personas, ni modificar el juego o sus datos para cambiar cartas que no tenés.",
+              ],
+            },
+          ],
+        },
+        {
+          heading: "8. Cambios en el juego",
           body: [
             "Para mejorar el juego podemos cambiar cartas, reglas, precios y contenido, o agregar y quitar funciones. Los precios nuevos rigen para las compras futuras, nunca para las ya hechas. Si dejamos de ofrecer el juego en Google Play, el que ya tenés instalado sigue funcionando sin conexión.",
           ],
         },
         {
-          heading: "8. Responsabilidad",
+          heading: "9. Responsabilidad",
           body: [
             {
               list: [
@@ -304,7 +386,7 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "9. Ley aplicable y reclamos",
+          heading: "10. Ley aplicable y reclamos",
           body: [
             "Estas condiciones se rigen por las leyes de la República Argentina.",
             "Si sos consumidor y vivís en otro país, conservás la protección que te dan las normas obligatorias de tu país, y podés reclamar ante sus tribunales. Esto incluye la Unión Europea y el Reino Unido.",
@@ -312,13 +394,13 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "10. Cambios en estas condiciones",
+          heading: "11. Cambios en estas condiciones",
           body: [
             "Si cambiamos estas condiciones, la versión nueva va a estar en esta misma página, con su fecha. Si el cambio es importante, también lo avisamos en el juego o en su ficha de Google Play. Las compras ya hechas siguen rigiéndose por las condiciones vigentes al momento de hacerlas.",
           ],
         },
         {
-          heading: "11. Contacto",
+          heading: "12. Contacto",
           body: [
             "Para preguntas, problemas con una compra o reclamos: **hernanhawryluk@gmail.com**.",
           ],
