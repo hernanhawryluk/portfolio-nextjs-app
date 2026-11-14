@@ -70,9 +70,33 @@ const duenosDelSillon: LegalDocument = {
               list: [
                 "**Who sees your achievements** is up to you, in the visibility settings of your Play Games profile.",
                 "**The Play Games library** sends Google its own diagnostic and usage data, so it can work.",
-                "**To delete** your profile and your games’ data, go to your Play Games profile ([play.google.com/games/profile](https://play.google.com/games/profile)) or your Google Account ([myaccount.google.com](https://myaccount.google.com)). What’s on the phone is deleted when you uninstall the game.",
+                "**To delete** your profile and your games’ data, go to your Play Games profile ([play.google.com/games/profile](https://play.google.com/games/profile)) or your Google Account ([myaccount.google.com](https://myaccount.google.com)). The steps are in “How to delete your data”.",
               ],
             },
+          ],
+        },
+        {
+          heading: "How to delete your data",
+          body: [
+            "We don’t hold any of your data to delete: the game has no servers of its own. What Dueños del sillón stores is in two places, and you delete it yourself:",
+            {
+              list: [
+                "**On your phone:** your collection, your decks, your progress, your latitas and your settings. They’re deleted when you uninstall the game or clear its data in Android’s settings (Apps › Dueños del sillón › Storage).",
+                [
+                  "**In your Google account, if you connected Play Games:** the copy of your progress and this game’s achievements. To delete them:",
+                  {
+                    list: [
+                      "go to [play.google.com/games/profile](https://play.google.com/games/profile);",
+                      "tap **Your data**, then **Delete Play Games account & data**;",
+                      "under “Delete individual game data”, find **Dueños del sillón** and tap **Delete**.",
+                    ],
+                  },
+                  "You can also do it from the Play Store app: your profile icon › Settings › General › Play Games profile › Privacy & settings › Delete profile & game data. On that same page you can delete your whole Play Games profile.",
+                ],
+              ],
+            },
+            "If the game is still installed and connected to Play Games, it saves a copy in your account again when you leave it. To stop that, uninstall it or delete your whole Play Games profile.",
+            "**What’s kept:** we keep nothing, since we have no separate copies. Your purchases stay in your Google Play order history, and what Google keeps is explained in the [Google Privacy Policy](https://policies.google.com/privacy).",
           ],
         },
         {
@@ -174,9 +198,33 @@ const duenosDelSillon: LegalDocument = {
               list: [
                 "**Quién ve tus logros** lo decidís vos, en la visibilidad de tu perfil de Play Juegos.",
                 "**La biblioteca de Play Juegos** le manda a Google sus propios datos de diagnóstico y de uso, para su funcionamiento.",
-                "**Para borrar** tu perfil y los datos de tus juegos, entrá a tu perfil de Play Juegos ([play.google.com/games/profile](https://play.google.com/games/profile)) o a tu cuenta de Google ([myaccount.google.com](https://myaccount.google.com)). Lo que está en el teléfono se borra al desinstalar el juego.",
+                "**Para borrar** tu perfil y los datos de tus juegos, entrá a tu perfil de Play Juegos ([play.google.com/games/profile](https://play.google.com/games/profile)) o a tu cuenta de Google ([myaccount.google.com](https://myaccount.google.com)). Los pasos están en «Cómo borrar tus datos».",
               ],
             },
+          ],
+        },
+        {
+          heading: "Cómo borrar tus datos",
+          body: [
+            "Nosotros no tenemos datos tuyos para borrar: el juego no tiene servidores propios. Lo que Dueños del sillón guarda está en dos lugares, y lo borrás vos:",
+            {
+              list: [
+                "**En tu teléfono:** tu colección, tus mazos, tu progreso, tus latitas y tus ajustes. Se borran al desinstalar el juego o al borrar sus datos desde la configuración de Android (Apps › Dueños del sillón › Almacenamiento).",
+                [
+                  "**En tu cuenta de Google, si conectaste Play Juegos:** la copia de tu progreso y los logros de este juego. Para borrarlos:",
+                  {
+                    list: [
+                      "entrá a [play.google.com/games/profile](https://play.google.com/games/profile);",
+                      "tocá **Tus datos** y después **Borrar la cuenta y los datos de Play Juegos**;",
+                      "en «Borra datos de juegos específicos», buscá **Dueños del sillón** y tocá **Borrar**.",
+                    ],
+                  },
+                  "También se puede desde la app de Play Store: tu ícono de perfil › Configuración › General › Perfil de Play Juegos › Privacidad y configuración › Borrar datos de perfil y de juegos. En esa misma página podés borrar todo tu perfil de Play Juegos.",
+                ],
+              ],
+            },
+            "Si el juego sigue instalado y conectado a Play Juegos, al salir vuelve a guardar una copia en tu cuenta. Para que no lo haga, desinstalalo o borrá todo tu perfil de Play Juegos.",
+            "**Qué queda:** nosotros no conservamos nada, porque no tenemos copias aparte. Tus compras siguen en el historial de pedidos de tu cuenta de Google Play, y lo que conserva Google lo explica la [Política de Privacidad de Google](https://policies.google.com/privacy).",
           ],
         },
         {
