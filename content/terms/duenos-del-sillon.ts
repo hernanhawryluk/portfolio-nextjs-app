@@ -3,7 +3,7 @@ import type { LegalDocument } from "@/lib/types";
 const duenosDelSillon: LegalDocument = {
   slug: "duenos-del-sillon",
   appName: "Dueños del sillón",
-  lastUpdated: "2026-11-09",
+  lastUpdated: "2026-11-14",
   content: {
     en: {
       title: "Terms of Service",
@@ -54,11 +54,11 @@ const duenosDelSillon: LegalDocument = {
           heading: "5. Latitas and in-game purchases",
           body: [
             { subheading: "What latitas are" },
-            "**Latitas** are the game’s currency. You earn them by playing (duels, puzzles, achievements), and you can also buy them. They are used to buy card packs and cosmetics in the game, and nothing else:",
+            "**Latitas** are the game’s currency. You earn them by playing (the story, duels, puzzles and achievements), and you can also buy them. They are used to buy card packs, test decks, temperaments and cosmetics in the game, and nothing else:",
             {
               list: [
                 "they have no monetary value and can’t be exchanged for money or for anything outside the game;",
-                "they can’t be transferred to another person or to another device;",
+                "they can’t be transferred to another person, and they only move to another phone with the Google Play Games copy (see section 6);",
                 "they don’t expire as long as you have the game installed.",
               ],
             },
@@ -77,8 +77,14 @@ const duenosDelSillon: LegalDocument = {
               },
             },
             "You’ll see the final price, including any applicable taxes, in Google Play before you confirm each purchase. Payment is processed by **Google Play**: we never see your payment details. What you buy gives no advantage in duels: every card and everything used in play can be earned for free by playing.",
-            { subheading: "Packs" },
-            "Packs contain random cards. Before you buy one, the Shop tells you what it may contain, how the protection against duplicate cards works and within how many packs, at most, you’ll get the next shiny card. Cards are not sold individually.",
+            { subheading: "Packs, decks and shiny cards" },
+            {
+              list: [
+                "**Packs** contain random cards. Before you buy one, the Shop tells you what it may contain, how the protection against duplicate cards works and within how many packs, at most, you’ll get the next shiny card.",
+                "**Cards are not sold individually.** Test decks are, and you only pay for the cards you’re missing.",
+                "**Fusion:** four copies of a card can be fused into one shiny copy. It’s optional, the game asks you first, and it can’t be undone.",
+              ],
+            },
             { subheading: "Delivery" },
             "What you buy reaches the game **as soon as Google Play confirms the payment**. If you chose a payment method that clears later (for example, cash), it arrives when the payment clears, the next time you open the game.",
             { subheading: "Right of withdrawal" },
@@ -97,10 +103,21 @@ const duenosDelSillon: LegalDocument = {
         {
           heading: "6. Where your progress is stored",
           body: [
-            "The game has no accounts or servers. **Everything is stored only on your phone:** your collection, your decks, your progress and your latitas, including the ones you bought.",
+            "The game has no accounts or servers of its own. **Everything is stored on your phone:** your collection, your decks, your progress and your latitas, including the ones you bought.",
             {
               list: [
-                "If you uninstall the game, clear its data or change phones, all of that is lost.",
+                [
+                  "**If you connect Google Play Games** (it’s optional), a copy of your progress is also kept in your Google account, and it’s updated when you leave the game. On another phone, the game offers to restore it.",
+                  {
+                    list: [
+                      "Restoring it replaces what’s on that phone, and that can’t be undone: that’s why it always asks you first and shows you what each side has.",
+                      "Purchases made on that phone since version 0.5.0 are kept. Earlier ones are replaced along with everything else, unless the copy already has them.",
+                      "If you play on two phones, their progress isn’t merged: the one with less can restore the other’s copy.",
+                      "That copy depends on Google’s service: we don’t have it and can’t recover it for you.",
+                    ],
+                  },
+                ],
+                "**If you didn’t connect Play Games** and you uninstall the game, clear its data or change phones, all of that is lost.",
                 "We don’t have a copy and **we can’t recover it**.",
                 "A purchase that Google Play confirmed but the game hasn’t delivered yet arrives the next time you open it.",
               ],
@@ -120,7 +137,7 @@ const duenosDelSillon: LegalDocument = {
             {
               list: [
                 "We do our best to make the game work well, but we can’t guarantee it will always be free of errors, especially in this beta version.",
-                "To the extent permitted by law, we are not liable for indirect damages, such as data loss caused by uninstalling the game or by device failures.",
+                "To the extent permitted by law, we are not liable for indirect damages, such as data loss caused by uninstalling the game, by device failures or by the Google Play Games service.",
                 "Nothing in these terms limits the rights that the consumer protection law of your country gives you, or our liability in cases where the law doesn’t allow it to be limited.",
               ],
             },
@@ -197,11 +214,11 @@ const duenosDelSillon: LegalDocument = {
           heading: "5. Latitas y compras dentro del juego",
           body: [
             { subheading: "Qué son las latitas" },
-            "Las **latitas** son la moneda del juego. Se ganan jugando (duelos, acertijos, logros) y también se pueden comprar. Sirven para comprar sobres de cartas y cosméticos dentro del juego, y nada más:",
+            "Las **latitas** son la moneda del juego. Se ganan jugando (la historia, los duelos, los acertijos y los logros) y también se pueden comprar. Sirven para comprar sobres de cartas, mazos de prueba, temperamentos y cosméticos dentro del juego, y nada más:",
             {
               list: [
                 "no tienen valor en dinero, no se pueden cambiar por dinero ni por nada fuera del juego;",
-                "no se pueden transferir a otra persona ni a otro dispositivo;",
+                "no se pueden transferir a otra persona, y a otro teléfono solo pasan con la copia de Google Play Juegos (ver la sección 6);",
                 "no vencen mientras tengas el juego instalado.",
               ],
             },
@@ -220,8 +237,14 @@ const duenosDelSillon: LegalDocument = {
               },
             },
             "El precio final, con los impuestos que correspondan, lo ves en Google Play antes de confirmar cada compra. El pago lo procesa **Google Play**: nunca vemos tus datos de pago. Lo comprado no da ventajas en los duelos: todas las cartas y todo lo que se juega se consigue gratis jugando.",
-            { subheading: "Sobres" },
-            "Los sobres traen cartas al azar. Antes de comprar uno, la Tienda dice qué puede traer, cómo funciona la protección contra cartas repetidas y en cuántos sobres llega, como mucho, la próxima carta brillante. Las cartas no se venden sueltas.",
+            { subheading: "Sobres, mazos y cartas brillantes" },
+            {
+              list: [
+                "**Los sobres** traen cartas al azar. Antes de comprar uno, la Tienda dice qué puede traer, cómo funciona la protección contra cartas repetidas y en cuántos sobres llega, como mucho, la próxima carta brillante.",
+                "**Las cartas no se venden sueltas.** Los mazos de prueba sí se venden, y pagás solo las cartas que te faltan.",
+                "**La fusión:** cuatro copias de una carta se pueden fusionar en una copia brillante. Es opcional, el juego te pregunta antes, y no se deshace.",
+              ],
+            },
             { subheading: "Entrega" },
             "Lo comprado llega al juego **apenas Google Play confirma el pago**. Si elegiste un medio de pago que se acredita más tarde (por ejemplo, en efectivo), llega cuando se acredita, la próxima vez que abras el juego.",
             { subheading: "Derecho de desistimiento" },
@@ -240,10 +263,21 @@ const duenosDelSillon: LegalDocument = {
         {
           heading: "6. Dónde se guarda tu progreso",
           body: [
-            "El juego no tiene cuentas ni servidores. **Todo se guarda solo en tu teléfono:** tu colección, tus mazos, tu progreso y tus latitas, también las compradas.",
+            "El juego no tiene cuentas ni servidores propios. **Todo se guarda en tu teléfono:** tu colección, tus mazos, tu progreso y tus latitas, también las compradas.",
             {
               list: [
-                "Si desinstalás el juego, borrás sus datos o cambiás de teléfono, todo eso se pierde.",
+                [
+                  "**Si conectás Google Play Juegos** (es opcional), una copia de tu progreso queda también en tu cuenta de Google, y se actualiza cuando salís del juego. En otro teléfono, el juego te ofrece recuperarla.",
+                  {
+                    list: [
+                      "Recuperarla reemplaza lo que hay en ese teléfono, y eso no se deshace: por eso siempre te pregunta antes, y te muestra qué tiene cada lado.",
+                      "Las compras hechas en ese teléfono desde la versión 0.5.0 se conservan. Las de antes se reemplazan con lo demás, salvo que la copia ya las tenga.",
+                      "Si jugás en dos teléfonos, sus progresos no se juntan: el que tiene menos puede recuperar la copia del otro.",
+                      "Esa copia depende del servicio de Google: nosotros no la tenemos ni podemos recuperarla por vos.",
+                    ],
+                  },
+                ],
+                "**Si no conectaste Play Juegos** y desinstalás el juego, borrás sus datos o cambiás de teléfono, todo eso se pierde.",
                 "Nosotros no tenemos una copia y **no podemos recuperarlo**.",
                 "Una compra que Google Play confirmó pero que el juego todavía no entregó llega la próxima vez que lo abras.",
               ],
@@ -263,7 +297,7 @@ const duenosDelSillon: LegalDocument = {
             {
               list: [
                 "Hacemos lo posible para que el juego funcione bien, pero no podemos garantizar que esté siempre libre de errores, sobre todo en esta versión de prueba.",
-                "En la medida en que la ley lo permita, no respondemos por daños indirectos, como la pérdida de datos causada por desinstalar el juego o por fallas del dispositivo.",
+                "En la medida en que la ley lo permita, no respondemos por daños indirectos, como la pérdida de datos causada por desinstalar el juego, por fallas del dispositivo o por el servicio de Google Play Juegos.",
                 "Nada de estas condiciones limita los derechos que te da la ley de protección al consumidor de tu país, ni nuestra responsabilidad en los casos en que la ley no permite limitarla.",
               ],
             },
