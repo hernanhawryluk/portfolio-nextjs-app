@@ -3,7 +3,7 @@ import type { LegalDocument } from "@/lib/types";
 const duenosDelSillon: LegalDocument = {
   slug: "duenos-del-sillon",
   appName: "Dueños del sillón",
-  lastUpdated: "2026-11-14",
+  lastUpdated: "2026-11-15",
   content: {
     en: {
       title: "Terms of Service",
@@ -103,7 +103,7 @@ const duenosDelSillon: LegalDocument = {
         {
           heading: "6. Where your progress is stored",
           body: [
-            "The game has no accounts or servers of its own. **Everything is stored on your phone:** your collection, your decks, your progress and your latitas, including the ones you bought.",
+            "The game has no accounts of its own. **Your progress is stored on your phone:** your collection, your decks, your progress and your latitas, including the ones you bought. Only your “El barrio” league is kept by our server (see section 8).",
             {
               list: [
                 [
@@ -167,17 +167,55 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "8. Changes to the game",
+          heading: "8. “El barrio”: online duels",
           body: [
-            "To improve the game, we may change cards, rules, prices and content, or add and remove features. New prices apply to future purchases, never to ones already made. If we stop offering the game on Google Play, the copy you already have installed keeps working offline.",
+            "“El barrio” is the online duel against other people, with a league. It’s optional, and to play you need the internet and Google Play Games. The first time you enter, the game shows you its rules: accepting them is also accepting this section.",
+            {
+              list: [
+                [
+                  "**The barrio’s rules:**",
+                  {
+                    list: [
+                      "your rivals see your name: nothing offensive, no personal data, yours or anyone else’s, and don’t pretend to be another person, the game or its team;",
+                      "play every duel to the end: leaving, or letting your time run out, is losing;",
+                      "don’t use a modified game or phone, or any other way of playing with cards you don’t have.",
+                    ],
+                  },
+                ],
+                "**Your name:** a filter checks it before showing it, and it may reject it. We may also ask you to change it. If several players report it, it’s hidden until we review it.",
+                "**Reporting and blocking:** at the end of a duel, you can report your rival’s name or block them. A blocked rival won’t be matched with you again until you unblock them from your profile.",
+                "**Moderation:** we review the reports. If someone doesn’t follow these rules, we may hide their name, ask them to change it or suspend them from “El barrio”, for a while or for good. The rest of the game keeps working the same for them. If you think we made a mistake, write to us.",
+                "**Verification:** each search for a rival goes through Google Play Integrity. If Google can’t verify that the game is the one from Google Play, or that the phone hasn’t been modified, you can’t play online. The rest of the game, including “Visita”, stays the same.",
+                "**The league:** winning adds points and losing takes them away, without ever dropping below the best division you reached. Each new division gives its reward only once.",
+                [
+                  "**Availability:**",
+                  {
+                    list: [
+                      "“El barrio” depends on our server, which may be unavailable because of maintenance, updates or failures;",
+                      "if the server cuts a duel, that duel has no winner and doesn’t count;",
+                      "to play online you need the latest version of the game;",
+                      "we may change “El barrio” or stop offering it, and the rest of the game keeps working.",
+                    ],
+                  },
+                ],
+                "**Your data:** what our server stores, for how long and how to delete it is in the [Privacy Policy](https://hernan-hawryluk.vercel.app/privacy/duenos-del-sillon).",
+              ],
+            },
           ],
         },
         {
-          heading: "9. Liability",
+          heading: "9. Changes to the game",
+          body: [
+            "To improve the game, we may change cards, rules, prices and content, or add and remove features. New prices apply to future purchases, never to ones already made. If we stop offering the game on Google Play, the copy you already have installed keeps working offline, except “El barrio”, which needs our server.",
+          ],
+        },
+        {
+          heading: "10. Liability",
           body: [
             {
               list: [
                 "We do our best to make the game work well, but we can’t guarantee it will always be free of errors, especially in this beta version.",
+                "Other players choose their own names. We filter them and review the reports, but we can’t guarantee that none of them will bother you.",
                 "To the extent permitted by law, we are not liable for indirect damages, such as data loss caused by uninstalling the game, by device failures or by the Google Play Games service.",
                 "Nothing in these terms limits the rights that the consumer protection law of your country gives you, or our liability in cases where the law doesn’t allow it to be limited.",
               ],
@@ -185,7 +223,7 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "10. Governing law and complaints",
+          heading: "11. Governing law and complaints",
           body: [
             "These terms are governed by the laws of Argentina.",
             "If you are a consumer and live in another country, you keep the protection given by the mandatory rules of your country, and you can bring a claim before its courts. This includes the European Union and the United Kingdom.",
@@ -193,13 +231,13 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "11. Changes to these terms",
+          heading: "12. Changes to these terms",
           body: [
             "If we change these terms, the new version will be on this same page, with its date. If the change is important, we’ll also announce it in the game or on its Google Play listing. Purchases already made remain governed by the terms in force when they were made.",
           ],
         },
         {
-          heading: "12. Contact",
+          heading: "13. Contact",
           body: [
             "For questions, problems with a purchase or complaints: **hernanhawryluk@gmail.com**.",
           ],
@@ -304,7 +342,7 @@ const duenosDelSillon: LegalDocument = {
         {
           heading: "6. Dónde se guarda tu progreso",
           body: [
-            "El juego no tiene cuentas ni servidores propios. **Todo se guarda en tu teléfono:** tu colección, tus mazos, tu progreso y tus latitas, también las compradas.",
+            "El juego no tiene cuentas propias. **Tu progreso se guarda en tu teléfono:** tu colección, tus mazos, tu progreso y tus latitas, también las compradas. Solo tu liga de «El barrio» la lleva nuestro servidor (ver la sección 8).",
             {
               list: [
                 [
@@ -368,17 +406,55 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "8. Cambios en el juego",
+          heading: "8. «El barrio»: duelos en línea",
           body: [
-            "Para mejorar el juego podemos cambiar cartas, reglas, precios y contenido, o agregar y quitar funciones. Los precios nuevos rigen para las compras futuras, nunca para las ya hechas. Si dejamos de ofrecer el juego en Google Play, el que ya tenés instalado sigue funcionando sin conexión.",
+            "«El barrio» es el duelo por internet contra otras personas, con una liga. Es opcional, y para jugar necesitás internet y Google Play Juegos. La primera vez que entrás, el juego te muestra sus reglas: aceptarlas es aceptar también esta sección.",
+            {
+              list: [
+                [
+                  "**Las reglas del barrio:**",
+                  {
+                    list: [
+                      "tu nombre lo ven tus rivales: nada ofensivo, ningún dato personal, tuyo o de otros, y no te hagas pasar por otra persona, por el juego ni por su gente;",
+                      "jugá cada duelo hasta el final: abandonar, o dejar que se acabe el tiempo, es perder;",
+                      "no uses un juego o un teléfono modificados, ni otra forma de jugar con cartas que no tenés.",
+                    ],
+                  },
+                ],
+                "**Tu nombre:** un filtro lo revisa antes de mostrarlo, y puede rechazarlo. Nosotros también podemos pedirte que lo cambies. Si varios jugadores lo denuncian, queda oculto hasta que lo revisemos.",
+                "**Denunciar y bloquear:** al terminar un duelo, podés denunciar el nombre de tu rival o bloquearlo. Un rival bloqueado no te vuelve a tocar hasta que lo desbloquees desde tu perfil.",
+                "**La moderación:** revisamos las denuncias. Si alguien no respeta estas reglas, podemos ocultar su nombre, pedirle que lo cambie o suspenderlo de «El barrio», por un tiempo o para siempre. El resto del juego le sigue funcionando igual. Si creés que nos equivocamos, escribinos.",
+                "**La verificación:** cada búsqueda de rival pasa por Google Play Integrity. Si Google no puede verificar que el juego es el de Google Play, o que el teléfono no fue modificado, no se puede jugar en línea. El resto del juego, «Visita» incluida, sigue igual.",
+                "**La liga:** ganar suma puntos y perder resta, sin bajar nunca de la mejor división que alcanzaste. Cada división nueva da su premio una sola vez.",
+                [
+                  "**La disponibilidad:**",
+                  {
+                    list: [
+                      "«El barrio» depende de nuestro servidor, que puede no estar disponible por mantenimiento, por actualizaciones o por fallas;",
+                      "si el servidor corta un duelo, ese duelo no tiene ganador y no cuenta;",
+                      "para jugar en línea hace falta la versión más reciente del juego;",
+                      "podemos cambiar «El barrio» o dejar de ofrecerlo, y el resto del juego sigue funcionando.",
+                    ],
+                  },
+                ],
+                "**Tus datos:** qué guarda nuestro servidor, cuánto tiempo y cómo borrarlo está en la [Política de privacidad](https://hernan-hawryluk.vercel.app/privacy/duenos-del-sillon).",
+              ],
+            },
           ],
         },
         {
-          heading: "9. Responsabilidad",
+          heading: "9. Cambios en el juego",
+          body: [
+            "Para mejorar el juego podemos cambiar cartas, reglas, precios y contenido, o agregar y quitar funciones. Los precios nuevos rigen para las compras futuras, nunca para las ya hechas. Si dejamos de ofrecer el juego en Google Play, el que ya tenés instalado sigue funcionando sin conexión, salvo «El barrio», que necesita nuestro servidor.",
+          ],
+        },
+        {
+          heading: "10. Responsabilidad",
           body: [
             {
               list: [
                 "Hacemos lo posible para que el juego funcione bien, pero no podemos garantizar que esté siempre libre de errores, sobre todo en esta versión de prueba.",
+                "Los nombres de los otros jugadores los eligen ellos. Los filtramos y revisamos las denuncias, pero no podemos garantizar que ninguno moleste.",
                 "En la medida en que la ley lo permita, no respondemos por daños indirectos, como la pérdida de datos causada por desinstalar el juego, por fallas del dispositivo o por el servicio de Google Play Juegos.",
                 "Nada de estas condiciones limita los derechos que te da la ley de protección al consumidor de tu país, ni nuestra responsabilidad en los casos en que la ley no permite limitarla.",
               ],
@@ -386,7 +462,7 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "10. Ley aplicable y reclamos",
+          heading: "11. Ley aplicable y reclamos",
           body: [
             "Estas condiciones se rigen por las leyes de la República Argentina.",
             "Si sos consumidor y vivís en otro país, conservás la protección que te dan las normas obligatorias de tu país, y podés reclamar ante sus tribunales. Esto incluye la Unión Europea y el Reino Unido.",
@@ -394,13 +470,13 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "11. Cambios en estas condiciones",
+          heading: "12. Cambios en estas condiciones",
           body: [
             "Si cambiamos estas condiciones, la versión nueva va a estar en esta misma página, con su fecha. Si el cambio es importante, también lo avisamos en el juego o en su ficha de Google Play. Las compras ya hechas siguen rigiéndose por las condiciones vigentes al momento de hacerlas.",
           ],
         },
         {
-          heading: "12. Contacto",
+          heading: "13. Contacto",
           body: [
             "Para preguntas, problemas con una compra o reclamos: **hernanhawryluk@gmail.com**.",
           ],
