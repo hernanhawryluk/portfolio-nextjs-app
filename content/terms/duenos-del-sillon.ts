@@ -71,7 +71,7 @@ const duenosDelSillon: LegalDocument = {
                   ["Bolsa de latitas", "1,500 latitas"],
                   [
                     "Apoyá el juego",
-                    "300 latitas, the title “Mecenas del sillón” and a golden frame for your portrait",
+                    "750 latitas, the title “Mecenas del sillón” and a golden frame for your portrait",
                   ],
                 ],
               },
@@ -310,7 +310,7 @@ const duenosDelSillon: LegalDocument = {
                   ["Bolsa de latitas", "1.500 latitas"],
                   [
                     "Apoyá el juego",
-                    "300 latitas, el título «Mecenas del sillón» y un marco dorado para tu retrato",
+                    "750 latitas, el título «Mecenas del sillón» y un marco dorado para tu retrato",
                   ],
                 ],
               },
