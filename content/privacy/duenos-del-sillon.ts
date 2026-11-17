@@ -3,12 +3,12 @@ import type { LegalDocument } from "@/lib/types";
 const duenosDelSillon: LegalDocument = {
   slug: "duenos-del-sillon",
   appName: "Dueños del sillón",
-  lastUpdated: "2026-11-15",
+  lastUpdated: "2026-11-17",
   content: {
     en: {
       title: "Privacy Policy",
       intro: [
-        "Dueños del sillón is a card game for Android made by Hernán Hawryluk. This policy explains what happens to your data when you play. The rules of use and purchases are in the [Terms of Service](https://hernan-hawryluk.vercel.app/terms/duenos-del-sillon). The short version: almost everything stays on your phone. If you connect Google Play Games, which is optional, Google stores your achievements and a copy of your progress in your account. If you play in “El barrio”, the online duel, which is also optional, our server stores what it needs for you to play with other people: your Play Games ID, the name you choose, your collection, your league and your duels. And if you play in “Visita”, your phone talks directly to the phone of whoever is next to you, without the internet.",
+        "Dueños del sillón is a card game for Android made by Hernán Hawryluk. This policy explains what happens to your data when you play. The rules of use and purchases are in the [Terms of Service](https://hernan-hawryluk.vercel.app/terms/duenos-del-sillon). The short version: almost everything stays on your phone. If you connect Google Play Games, which is optional, Google stores your achievements and a copy of your progress in your account. If you play in “El barrio”, the online duel, which is also optional, our server stores what it needs for you to play with other people: your Play Games ID, the name you choose, your collection, your league and your duels. And if you play in “Visita”, or in “La juntada” with friends, your phone talks directly to the phones of those next to you, without the internet.",
       ],
       sections: [
         {
@@ -33,9 +33,9 @@ const duenosDelSillon: LegalDocument = {
             {
               list: [
                 "It doesn’t ask for your real name, your email or any other personal data. The profile name is optional and you choose it. It stays on your phone, in the copy in your account if you connect Play Games and, if you play in “El barrio”, on our server, which shows it to your rivals.",
-                "It doesn’t use your location, contacts, camera, microphone or photos. On Android 8 to 12, “Visita” asks for the location permission because Android requires it to look for other phones over Bluetooth, but the game never reads where you are.",
+                "It doesn’t use your location, contacts, camera, microphone or photos. On Android 8 to 12, “Visita” and “La juntada” with friends ask for the location permission because Android requires it to look for other phones over Bluetooth, but the game never reads where you are.",
                 "It has no ads.",
-                "It doesn’t use analytics or tracking tools, and it doesn’t sell or share your data with third parties. Our server runs on Google Cloud, which stores its data on our behalf. The Google libraries the game uses (Play Games, Play Integrity and the “Visita” connection) send Google their own usage data, as explained below.",
+                "It doesn’t use analytics or tracking tools, and it doesn’t sell or share your data with third parties. Our server runs on Google Cloud, which stores its data on our behalf. The Google libraries the game uses (Play Games, Play Integrity and the connection of “Visita” and “La juntada”) send Google their own usage data, as explained below.",
               ],
             },
           ],
@@ -144,6 +144,30 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
+          heading: "“La juntada”: a table with friends",
+          body: [
+            "“La juntada” is a table of three to six on one Sillón. Against the house cats, it’s played entirely on your phone and shares nothing with anyone. With friends who are nearby, each one plays from their own phone. It’s optional.",
+            {
+              list: [
+                "**How they connect:** whoever sets the table opens it with “Invitar amigos”, and the others look for it with “Sumarme a una mesa”. The phones talk directly, over Bluetooth and Wi-Fi, with the same Nearby Connections library as “Visita”: without the internet, without going through any server, and with the connection encrypted. Whoever set the table decides whom to seat, and can remove someone at any time.",
+                "**What phones looking for a table nearby see:** while your table is open, your name and your portrait, so they recognize it. If you ask for a seat at a table, whoever set it sees your name and your portrait to decide.",
+                [
+                  "**What the others at the table see**, only while you’re seated:",
+                  {
+                    list: [
+                      "your name, your portrait, your frame and your title, the band of the starter deck you chose, if the table lends them, whether you play with a screen reader, and whether your connection dropped or you got up;",
+                      "in a match, the same as any rival: your temperament, your deck list and the cards you play.",
+                    ],
+                  },
+                ],
+                "**What the phone of whoever set the table also receives,** since it deals and referees the match: the list of the deck you have chosen and how many shiny copies of each card you have, so they shine on the table. It uses them for that match and doesn’t store them.",
+                "**What stays stored:** on each phone, only how many tables its owner played and won, with the rest of their stats. No phone stores the others’ names or anything about them.",
+                "**The permissions and Google’s library:** the same as “Visita”, explained above.",
+              ],
+            },
+          ],
+        },
+        {
           heading: "How to delete your data",
           body: [
             "What Dueños del sillón stores is in three places, and you delete it yourself:",
@@ -182,7 +206,7 @@ const duenosDelSillon: LegalDocument = {
               ],
             },
             "If you play in “El barrio”, it also communicates with our server, and with Google Play Integrity on each search for a rival.",
-            "“Visita” doesn’t use the internet: the phones talk directly, over Bluetooth and Wi-Fi.",
+            "“Visita” and “La juntada” don’t use the internet: the phones talk directly, over Bluetooth and Wi-Fi.",
           ],
         },
         {
@@ -208,7 +232,7 @@ const duenosDelSillon: LegalDocument = {
     es: {
       title: "Política de privacidad",
       intro: [
-        "Dueños del sillón es un juego de cartas para Android hecho por Hernán Hawryluk. Esta política explica qué pasa con tus datos cuando jugás. Las reglas de uso y de las compras están en las [Condiciones del servicio](https://hernan-hawryluk.vercel.app/terms/duenos-del-sillon). La versión corta: casi todo queda en tu teléfono. Si conectás Google Play Juegos, que es opcional, Google guarda en tu cuenta tus logros y una copia de tu progreso. Si jugás en «El barrio», el duelo en línea, que también es opcional, nuestro servidor guarda lo necesario para jugar con otras personas: tu identificador de Play Juegos, el nombre que elegís, tu colección, tu liga y tus duelos. Y si jugás en «Visita», tu teléfono se habla directo con el de quien está al lado, sin internet.",
+        "Dueños del sillón es un juego de cartas para Android hecho por Hernán Hawryluk. Esta política explica qué pasa con tus datos cuando jugás. Las reglas de uso y de las compras están en las [Condiciones del servicio](https://hernan-hawryluk.vercel.app/terms/duenos-del-sillon). La versión corta: casi todo queda en tu teléfono. Si conectás Google Play Juegos, que es opcional, Google guarda en tu cuenta tus logros y una copia de tu progreso. Si jugás en «El barrio», el duelo en línea, que también es opcional, nuestro servidor guarda lo necesario para jugar con otras personas: tu identificador de Play Juegos, el nombre que elegís, tu colección, tu liga y tus duelos. Y si jugás en «Visita», o en «La juntada» con amigos, tu teléfono se habla directo con los de quienes están al lado, sin internet.",
       ],
       sections: [
         {
@@ -233,9 +257,9 @@ const duenosDelSillon: LegalDocument = {
             {
               list: [
                 "No pide tu nombre real, tu correo ni ningún otro dato personal. El nombre del perfil es opcional y lo elegís vos. Queda en tu teléfono, en la copia de tu cuenta si conectás Play Juegos y, si jugás en «El barrio», en nuestro servidor, que se lo muestra a tus rivales.",
-                "No usa tu ubicación, tus contactos, tu cámara, tu micrófono ni tus fotos. En Android 8 a 12, «Visita» pide el permiso de ubicación porque Android lo exige para buscar otros teléfonos por Bluetooth, pero el juego nunca lee dónde estás.",
+                "No usa tu ubicación, tus contactos, tu cámara, tu micrófono ni tus fotos. En Android 8 a 12, «Visita» y «La juntada» con amigos piden el permiso de ubicación porque Android lo exige para buscar otros teléfonos por Bluetooth, pero el juego nunca lee dónde estás.",
                 "No tiene publicidad.",
-                "No usa herramientas de analítica ni de seguimiento, y no vende ni comparte tus datos con terceros. Nuestro servidor corre en Google Cloud, que guarda sus datos por cuenta nuestra. Las bibliotecas de Google que usa el juego (Play Juegos, Play Integrity y la conexión de «Visita») le mandan a Google sus propios datos de uso, como se explica más abajo.",
+                "No usa herramientas de analítica ni de seguimiento, y no vende ni comparte tus datos con terceros. Nuestro servidor corre en Google Cloud, que guarda sus datos por cuenta nuestra. Las bibliotecas de Google que usa el juego (Play Juegos, Play Integrity y la conexión de «Visita» y de «La juntada») le mandan a Google sus propios datos de uso, como se explica más abajo.",
               ],
             },
           ],
@@ -344,6 +368,30 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
+          heading: "«La juntada»: una mesa con amigos",
+          body: [
+            "«La juntada» es una mesa de tres a seis en un mismo Sillón. Contra los gatos de la casa se juega entera en tu teléfono y no comparte nada con nadie. Con amigos que están cerca, cada uno juega desde su teléfono. Es opcional.",
+            {
+              list: [
+                "**Cómo se conectan:** quien arma la mesa la abre con «Invitar amigos», y los demás la buscan con «Sumarme a una mesa». Los teléfonos se hablan directo, por Bluetooth y Wi-Fi, con la misma biblioteca Nearby Connections de «Visita»: sin internet, sin pasar por ningún servidor y con la conexión cifrada. Quien armó la mesa decide a quién sienta, y puede sacar a alguien cuando quiera.",
+                "**Qué ven los teléfonos que buscan una mesa cerca:** mientras tu mesa está abierta, tu nombre y tu retrato, para que la reconozcan. Si pedís un lugar en una mesa, quien la armó ve tu nombre y tu retrato para decidir.",
+                [
+                  "**Qué ven los demás de la mesa**, solo mientras estás sentado:",
+                  {
+                    list: [
+                      "tu nombre, tu retrato, tu marco y tu título, la banda del mazo inicial que elegiste, si la mesa los presta, si jugás con lector de pantalla, y si se te cortó la conexión o te levantaste;",
+                      "en una partida, lo mismo que cualquier rival: tu temperamento, la lista de tu mazo y las cartas que jugás.",
+                    ],
+                  },
+                ],
+                "**Qué recibe además el teléfono de quien armó la mesa,** que es el que reparte y arbitra la partida: la lista del mazo que tenés elegido y cuántas copias brillantes tenés de cada carta, para que brillen en la mesa. Las usa para esa partida y no las guarda.",
+                "**Qué queda guardado:** en cada teléfono, solo cuántas mesas jugó y ganó su dueño, con el resto de sus estadísticas. Ningún teléfono guarda el nombre ni nada de los demás.",
+                "**Los permisos y la biblioteca de Google:** los mismos de «Visita», explicados más arriba.",
+              ],
+            },
+          ],
+        },
+        {
           heading: "Cómo borrar tus datos",
           body: [
             "Lo que Dueños del sillón guarda está en tres lugares, y lo borrás vos:",
@@ -382,7 +430,7 @@ const duenosDelSillon: LegalDocument = {
               ],
             },
             "Si jugás en «El barrio», también con nuestro servidor, y con Google Play Integrity en cada búsqueda de rival.",
-            "«Visita» no usa internet: los teléfonos se hablan directo, por Bluetooth y Wi-Fi.",
+            "«Visita» y «La juntada» no usan internet: los teléfonos se hablan directo, por Bluetooth y Wi-Fi.",
           ],
         },
         {

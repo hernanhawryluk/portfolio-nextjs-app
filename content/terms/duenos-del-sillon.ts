@@ -3,7 +3,7 @@ import type { LegalDocument } from "@/lib/types";
 const duenosDelSillon: LegalDocument = {
   slug: "duenos-del-sillon",
   appName: "Dueños del sillón",
-  lastUpdated: "2026-11-15",
+  lastUpdated: "2026-11-17",
   content: {
     en: {
       title: "Terms of Service",
@@ -126,8 +126,9 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "7. “Visita”: duels and trades with whoever is next to you",
+          heading: "7. “Visita” and “La juntada”: with those next to you",
           body: [
+            { subheading: "“Visita”: duels and trades" },
             "“Visita” connects your phone with the phone of someone who is next to you, without the internet, to play a duel or trade cards. It’s optional.",
             {
               list: [
@@ -164,6 +165,26 @@ const duenosDelSillon: LegalDocument = {
                 "**You may not** use a name that offends other people, or modify the game or its data to trade cards you don’t have.",
               ],
             },
+            { subheading: "“La juntada”: a table of three to six" },
+            "“La juntada” is a match of three to six on one Sillón: against the house cats, on your phone, or with friends who are nearby, each from their own phone and without the internet. It’s optional.",
+            {
+              list: [
+                "**Whoever sets the table** chooses its rules (the house event, whether temperaments and the clock are on, and whether each person plays with a starter deck the table lends or with their own), decides who sits and can remove someone. Their phone deals and referees the match.",
+                [
+                  "**If someone leaves:**",
+                  {
+                    list: [
+                      "whoever gets up in the middle of a match loses it, and the others play on without that person;",
+                      "whoever loses the connection doesn’t cut it: after a minute, their seat passes by itself until they come back;",
+                      "if whoever set the table closes it, or their connection doesn’t come back, the match ends with no winner and counts for no one.",
+                    ],
+                  },
+                ],
+                "**What it gives:** a table pays latitas like a duel against the AI. It doesn’t count for the ladder, for the “El barrio” league or for achievements.",
+                "**The phones are trusted:** the phones play the match between themselves, with no server checking it. We can’t verify the others’ cards or review a match.",
+                "**Among people who know each other:** there are no reports or blocks, because those at the table are people who are nearby and whom whoever set it chose to seat. The same rules apply: you may not use a name that offends other people, or modify the game or its data.",
+              ],
+            },
           ],
         },
         {
@@ -185,7 +206,7 @@ const duenosDelSillon: LegalDocument = {
                 "**Your name:** a filter checks it before showing it, and it may reject it. We may also ask you to change it. If several players report it, it’s hidden until we review it.",
                 "**Reporting and blocking:** at the end of a duel, you can report your rival’s name or block them. A blocked rival won’t be matched with you again until you unblock them from your profile.",
                 "**Moderation:** we review the reports. If someone doesn’t follow these rules, we may hide their name, ask them to change it or suspend them from “El barrio”, for a while or for good. The rest of the game keeps working the same for them. If you think we made a mistake, write to us.",
-                "**Verification:** each search for a rival goes through Google Play Integrity. If Google can’t verify that the game is the one from Google Play, or that the phone hasn’t been modified, you can’t play online. The rest of the game, including “Visita”, stays the same.",
+                "**Verification:** each search for a rival goes through Google Play Integrity. If Google can’t verify that the game is the one from Google Play, or that the phone hasn’t been modified, you can’t play online. The rest of the game, with “Visita” and “La juntada”, stays the same.",
                 "**The league:** winning adds points and losing takes them away, without ever dropping below the best division you reached. Each new division gives its reward only once.",
                 [
                   "**Availability:**",
@@ -365,8 +386,9 @@ const duenosDelSillon: LegalDocument = {
           ],
         },
         {
-          heading: "7. «Visita»: duelos y cambios con quien está al lado",
+          heading: "7. «Visita» y «La juntada»: con quienes están al lado",
           body: [
+            { subheading: "«Visita»: duelos y cambios" },
             "«Visita» conecta tu teléfono con el de alguien que está al lado, sin internet, para jugar un duelo o cambiar cartas. Es opcional.",
             {
               list: [
@@ -403,6 +425,26 @@ const duenosDelSillon: LegalDocument = {
                 "**No podés** usar un nombre que ofenda a otras personas, ni modificar el juego o sus datos para cambiar cartas que no tenés.",
               ],
             },
+            { subheading: "«La juntada»: una mesa de tres a seis" },
+            "«La juntada» es una partida de tres a seis en un mismo Sillón: contra los gatos de la casa, en tu teléfono, o con amigos que están cerca, cada uno desde el suyo y sin internet. Es opcional.",
+            {
+              list: [
+                "**Quien arma la mesa** elige sus reglas (el evento de la casa, si se juega con temperamentos y con reloj, y si cada persona juega con un mazo inicial que presta la mesa o con el suyo), decide quién se sienta y puede sacar a alguien. Su teléfono reparte y arbitra la partida.",
+                [
+                  "**Si alguien se va:**",
+                  {
+                    list: [
+                      "quien se levanta en medio de una partida la pierde, y los demás la siguen sin esa persona;",
+                      "quien se queda sin conexión no la corta: pasado un minuto, su asiento pasa solo hasta que vuelva;",
+                      "si quien armó la mesa la cierra, o su conexión no vuelve, la partida termina sin ganador y no cuenta para nadie.",
+                    ],
+                  },
+                ],
+                "**Qué da:** una mesa paga latitas como un duelo contra la IA. No cuenta para la escalera, para la liga de «El barrio» ni para los logros.",
+                "**Se confía en los teléfonos:** la partida la juegan los teléfonos entre sí, sin un servidor que la controle. No podemos verificar las cartas de los demás ni revisar una partida.",
+                "**Entre personas que se conocen:** no hay denuncias ni bloqueos, porque se sientan a la mesa quienes están cerca y quien la armó quiso sentar. Valen las mismas reglas: no podés usar un nombre que ofenda a otras personas, ni modificar el juego o sus datos.",
+              ],
+            },
           ],
         },
         {
@@ -424,7 +466,7 @@ const duenosDelSillon: LegalDocument = {
                 "**Tu nombre:** un filtro lo revisa antes de mostrarlo, y puede rechazarlo. Nosotros también podemos pedirte que lo cambies. Si varios jugadores lo denuncian, queda oculto hasta que lo revisemos.",
                 "**Denunciar y bloquear:** al terminar un duelo, podés denunciar el nombre de tu rival o bloquearlo. Un rival bloqueado no te vuelve a tocar hasta que lo desbloquees desde tu perfil.",
                 "**La moderación:** revisamos las denuncias. Si alguien no respeta estas reglas, podemos ocultar su nombre, pedirle que lo cambie o suspenderlo de «El barrio», por un tiempo o para siempre. El resto del juego le sigue funcionando igual. Si creés que nos equivocamos, escribinos.",
-                "**La verificación:** cada búsqueda de rival pasa por Google Play Integrity. Si Google no puede verificar que el juego es el de Google Play, o que el teléfono no fue modificado, no se puede jugar en línea. El resto del juego, «Visita» incluida, sigue igual.",
+                "**La verificación:** cada búsqueda de rival pasa por Google Play Integrity. Si Google no puede verificar que el juego es el de Google Play, o que el teléfono no fue modificado, no se puede jugar en línea. El resto del juego, con «Visita» y «La juntada», sigue igual.",
                 "**La liga:** ganar suma puntos y perder resta, sin bajar nunca de la mejor división que alcanzaste. Cada división nueva da su premio una sola vez.",
                 [
                   "**La disponibilidad:**",
